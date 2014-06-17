@@ -1,0 +1,3 @@
+2014-06-10 12:41:53 : Read in random number generator
+2014-06-10 12:41:53 : Setting initial 0.01
+2014-06-10 12:41:53 : Setting initial 0.0

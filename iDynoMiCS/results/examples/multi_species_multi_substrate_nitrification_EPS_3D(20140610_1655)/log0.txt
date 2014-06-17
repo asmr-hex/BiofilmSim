@@ -1,0 +1,74 @@
+2014-06-10 16:55:04 : Read in random number generator
+2014-06-10 16:55:04 : Using adaptive time stepping.
+2014-06-10 16:55:04 : Setting initial 0.01
+2014-06-10 16:55:04 : Setting initial 0.0060
+2014-06-10 16:55:04 : Setting initial 0.0
+2014-06-10 16:55:04 : Setting initial 0.01
+2014-06-10 16:55:04 : Setting initial 0.0
+2014-06-10 16:55:05 : 		o2d (0)
+2014-06-10 16:55:05 : 		MyNH4 (1)
+2014-06-10 16:55:05 : 		MyNO3 (2)
+2014-06-10 16:55:05 : 		MyCOD (3)
+2014-06-10 16:55:05 : 		pressure (4)
+2014-06-10 16:55:05 : 	 Reactions: 
+
+2014-06-10 16:55:05 : Reaction 0 is autocatalyic
+2014-06-10 16:55:05 : 		MyGrowthAutotrophs (0)
+2014-06-10 16:55:05 : Reaction 0 is autocatalyic
+2014-06-10 16:55:05 : 		MyMaintenanceAutotrophs (1)
+2014-06-10 16:55:05 : Reaction 0 is autocatalyic
+2014-06-10 16:55:05 : 		MyInactivationAutotrophs (2)
+2014-06-10 16:55:05 : Reaction 0 is autocatalyic
+2014-06-10 16:55:05 : 		MyGrowthHeterotrophs (3)
+2014-06-10 16:55:05 : Reaction 0 is autocatalyic
+2014-06-10 16:55:05 : 		MyAnaerobicGrowthHeterotrophs (4)
+2014-06-10 16:55:05 : Reaction 0 is autocatalyic
+2014-06-10 16:55:05 : 		MyMaintenanceHeterotrophs (5)
+2014-06-10 16:55:05 : Reaction 0 is autocatalyic
+2014-06-10 16:55:05 : 		MyAnaerobicMaintenanceHeterotrophs (6)
+2014-06-10 16:55:05 : Reaction 0 is autocatalyic
+2014-06-10 16:55:05 : 		MyInactivationHeterotrophs (7)
+2014-06-10 16:55:05 : Reaction 0 is autocatalyic
+2014-06-10 16:55:05 : 		MyHydrolysisEPS (8)
+2014-06-10 16:55:05 : 	 done
+2014-06-10 16:55:05 : 		MyAutotrophEPS (0)
+2014-06-10 16:55:05 : 		MyHeterotrophEPS (1)
+2014-06-10 16:55:05 : 		MyAutotrophs (2)
+2014-06-10 16:55:05 : 		MyHeterotroph (3)
+2014-06-10 16:55:05 : 		MySwitchHeterotroph (4)
+2014-06-10 16:55:05 : Agent time step is... 0.05
+2014-06-10 16:55:05 :  42875 grid elements, resolution: 8.0 micrometers
+2014-06-10 16:55:05 : Guessing MyAutotrophs initial mass at: 2513.274122871834
+2014-06-10 16:55:05 : Guessing MyHeterotroph initial mass at: 2513.274122871834
+2014-06-10 16:55:05 : Guessing MySwitchHeterotroph initial mass at: 8482.30016469244
+2014-06-10 16:55:07 : System description finalized
+2014-06-10 16:55:07 : Initialization (../results/examples/multi_species_multi_substrate_nitrification_EPS_3D(20140610_1655)/multi_species_multi_substrate_nitrification_EPS_3D.xml):OK
+2014-06-10 16:55:13 : Solving Diffusion-reaction done in 6 sec
+2014-06-10 16:55:13 : Doing pressure calculations.
+2014-06-10 16:55:13 : Doing pressure calculations.
+2014-06-10 16:55:14 : Doing pressure calculations.
+2014-06-10 16:55:14 : Doing pressure calculations.
+2014-06-10 16:55:14 : Doing pressure calculations.
+2014-06-10 16:55:15 : Doing pressure calculations.
+2014-06-10 16:55:15 : Doing pressure calculations.
+2014-06-10 16:55:15 : Doing pressure calculations.
+2014-06-10 16:55:16 : Doing pressure calculations.
+2014-06-10 16:55:16 : Doing pressure calculations.
+2014-06-10 16:55:16 : Doing pressure calculations.
+2014-06-10 16:55:17 : 0/0 after 2 shove iterations
+2014-06-10 16:55:17 : Eroding 0 (000E0/000E0 fg)
+2014-06-10 16:55:17 : Detachment done in 3 sec
+2014-06-10 16:55:17 : Agents stepped/dead/born: 0.0/0/0 done in 0 sec
+2014-06-10 16:55:17 : Simulating agents done in 0 sec
+2014-06-10 16:55:17 : Computation time :0.2 minute(s) 
+ 	 -> Iter 1, Time: 0.5 achieved in 10.0 sec 
+
+2014-06-10 16:55:23 : Solving Diffusion-reaction done in 6 sec
+2014-06-10 16:55:23 : Doing pressure calculations.
+2014-06-10 16:55:23 : Doing pressure calculations.
+2014-06-10 16:55:24 : Doing pressure calculations.
+2014-06-10 16:55:24 : Doing pressure calculations.
+2014-06-10 16:55:24 : Doing pressure calculations.
+2014-06-10 16:55:25 : Doing pressure calculations.
+2014-06-10 16:55:25 : Doing pressure calculations.
+2014-06-10 16:55:25 : Doing pressure calculations.

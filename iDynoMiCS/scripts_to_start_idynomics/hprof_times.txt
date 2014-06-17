@@ -1,0 +1,513 @@
+JAVA PROFILE 1.0.1, created Tue Jun 10 12:41:49 2014
+
+Header for -agentlib:hprof (or -Xrunhprof) ASCII Output (JDK 5.0 JVMTI based)
+
+%W% %E%
+
+ Copyright (c) 2006 Sun Microsystems, Inc. All  Rights Reserved.
+
+WARNING!  This file format is under development, and is subject to
+change without notice.
+
+This file contains the following types of records:
+
+THREAD START
+THREAD END      mark the lifetime of Java threads
+
+TRACE           represents a Java stack trace.  Each trace consists
+                of a series of stack frames.  Other records refer to
+                TRACEs to identify (1) where object allocations have
+                taken place, (2) the frames in which GC roots were
+                found, and (3) frequently executed methods.
+
+HEAP DUMP       is a complete snapshot of all live objects in the Java
+                heap.  Following distinctions are made:
+
+                ROOT    root set as determined by GC
+                CLS     classes 
+                OBJ     instances
+                ARR     arrays
+
+SITES           is a sorted list of allocation sites.  This identifies
+                the most heavily allocated object types, and the TRACE
+                at which those allocations occurred.
+
+CPU SAMPLES     is a statistical profile of program execution.  The VM
+                periodically samples all running threads, and assigns
+                a quantum to active TRACEs in those threads.  Entries
+                in this record are TRACEs ranked by the percentage of
+                total quanta they consumed; top-ranked TRACEs are
+                typically hot spots in the program.
+
+CPU TIME        is a profile of program execution obtained by measuring
+                the time spent in individual methods (excluding the time
+                spent in callees), as well as by counting the number of
+                times each method is called. Entries in this record are
+                TRACEs ranked by the percentage of total CPU time. The
+                "count" field indicates the number of times each TRACE 
+                is invoked.
+
+MONITOR TIME    is a profile of monitor contention obtained by measuring
+                the time spent by a thread waiting to enter a monitor.
+                Entries in this record are TRACEs ranked by the percentage
+                of total monitor contention time and a brief description
+                of the monitor.  The "count" field indicates the number of 
+                times the monitor was contended at that TRACE.
+
+MONITOR DUMP    is a complete snapshot of all the monitors and threads in 
+                the System.
+
+HEAP DUMP, SITES, CPU SAMPLES|TIME and MONITOR DUMP|TIME records are generated 
+at program exit.  They can also be obtained during program execution by typing 
+Ctrl-\ (on Solaris) or by typing Ctrl-Break (on Win32).
+
+--------
+
+THREAD START (obj=50000159, id = 200002, name="HPROF gc_finish watcher", group="system")
+THREAD START (obj=5000015a, id = 200001, name="main", group="main")
+THREAD START (obj=50000427, id = 200003, name="Keep-Alive-Timer", group="system")
+THREAD START (obj=5000048c, id = 200004, name="TrueZIP InputStream Reader", group="main")
+THREAD START (obj=500004ce, id = 200007, name="Thread-2", group="main")
+THREAD END (id = 200007)
+THREAD END (id = 200003)
+THREAD END (id = 200004)
+THREAD START (obj=500004e4, id = 200009, name="SIGINT handler", group="system")
+THREAD START (obj=500004e8, id = 200010, name="Thread-1", group="main")
+THREAD END (id = 200010)
+THREAD END (id = 200009)
+TRACE 318979:
+	java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:Unknown line)
+	java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:Unknown line)
+	java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:Unknown line)
+	java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:Unknown line)
+TRACE 318253:
+	java.lang.Object.wait(Object.java:Unknown line)
+	java.lang.ref.Reference$ReferenceHandler.run(Reference.java:Unknown line)
+TRACE 318264:
+	java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:Unknown line)
+	java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:Unknown line)
+	java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:Unknown line)
+TRACE 318978:
+	simulator.geometry.Domain.checkDilationRadius(Domain.java:Unknown line)
+	simulator.geometry.Domain.calculateComputationDomainGrids(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+	simulator.World.init(World.java:Unknown line)
+TRACE 318964:
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+	simulator.World.init(World.java:Unknown line)
+	simulator.Simulator.createWorld(Simulator.java:Unknown line)
+TRACE 318977:
+	simulator.geometry.Domain.cyclicIndex(Domain.java:Unknown line)
+	simulator.geometry.Domain.checkDilationRadius(Domain.java:Unknown line)
+	simulator.geometry.Domain.calculateComputationDomainGrids(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+TRACE 318867:
+	simulator.geometry.boundaryConditions.AllBC.isOutside(AllBC.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+	simulator.World.init(World.java:Unknown line)
+TRACE 318975:
+	utils.ExtraMath.sq(ExtraMath.java:Unknown line)
+	simulator.geometry.Domain.checkDilationRadius(Domain.java:Unknown line)
+	simulator.geometry.Domain.calculateComputationDomainGrids(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+TRACE 318962:
+	sun.net.www.http.KeepAliveCache.run(KeepAliveCache.java:Unknown line)
+	java.lang.Thread.run(Thread.java:Unknown line)
+TRACE 318865:
+	simulator.geometry.shape.Planar.isOutside(Planar.java:Unknown line)
+	simulator.geometry.boundaryConditions.AllBC.isOutside(AllBC.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+TRACE 318854:
+	java.util.LinkedList$ListItr.next(LinkedList.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+	simulator.World.init(World.java:Unknown line)
+TRACE 318973:
+	java.lang.Double.<init>(Double.java:Unknown line)
+	java.lang.Double.valueOf(Double.java:Unknown line)
+	utils.ExtraMath.sq(ExtraMath.java:Unknown line)
+	simulator.geometry.Domain.checkDilationRadius(Domain.java:Unknown line)
+TRACE 318970:
+	java.lang.Double.valueOf(Double.java:Unknown line)
+	simulator.geometry.Domain.checkDilationRadius(Domain.java:Unknown line)
+	simulator.geometry.Domain.calculateComputationDomainGrids(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+TRACE 318969:
+	java.lang.Double.<init>(Double.java:Unknown line)
+	java.lang.Double.valueOf(Double.java:Unknown line)
+	simulator.geometry.Domain.checkDilationRadius(Domain.java:Unknown line)
+	simulator.geometry.Domain.calculateComputationDomainGrids(Domain.java:Unknown line)
+TRACE 318974:
+	java.lang.Double.valueOf(Double.java:Unknown line)
+	utils.ExtraMath.sq(ExtraMath.java:Unknown line)
+	simulator.geometry.Domain.checkDilationRadius(Domain.java:Unknown line)
+	simulator.geometry.Domain.calculateComputationDomainGrids(Domain.java:Unknown line)
+TRACE 318856:
+	simulator.SpatialGrid.getValueAt(SpatialGrid.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+	simulator.World.init(World.java:Unknown line)
+TRACE 318851:
+	java.util.LinkedList$ListItr.hasNext(LinkedList.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+	simulator.World.init(World.java:Unknown line)
+TRACE 318971:
+	java.lang.Double.doubleValue(Double.java:Unknown line)
+	utils.ExtraMath.sq(ExtraMath.java:Unknown line)
+	simulator.geometry.Domain.checkDilationRadius(Domain.java:Unknown line)
+	simulator.geometry.Domain.calculateComputationDomainGrids(Domain.java:Unknown line)
+TRACE 318965:
+	java.lang.StrictMath.floorOrCeil(StrictMath.java:Unknown line)
+	java.lang.StrictMath.floor(StrictMath.java:Unknown line)
+	java.lang.Math.floor(Math.java:Unknown line)
+	simulator.geometry.Domain.checkDilationRadius(Domain.java:Unknown line)
+TRACE 318872:
+	simulator.geometry.shape.Planar.intersection(Planar.java:Unknown line)
+	simulator.geometry.shape.Planar.getDistance(Planar.java:Unknown line)
+	simulator.geometry.boundaryConditions.AllBC.getDistance(AllBC.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+TRACE 318966:
+	java.lang.StrictMath.floor(StrictMath.java:Unknown line)
+	java.lang.Math.floor(Math.java:Unknown line)
+	simulator.geometry.Domain.checkDilationRadius(Domain.java:Unknown line)
+	simulator.geometry.Domain.calculateComputationDomainGrids(Domain.java:Unknown line)
+TRACE 318967:
+	java.lang.Math.floor(Math.java:Unknown line)
+	simulator.geometry.Domain.checkDilationRadius(Domain.java:Unknown line)
+	simulator.geometry.Domain.calculateComputationDomainGrids(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+TRACE 302066:
+	java.lang.Math.getExponent(Math.java:Unknown line)
+	java.lang.StrictMath.floorOrCeil(StrictMath.java:Unknown line)
+	java.lang.StrictMath.floor(StrictMath.java:Unknown line)
+	java.lang.Math.floor(Math.java:Unknown line)
+TRACE 318972:
+	java.lang.Number.<init>(Number.java:Unknown line)
+	java.lang.Double.<init>(Double.java:Unknown line)
+	java.lang.Double.valueOf(Double.java:Unknown line)
+	utils.ExtraMath.sq(ExtraMath.java:Unknown line)
+TRACE 312995:
+	java.util.LinkedList$ListItr.<init>(LinkedList.java:Unknown line)
+	java.util.LinkedList.listIterator(LinkedList.java:Unknown line)
+	java.util.AbstractList.listIterator(AbstractList.java:Unknown line)
+	java.util.AbstractSequentialList.iterator(AbstractSequentialList.java:Unknown line)
+TRACE 318850:
+	java.util.LinkedList.access$100(LinkedList.java:Unknown line)
+	java.util.LinkedList$ListItr.hasNext(LinkedList.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+TRACE 318968:
+	java.lang.Number.<init>(Number.java:Unknown line)
+	java.lang.Double.<init>(Double.java:Unknown line)
+	java.lang.Double.valueOf(Double.java:Unknown line)
+	simulator.geometry.Domain.checkDilationRadius(Domain.java:Unknown line)
+TRACE 318852:
+	java.util.LinkedList$ListItr.checkForComodification(LinkedList.java:Unknown line)
+	java.util.LinkedList$ListItr.next(LinkedList.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+TRACE 318853:
+	java.util.LinkedList.access$100(LinkedList.java:Unknown line)
+	java.util.LinkedList$ListItr.next(LinkedList.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+TRACE 318976:
+	java.lang.Double.doubleValue(Double.java:Unknown line)
+	simulator.geometry.Domain.checkDilationRadius(Domain.java:Unknown line)
+	simulator.geometry.Domain.calculateComputationDomainGrids(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+TRACE 318858:
+	simulator.geometry.ContinuousVector.<init>(ContinuousVector.java:Unknown line)
+	simulator.geometry.boundaryConditions.AllBC.isOutside(AllBC.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+TRACE 318857:
+	simulator.SpatialGrid.getResolution(SpatialGrid.java:Unknown line)
+	simulator.geometry.boundaryConditions.AllBC.isOutside(AllBC.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+TRACE 318855:
+	simulator.SpatialGrid.isValidorPadded(SpatialGrid.java:Unknown line)
+	simulator.SpatialGrid.getValueAt(SpatialGrid.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+TRACE 318866:
+	java.lang.Boolean.booleanValue(Boolean.java:Unknown line)
+	simulator.geometry.boundaryConditions.AllBC.isOutside(AllBC.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+TRACE 318863:
+	simulator.geometry.ContinuousVector.cosAngle(ContinuousVector.java:Unknown line)
+	simulator.geometry.shape.Planar.isOutside(Planar.java:Unknown line)
+	simulator.geometry.boundaryConditions.AllBC.isOutside(AllBC.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+TRACE 318864:
+	java.lang.Boolean.valueOf(Boolean.java:Unknown line)
+	simulator.geometry.shape.Planar.isOutside(Planar.java:Unknown line)
+	simulator.geometry.boundaryConditions.AllBC.isOutside(AllBC.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+TRACE 318869:
+	simulator.geometry.boundaryConditions.AllBC.isSupport(AllBC.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+	simulator.World.init(World.java:Unknown line)
+TRACE 318870:
+	simulator.geometry.ContinuousVector.prodScalar(ContinuousVector.java:Unknown line)
+	simulator.geometry.shape.Planar.intersection(Planar.java:Unknown line)
+	simulator.geometry.shape.Planar.getDistance(Planar.java:Unknown line)
+	simulator.geometry.boundaryConditions.AllBC.getDistance(AllBC.java:Unknown line)
+TRACE 318874:
+	simulator.geometry.shape.Planar.getDistance(Planar.java:Unknown line)
+	simulator.geometry.boundaryConditions.AllBC.getDistance(AllBC.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+TRACE 302065:
+	sun.misc.FpUtils.getExponent(FpUtils.java:Unknown line)
+	java.lang.Math.getExponent(Math.java:Unknown line)
+	java.lang.StrictMath.floorOrCeil(StrictMath.java:Unknown line)
+	java.lang.StrictMath.floor(StrictMath.java:Unknown line)
+TRACE 318847:
+	java.util.LinkedList.listIterator(LinkedList.java:Unknown line)
+	java.util.AbstractList.listIterator(AbstractList.java:Unknown line)
+	java.util.AbstractSequentialList.iterator(AbstractSequentialList.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+TRACE 318848:
+	java.util.AbstractList.listIterator(AbstractList.java:Unknown line)
+	java.util.AbstractSequentialList.iterator(AbstractSequentialList.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+TRACE 318849:
+	java.util.AbstractSequentialList.iterator(AbstractSequentialList.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+	simulator.World.init(World.java:Unknown line)
+TRACE 318846:
+	simulator.SpatialGrid.getContinuousCoordinates(SpatialGrid.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+	simulator.World.init(World.java:Unknown line)
+TRACE 318875:
+	simulator.geometry.boundaryConditions.AllBC.getDistance(AllBC.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+	simulator.World.init(World.java:Unknown line)
+TRACE 318248:
+	java.util.Arrays.fill(Arrays.java:Unknown line)
+	simulator.SpatialGrid.setAllValueAt(SpatialGrid.java:Unknown line)
+	simulator.geometry.Domain.createGrid(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+TRACE 318247:
+	java.util.Arrays.fill(Arrays.java:Unknown line)
+	java.util.Arrays.fill(Arrays.java:Unknown line)
+	simulator.SpatialGrid.setAllValueAt(SpatialGrid.java:Unknown line)
+	simulator.geometry.Domain.createGrid(Domain.java:Unknown line)
+TRACE 312994:
+	java.util.LinkedList.access$100(LinkedList.java:Unknown line)
+	java.util.LinkedList$ListItr.<init>(LinkedList.java:Unknown line)
+	java.util.LinkedList.listIterator(LinkedList.java:Unknown line)
+	java.util.AbstractList.listIterator(AbstractList.java:Unknown line)
+TRACE 312993:
+	java.util.LinkedList.access$000(LinkedList.java:Unknown line)
+	java.util.LinkedList$ListItr.<init>(LinkedList.java:Unknown line)
+	java.util.LinkedList.listIterator(LinkedList.java:Unknown line)
+	java.util.AbstractList.listIterator(AbstractList.java:Unknown line)
+TRACE 313074:
+	java.net.InetAddress$1.lookupAllHostAddr(InetAddress.java:Unknown line)
+	java.net.InetAddress.getAddressFromNameService(InetAddress.java:Unknown line)
+	java.net.InetAddress.getAllByName0(InetAddress.java:Unknown line)
+	java.net.InetAddress.getAllByName(InetAddress.java:Unknown line)
+TRACE 318843:
+	simulator.SpatialGrid.getGridTotalSize(SpatialGrid.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+	simulator.World.init(World.java:Unknown line)
+TRACE 318246:
+	java.util.Arrays.rangeCheck(Arrays.java:Unknown line)
+	java.util.Arrays.fill(Arrays.java:Unknown line)
+	java.util.Arrays.fill(Arrays.java:Unknown line)
+	simulator.SpatialGrid.setAllValueAt(SpatialGrid.java:Unknown line)
+TRACE 318249:
+	simulator.SpatialGrid.setAllValueAt(SpatialGrid.java:Unknown line)
+	simulator.geometry.Domain.createGrid(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+	simulator.World.init(World.java:Unknown line)
+TRACE 318873:
+	simulator.geometry.ContinuousVector.distance(ContinuousVector.java:Unknown line)
+	simulator.geometry.shape.Planar.getDistance(Planar.java:Unknown line)
+	simulator.geometry.boundaryConditions.AllBC.getDistance(AllBC.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+TRACE 318845:
+	simulator.geometry.ContinuousVector.<init>(ContinuousVector.java:Unknown line)
+	simulator.SpatialGrid.getContinuousCoordinates(SpatialGrid.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+TRACE 310595:
+	org.jdom.Verifier.checkCharacterData(Verifier.java:Unknown line)
+	org.jdom.Verifier.checkCommentData(Verifier.java:Unknown line)
+	org.jdom.Comment.setText(Comment.java:Unknown line)
+	org.jdom.Comment.<init>(Comment.java:Unknown line)
+TRACE 318871:
+	simulator.geometry.ContinuousVector.<init>(ContinuousVector.java:Unknown line)
+	simulator.geometry.shape.Planar.intersection(Planar.java:Unknown line)
+	simulator.geometry.shape.Planar.getDistance(Planar.java:Unknown line)
+	simulator.geometry.boundaryConditions.AllBC.getDistance(AllBC.java:Unknown line)
+TRACE 318844:
+	simulator.geometry.DiscreteVector.set(DiscreteVector.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+	simulator.World.init(World.java:Unknown line)
+TRACE 318841:
+	java.util.Arrays.fill(Arrays.java:Unknown line)
+	simulator.SpatialGrid.setAllValueAt(SpatialGrid.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+TRACE 310558:
+	com.sun.org.apache.xerces.internal.util.XMLChar.isInvalid(XMLChar.java:Unknown line)
+	com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.scanData(XMLEntityScanner.java:Unknown line)
+	com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(XMLScanner.java:Unknown line)
+	com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanComment(XMLDocumentFragmentScannerImpl.java:Unknown line)
+TRACE 318840:
+	java.util.Arrays.fill(Arrays.java:Unknown line)
+	java.util.Arrays.fill(Arrays.java:Unknown line)
+	simulator.SpatialGrid.setAllValueAt(SpatialGrid.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+TRACE 313343:
+	java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:Unknown line)
+	java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:Unknown line)
+	java.net.PlainSocketImpl.connect(PlainSocketImpl.java:Unknown line)
+	java.net.SocksSocketImpl.connect(SocksSocketImpl.java:Unknown line)
+TRACE 313625:
+	java.net.SocketInputStream.read(SocketInputStream.java:Unknown line)
+	java.io.BufferedInputStream.fill(BufferedInputStream.java:Unknown line)
+	java.io.BufferedInputStream.read1(BufferedInputStream.java:Unknown line)
+	java.io.BufferedInputStream.read(BufferedInputStream.java:Unknown line)
+TRACE 318868:
+	simulator.SpatialGrid.setValueAt(SpatialGrid.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+	simulator.World.init(World.java:Unknown line)
+TRACE 310795:
+	com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.scanData(XMLEntityScanner.java:Unknown line)
+	com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(XMLScanner.java:Unknown line)
+	com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanComment(XMLDocumentFragmentScannerImpl.java:Unknown line)
+	com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:Unknown line)
+TRACE 310557:
+	com.sun.org.apache.xerces.internal.util.XMLChar.isValid(XMLChar.java:Unknown line)
+	com.sun.org.apache.xerces.internal.util.XMLChar.isInvalid(XMLChar.java:Unknown line)
+	com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.scanData(XMLEntityScanner.java:Unknown line)
+	com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(XMLScanner.java:Unknown line)
+TRACE 310593:
+	java.lang.String.charAt(String.java:Unknown line)
+	org.jdom.Verifier.checkCharacterData(Verifier.java:Unknown line)
+	org.jdom.Verifier.checkCommentData(Verifier.java:Unknown line)
+	org.jdom.Comment.setText(Comment.java:Unknown line)
+TRACE 318842:
+	simulator.SpatialGrid.setAllValueAt(SpatialGrid.java:Unknown line)
+	simulator.geometry.Domain.applyAllBoundary(Domain.java:Unknown line)
+	simulator.geometry.Domain.<init>(Domain.java:Unknown line)
+	simulator.World.init(World.java:Unknown line)
+TRACE 310594:
+	org.jdom.Verifier.isXMLCharacter(Verifier.java:Unknown line)
+	org.jdom.Verifier.checkCharacterData(Verifier.java:Unknown line)
+	org.jdom.Verifier.checkCommentData(Verifier.java:Unknown line)
+	org.jdom.Comment.setText(Comment.java:Unknown line)
+TRACE 318243:
+	simulator.SpatialGrid.initGrids(SpatialGrid.java:Unknown line)
+	simulator.SpatialGrid.<init>(SpatialGrid.java:Unknown line)
+	simulator.SoluteGrid.<init>(SoluteGrid.java:Unknown line)
+	simulator.geometry.Domain.createGrid(Domain.java:Unknown line)
+TRACE 304781:
+	java.math.BigInteger.montReduce(BigInteger.java:Unknown line)
+	java.math.BigInteger.oddModPow(BigInteger.java:Unknown line)
+	java.math.BigInteger.modPow(BigInteger.java:Unknown line)
+	sun.security.provider.DSA.generateV(DSA.java:Unknown line)
+TRACE 304777:
+	java.math.BigInteger.squareToLen(BigInteger.java:Unknown line)
+	java.math.BigInteger.oddModPow(BigInteger.java:Unknown line)
+	java.math.BigInteger.modPow(BigInteger.java:Unknown line)
+	sun.security.provider.DSA.generateV(DSA.java:Unknown line)
+TRACE 305815:
+	java.lang.ClassLoader.defineClassCond(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.defineClass(ClassLoader.java:Unknown line)
+	java.security.SecureClassLoader.defineClass(SecureClassLoader.java:Unknown line)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:Unknown line)
+CPU TIME (ms) BEGIN (total = 243388) Tue Jun 10 12:43:41 2014
+rank   self  accum   count trace method
+   1 24.65% 24.65%       1 318979 java.util.concurrent.locks.LockSupport.parkNanos
+   2 13.63% 38.28%       2 318253 java.lang.Object.wait
+   3 13.63% 51.92%     175 318264 java.lang.ref.ReferenceQueue.remove
+   4  7.26% 59.18%   56842 318978 simulator.geometry.Domain.checkDilationRadius
+   5  3.73% 62.90%       1 318964 simulator.geometry.Domain.applyAllBoundary
+   6  3.63% 66.53% 8979814 318977 simulator.geometry.Domain.cyclicIndex
+   7  2.94% 69.47% 1130561 318867 simulator.geometry.boundaryConditions.AllBC.isOutside
+   8  2.46% 71.93% 1222269 318975 utils.ExtraMath.sq
+   9  2.05% 73.99%       1 318962 sun.net.www.http.KeepAliveCache.run
+  10  1.72% 75.71% 1130561 318865 simulator.geometry.shape.Planar.isOutside
+  11  1.67% 77.38% 1130561 318854 java.util.LinkedList$ListItr.next
+  12  1.19% 78.56% 1222270 318973 java.lang.Double.<init>
+  13  1.14% 79.70% 1222270 318970 java.lang.Double.valueOf
+  14  1.14% 80.84% 1222270 318969 java.lang.Double.<init>
+  15  1.14% 81.98% 1222269 318974 java.lang.Double.valueOf
+  16  1.13% 83.10% 1130561 318856 simulator.SpatialGrid.getValueAt
+  17  1.12% 84.23% 1196610 318851 java.util.LinkedList$ListItr.hasNext
+  18  1.01% 85.23% 2444540 318971 java.lang.Double.doubleValue
+  19  0.64% 85.88%  667977 318965 java.lang.StrictMath.floorOrCeil
+  20  0.64% 86.51%  200466 318872 simulator.geometry.shape.Planar.intersection
+  21  0.63% 87.14%  667977 318966 java.lang.StrictMath.floor
+  22  0.62% 87.76%  667977 318967 java.lang.Math.floor
+  23  0.61% 88.38%  667980 302066 java.lang.Math.getExponent
+  24  0.51% 88.89% 1222270 318972 java.lang.Number.<init>
+  25  0.50% 89.39%  201256 312995 java.util.LinkedList$ListItr.<init>
+  26  0.49% 89.88% 1196610 318850 java.util.LinkedList.access$100
+  27  0.49% 90.37% 1222270 318968 java.lang.Number.<init>
+  28  0.47% 90.84% 1130561 318852 java.util.LinkedList$ListItr.checkForComodification
+  29  0.47% 91.31% 1130561 318853 java.util.LinkedList.access$100
+  30  0.46% 91.77% 1222269 318976 java.lang.Double.doubleValue
+  31  0.46% 92.23% 1130561 318858 simulator.geometry.ContinuousVector.<init>
+  32  0.46% 92.69% 1130561 318857 simulator.SpatialGrid.getResolution
+  33  0.45% 93.14% 1130561 318855 simulator.SpatialGrid.isValidorPadded
+  34  0.45% 93.59% 1130561 318866 java.lang.Boolean.booleanValue
+  35  0.44% 94.03% 1130561 318863 simulator.geometry.ContinuousVector.cosAngle
+  36  0.44% 94.47% 1130561 318864 java.lang.Boolean.valueOf
+  37  0.38% 94.85%  995367 318869 simulator.geometry.boundaryConditions.AllBC.isSupport
+  38  0.33% 95.18%  801864 318870 simulator.geometry.ContinuousVector.prodScalar
+  39  0.31% 95.49%  200466 318874 simulator.geometry.shape.Planar.getDistance
+  40  0.27% 95.77%  667980 302065 sun.misc.FpUtils.getExponent
+  41  0.22% 95.98%  201243 318847 java.util.LinkedList.listIterator
+  42  0.20% 96.18%  201243 318848 java.util.AbstractList.listIterator
+  43  0.19% 96.38%  201243 318849 java.util.AbstractSequentialList.iterator
+  44  0.19% 96.57%  201243 318846 simulator.SpatialGrid.getContinuousCoordinates
+  45  0.19% 96.76%  200466 318875 simulator.geometry.boundaryConditions.AllBC.getDistance
+  46  0.19% 96.94%  201243 318248 java.util.Arrays.fill
+  47  0.18% 97.12%  201243 318247 java.util.Arrays.fill
+  48  0.17% 97.29%  402520 312994 java.util.LinkedList.access$100
+  49  0.14% 97.43%  402512 312993 java.util.LinkedList.access$000
+  50  0.14% 97.57%       1 313074 java.net.InetAddress$1.lookupAllHostAddr
+  51  0.13% 97.70%  335924 318843 simulator.SpatialGrid.getGridTotalSize
+  52  0.12% 97.82%  268324 318246 java.util.Arrays.rangeCheck
+  53  0.12% 97.94%       3 318249 simulator.SpatialGrid.setAllValueAt
+  54  0.09% 98.03%  200466 318873 simulator.geometry.ContinuousVector.distance
+  55  0.08% 98.11%  201243 318845 simulator.geometry.ContinuousVector.<init>
+  56  0.08% 98.19%     176 310595 org.jdom.Verifier.checkCharacterData
+  57  0.08% 98.27%  200466 318871 simulator.geometry.ContinuousVector.<init>
+  58  0.07% 98.34%  201243 318844 simulator.geometry.DiscreteVector.set
+  59  0.07% 98.41%   67081 318841 java.util.Arrays.fill
+  60  0.06% 98.47%   69956 310558 com.sun.org.apache.xerces.internal.util.XMLChar.isInvalid
+  61  0.06% 98.54%   67081 318840 java.util.Arrays.fill
+  62  0.06% 98.59%       1 313343 java.net.PlainSocketImpl.doConnect
+  63  0.06% 98.65%       1 313625 java.net.SocketInputStream.read
+  64  0.05% 98.70%  135971 318868 simulator.SpatialGrid.setValueAt
+  65  0.04% 98.74%     168 310795 com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.scanData
+  66  0.04% 98.78%   69956 310557 com.sun.org.apache.xerces.internal.util.XMLChar.isValid
+  67  0.03% 98.81%   71352 310593 java.lang.String.charAt
+  68  0.03% 98.84%       1 318842 simulator.SpatialGrid.setAllValueAt
+  69  0.03% 98.87%   71352 310594 org.jdom.Verifier.isXMLCharacter
+  70  0.02% 98.90%       3 318243 simulator.SpatialGrid.initGrids
+  71  0.02% 98.91%     393 304781 java.math.BigInteger.montReduce
+  72  0.01% 98.93%     313 304777 java.math.BigInteger.squareToLen
+  73  0.01% 98.94%     102 305815 java.lang.ClassLoader.defineClassCond
+CPU TIME (ms) END

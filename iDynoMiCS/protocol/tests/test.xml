@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Test Protocol -->
+
+<idynomics>
+	<!-- SIMULATOR SPECIFICATIONS -->
+	<simulator>
+		<param name="quietMode">false</param>
+		<param name="restartPreviousRun">false</param>
+		<param name="randomSeed">666</param>
+		<param name="outputPeriod" unit="hour">0.1</param>
+		<param name="checkForReleaseUpdate">false</param>
+		
+		<timeStep>
+			<param name="adaptive">false</param>
+			<param name="timeStepIni" unit="hour">0.1</param>
+			<param name="endOfSimulation" unit="day">3</param>
+		</timeStep>
+		
+		<param name="attachment">selfattach</param>
+		<param name="agentTimeStep" unit="hour">0.05</param>
+		<param name="invComp">false</param>
+	</simulator>
+	
+	<!-- INPUTS -->
+	<input>
+		<param name="useAgentFile">false</param>
+		<param name="inputAgentFileURL">agent_State(last).xml</param>
+		<param name="useBulkFile">false</param>
+		<param name="inputBulkFileURL">env_Sum(last).xml</param>
+	</input>
+	
+	<!-- SOLUTE DEFINITIONS -->
+	<solute domain="MyBiofilm" name="MyCOD">
+		<param name="diffusivity" unit="m2.day-1">1e-4</param>
+	</solute>
+	<solute domain="MyBiofilm" name="pressure">
+		<param name="diffusivity" unit="m2.day-1">1</param>
+	</solute>
+	
+	<!-- BIOMASS DEFINITIONS -->
+	<particle name="biomass">
+		<param name="density" unit="g.L-1">150</param>
+	</particle>
+	<particle name="inert">
+		<param name="density" unit="g.L-1">150</param>
+	</particle>
+	<particle name="capsule">
+		<param name="density" unit="g.L-1">75</param>
+	</particle>
+	
+	<!-- WORLD DEFINITION -->
+	
+	<world>
+		<bulk name="MyTank">
+			<param name="isConstant">true</param>
+			<param name="D" unit="h-1">0.6</param>
+
+			<solute name="MyCOD">
+				<param name="Sbulk" unit="g.L-1">10e-3</param>
+				<param name="Sin" unit="g.L-1">10e-3</param>
+			</solute>
+			<solute name="pressure">
+				<param name="Sbulk" unit="g.L-1">0</param>
+				<param name="Sin" unit="g.L-1">0</param>
+			</solute>
+		</bulk>
+		<computationDomain name="MyBiofilm">
+			<grid nDim="3" nI="65" nJ="65" nK="65"/>
+			<param name="resolution" unit="um">8</param>
+			<param name="boundaryLayer" unit="um">160</param>
+			<param name="biofilmDiffusivity">0.8</param>
+			<param name="specificArea" unit="m2.m-3">80</param>
+			
+			<boundaryCondition class="BoundaryZeroFlux" name="y0z">
+				<shape class="Planar">
+					<param name="pointIn" x="-1" y="0" z="0"/>
+					<param name="vectorOut" x="-1" y="0" z="0"/>
+				</shape>
+			</boundaryCondition>
+
+			<boundaryCondition class="BoundaryBulk" name="yNz">
+				<param name="activeForSolute">yes</param>
+				<param name="bulk">MyTank</param>
+				<shape class="Planar">
+					<param name="pointIn" x="65" y="0" z="0"/>
+					<param name="vectorOut" x="1" y="0" z="0"/>
+				</shape>
+			</boundaryCondition>
+
+			<boundaryCondition class="BoundaryCyclic" name="x0z">
+				<shape class="Planar">
+					<param name="pointIn" x="0" y="-1" z="0"/>
+					<param name="vectorOut" x="0" y="-1" z="0"/>
+				</shape>
+				<shape class="Planar">
+					<param name="pointIn" x="0" y="65" z="0"/>
+					<param name="vectorOut" x="0" y="1" z="0"/>
+				</shape>
+			</boundaryCondition>
+
+			<boundaryCondition class="BoundaryCyclic" name="x0y">
+				<shape class="Planar">
+					<param name="pointIn" x="0" y="0" z="-1"/>
+					<param name="vectorOut" x="0" y="0" z="-1"/>
+				</shape>
+				<shape class="Planar">
+					<param name="pointIn" x="0" y="0" z="65"/>
+					<param name="vectorOut" x="0" y="0" z="1"/>
+				</shape>
+			</boundaryCondition>
+		</computationDomain>
+	</world>
+	
+	<reaction catalyzedBy="biomass" class="ReactionFactor" name="MyGrowthHeterotrophs">
+		<param name="muMax" unit="hour-1">0.7</param>
+		<kineticFactor class="MonodKinetic" solute="MyCOD">
+			<param name="Ks" unit="g.L-1">2.5e-4</param>
+		</kineticFactor>
+		<yield>
+			<param name="MyCOD" unit="g.g-1">-1.5</param>
+			<param name="biomass" unit="g.g-1">1.0</param>
+		</yield>
+	</reaction>
+	
+	<solver class="Solver_multigrid" name="solutes" domain="MyBiofilm">
+		<param name="active">true</param>
+		<param name="preStep">150</param>
+		<param name="postStep">150</param>
+		<param name="coarseStep">1500</param>
+		<param name="nCycles">5</param>
+
+		<reaction name="MyGrowthHeterotrophs"/>
+	</solver>
+	
+	<solver class="Solver_pressure" name="pressure" domain="MyBiofilm">
+		<param name="active">true</param>
+	</solver>
+	
+	<agentGrid>
+		<param name="computationDomain">MyBiofilm</param>
+		<param name="resolution" unit="um">8</param>
+		<detachment class="DS_Quadratic">
+			<param name="kDet" unit="um-1.hour-1">5e-5</param>
+			<param name="maxTh" unit="um">1000</param>
+		</detachment>
+		<param name="sloughDetachedBiomass">true</param>
+
+		<!-- These parameters relate to particle shoving and are generally okay as-is. -->
+		<param name="shovingMaxNodes">2e6</param>
+		<param name="shovingFraction">0.025</param>
+		<param name="shovingMaxIter">250</param>
+		<param name="shovingMutual">true</param>
+	</agentGrid>
+	
+	<species class="Bacterium" name="MyHeterotroph">
+		<particle name="biomass">
+			<param name="mass" unit="fg">0</param>
+		</particle>
+		<particle name="inert">
+			<param name="mass" unit="fg">0</param>
+		</particle>
+
+		<param name="color">blue</param>
+		<param name="computationDomain">MyBiofilm</param>
+		<param name="divRadius" unit="um">2</param>
+		<param name="divRadiusCV">0.1</param>
+		<param name="deathRadius" unit="um">0.2</param>
+		<param name="deathRadiusCV">0.1</param>
+		<param name="babyMassFrac">0.5</param>
+		<param name="babyMassFracCV">0.05</param>
+		<param name="shoveFactor" unit="um">1.15</param>
+		<param name="shoveLimit" unit="um">0.</param>
+
+		<param name="epsMax">0.1</param>
+		<param name="kHyd" unit="hr-1">0.007</param>
+
+		<reaction name="MyGrowthHeterotrophs" status="active"/>
+
+		<param name="cellRunSpeed" unit="um/sec">30.0</param>
+		<param name="tumbleInt" unit="seconds">2</param>
+		<param name="stickinessAddition" unit="um">0.5</param> 
+		<param name="cellInjectionStartHour" unit="hour">0</param> 
+		<param name="injectionOnAttachmentFrequency" unit ="cells/hour">5</param>
+		<param name="cellInjectionEndHour" unit="hour">72</param> 
+		<param name="injectionOffAttachmentFrequency" unit ="cells/hour">0</param>
+	</species>			
+	
+</idynomics>

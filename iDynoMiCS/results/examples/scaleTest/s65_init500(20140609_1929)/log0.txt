@@ -1,0 +1,28 @@
+2014-06-09 19:29:48 : Read in random number generator
+2014-06-09 19:29:48 : Setting initial 0.01
+2014-06-09 19:29:48 : Setting initial 0.0
+2014-06-09 19:30:11 : 		MyCOD (0)
+2014-06-09 19:30:11 : 		pressure (1)
+2014-06-09 19:30:11 : 	 Reactions: 
+
+2014-06-09 19:30:11 : Reaction 0 is autocatalyic
+2014-06-09 19:30:11 : 		MyGrowthHeterotrophs (0)
+2014-06-09 19:30:11 : 	 done
+2014-06-09 19:30:12 : 		MyHeterotroph (0)
+2014-06-09 19:30:12 : Agent time step is... 0.05
+2014-06-09 19:30:16 :  13467 grid elements, resolution: 8.0 micrometers
+2014-06-09 19:30:16 : Guessing MyHeterotroph initial mass at: 7539.822368615503
+2014-06-09 19:30:16 : 10.0 agents of species MyHeterotroph for one-time attachment successfully created, by specifying 10.0 cells for a stated initial area
+2014-06-09 19:31:07 : System description finalized
+2014-06-09 19:31:07 : Initialization (../results/examples/scaleTest/s65_init500(20140609_1929)/s65_init500.xml):OK
+2014-06-09 19:37:41 : Solving Diffusion-reaction done in 394 sec
+2014-06-09 19:37:41 : Doing pressure calculations.
+2014-06-09 19:38:29 : Doing pressure calculations.
+2014-06-09 19:39:17 : Doing pressure calculations.
+2014-06-09 19:40:04 : Doing pressure calculations.
+2014-06-09 19:40:52 : Doing pressure calculations.
+2014-06-09 19:41:40 : Doing pressure calculations.
+2014-06-09 19:42:28 : Doing pressure calculations.
+2014-06-09 19:43:16 : Doing pressure calculations.
+2014-06-09 19:44:03 : Doing pressure calculations.
+2014-06-09 19:44:52 : Doing pressure calculations.

@@ -1,0 +1,2179 @@
+2014-06-09 16:10:09 : Read in random number generator
+2014-06-09 16:10:09 : Setting initial 0.01
+2014-06-09 16:10:09 : Setting initial 0.0
+2014-06-09 16:10:10 : 		MyCOD (0)
+2014-06-09 16:10:10 : 		pressure (1)
+2014-06-09 16:10:10 : 	 Reactions: 
+
+2014-06-09 16:10:10 : Reaction 0 is autocatalyic
+2014-06-09 16:10:10 : 		MyGrowthHeterotrophs (0)
+2014-06-09 16:10:10 : 	 done
+2014-06-09 16:10:10 : 		MyHeterotroph (0)
+2014-06-09 16:10:10 : Agent time step is... 0.05
+2014-06-09 16:10:10 :  3675 grid elements, resolution: 8.0 micrometers
+2014-06-09 16:10:10 : Guessing MyHeterotroph initial mass at: 7539.822368615503
+2014-06-09 16:10:10 : 100.0 agents of species MyHeterotroph for one-time attachment successfully created, by specifying 100.0 cells for a stated initial area
+2014-06-09 16:10:11 : System description finalized
+2014-06-09 16:10:11 : Initialization (../results/examples/single_species_single_substrate_2D(20140609_1610)/single_species_single_substrate_2D.xml):OK
+2014-06-09 16:10:11 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:11 : Doing pressure calculations.
+2014-06-09 16:10:11 : Doing pressure calculations.
+2014-06-09 16:10:11 : Doing pressure calculations.
+2014-06-09 16:10:11 : Doing pressure calculations.
+2014-06-09 16:10:11 : Doing pressure calculations.
+2014-06-09 16:10:11 : Doing pressure calculations.
+2014-06-09 16:10:11 : Doing pressure calculations.
+2014-06-09 16:10:11 : Doing pressure calculations.
+2014-06-09 16:10:11 : Doing pressure calculations.
+2014-06-09 16:10:11 : Doing pressure calculations.
+2014-06-09 16:10:11 : Doing pressure calculations.
+2014-06-09 16:10:11 : Doing pressure calculations.
+2014-06-09 16:10:11 : Doing pressure calculations.
+2014-06-09 16:10:11 : Doing pressure calculations.
+2014-06-09 16:10:11 : Doing pressure calculations.
+2014-06-09 16:10:11 : Doing pressure calculations.
+2014-06-09 16:10:11 : Doing pressure calculations.
+2014-06-09 16:10:11 : Doing pressure calculations.
+2014-06-09 16:10:11 : Doing pressure calculations.
+2014-06-09 16:10:11 : Doing pressure calculations.
+2014-06-09 16:10:11 : 0/196 after 2 shove iterations
+2014-06-09 16:10:11 : Eroding 24 (455.859E3/108.599E2 fg)
+2014-06-09 16:10:11 : Detachment done in 0 sec
+2014-06-09 16:10:11 : Agents stepped/dead/born: 100.0/38/96 done in 0 sec
+2014-06-09 16:10:11 : Simulating agents done in 0 sec
+2014-06-09 16:10:11 : System description finalized
+2014-06-09 16:10:11 : Computation time :0.0 minute(s) 
+ 	 -> Iter 1, Time: 1.0 achieved in 0.8 sec 
+
+2014-06-09 16:10:12 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : 0/285 after 2 shove iterations
+2014-06-09 16:10:12 : Eroding 9 (299.041E3/236.743E2 fg)
+2014-06-09 16:10:12 : Detachment done in 0 sec
+2014-06-09 16:10:12 : Agents stepped/dead/born: 164.0/17/121 done in 0 sec
+2014-06-09 16:10:12 : Simulating agents done in 0 sec
+2014-06-09 16:10:12 : System description finalized
+2014-06-09 16:10:12 : Computation time :0.0 minute(s) 
+ 	 -> Iter 2, Time: 2.0 achieved in 0.5 sec 
+
+2014-06-09 16:10:12 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : Doing pressure calculations.
+2014-06-09 16:10:12 : 4/440 after 2 shove iterations
+2014-06-09 16:10:12 : Eroding 4 (334.08E3/130.384E2 fg)
+2014-06-09 16:10:12 : Detachment done in 0 sec
+2014-06-09 16:10:12 : Agents stepped/dead/born: 268.0/4/172 done in 0 sec
+2014-06-09 16:10:12 : Simulating agents done in 0 sec
+2014-06-09 16:10:13 : System description finalized
+2014-06-09 16:10:13 : Computation time :0.0 minute(s) 
+ 	 -> Iter 3, Time: 3.0 achieved in 0.6 sec 
+
+2014-06-09 16:10:13 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:13 : 11/611 after 2 shove iterations
+2014-06-09 16:10:13 : Eroding 4 (242.814E3/332.441E1 fg)
+2014-06-09 16:10:13 : Detachment done in 0 sec
+2014-06-09 16:10:13 : Agents stepped/dead/born: 436.0/4/175 done in 0 sec
+2014-06-09 16:10:13 : Simulating agents done in 0 sec
+2014-06-09 16:10:13 : System description finalized
+2014-06-09 16:10:13 : Computation time :0.0 minute(s) 
+ 	 -> Iter 4, Time: 4.0 achieved in 0.7 sec 
+
+2014-06-09 16:10:13 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:13 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : 2/808 after 2 shove iterations
+2014-06-09 16:10:14 : Eroding 7 (303.915E3/946.268E1 fg)
+2014-06-09 16:10:14 : Detachment done in 0 sec
+2014-06-09 16:10:14 : Agents stepped/dead/born: 607.0/10/201 done in 0 sec
+2014-06-09 16:10:14 : Simulating agents done in 0 sec
+2014-06-09 16:10:14 : System description finalized
+2014-06-09 16:10:14 : Computation time :0.1 minute(s) 
+ 	 -> Iter 5, Time: 5.0 achieved in 0.8 sec 
+
+2014-06-09 16:10:14 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:14 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : 2/1004 after 2 shove iterations
+2014-06-09 16:10:15 : Eroding 14 (400.556E3/239.213E1 fg)
+2014-06-09 16:10:15 : Detachment done in 0 sec
+2014-06-09 16:10:15 : Agents stepped/dead/born: 798.0/14/206 done in 0 sec
+2014-06-09 16:10:15 : Simulating agents done in 0 sec
+2014-06-09 16:10:15 : System description finalized
+2014-06-09 16:10:15 : Computation time :0.1 minute(s) 
+ 	 -> Iter 6, Time: 6.0 achieved in 0.9 sec 
+
+2014-06-09 16:10:15 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:15 : Doing pressure calculations.
+2014-06-09 16:10:16 : Doing pressure calculations.
+2014-06-09 16:10:16 : Doing pressure calculations.
+2014-06-09 16:10:16 : Doing pressure calculations.
+2014-06-09 16:10:16 : Doing pressure calculations.
+2014-06-09 16:10:16 : Doing pressure calculations.
+2014-06-09 16:10:16 : Doing pressure calculations.
+2014-06-09 16:10:16 : 4/1190 after 2 shove iterations
+2014-06-09 16:10:16 : Eroding 18 (472.571E3/239.126E1 fg)
+2014-06-09 16:10:16 : Detachment done in 0 sec
+2014-06-09 16:10:16 : Agents stepped/dead/born: 990.0/23/200 done in 0 sec
+2014-06-09 16:10:16 : Simulating agents done in 0 sec
+2014-06-09 16:10:16 : System description finalized
+2014-06-09 16:10:16 : Computation time :0.1 minute(s) 
+ 	 -> Iter 7, Time: 7.0 achieved in 1.0 sec 
+
+2014-06-09 16:10:16 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:16 : Doing pressure calculations.
+2014-06-09 16:10:16 : Doing pressure calculations.
+2014-06-09 16:10:16 : Doing pressure calculations.
+2014-06-09 16:10:16 : Doing pressure calculations.
+2014-06-09 16:10:16 : Doing pressure calculations.
+2014-06-09 16:10:16 : Doing pressure calculations.
+2014-06-09 16:10:16 : Doing pressure calculations.
+2014-06-09 16:10:16 : Doing pressure calculations.
+2014-06-09 16:10:16 : Doing pressure calculations.
+2014-06-09 16:10:16 : Doing pressure calculations.
+2014-06-09 16:10:16 : Doing pressure calculations.
+2014-06-09 16:10:17 : Doing pressure calculations.
+2014-06-09 16:10:17 : Doing pressure calculations.
+2014-06-09 16:10:17 : Doing pressure calculations.
+2014-06-09 16:10:17 : Doing pressure calculations.
+2014-06-09 16:10:17 : Doing pressure calculations.
+2014-06-09 16:10:17 : Doing pressure calculations.
+2014-06-09 16:10:17 : Doing pressure calculations.
+2014-06-09 16:10:17 : Doing pressure calculations.
+2014-06-09 16:10:17 : Doing pressure calculations.
+2014-06-09 16:10:17 : 13/1401 after 2 shove iterations
+2014-06-09 16:10:17 : Eroding 25 (513.165E3/854.257E1 fg)
+2014-06-09 16:10:17 : Detachment done in 0 sec
+2014-06-09 16:10:17 : Agents stepped/dead/born: 1167.0/34/234 done in 0 sec
+2014-06-09 16:10:17 : Simulating agents done in 0 sec
+2014-06-09 16:10:17 : System description finalized
+2014-06-09 16:10:17 : Computation time :0.1 minute(s) 
+ 	 -> Iter 8, Time: 8.0 achieved in 1.2 sec 
+
+2014-06-09 16:10:17 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:17 : Doing pressure calculations.
+2014-06-09 16:10:17 : Doing pressure calculations.
+2014-06-09 16:10:17 : Doing pressure calculations.
+2014-06-09 16:10:17 : Doing pressure calculations.
+2014-06-09 16:10:17 : Doing pressure calculations.
+2014-06-09 16:10:17 : Doing pressure calculations.
+2014-06-09 16:10:17 : Doing pressure calculations.
+2014-06-09 16:10:18 : Doing pressure calculations.
+2014-06-09 16:10:18 : Doing pressure calculations.
+2014-06-09 16:10:18 : Doing pressure calculations.
+2014-06-09 16:10:18 : Doing pressure calculations.
+2014-06-09 16:10:18 : Doing pressure calculations.
+2014-06-09 16:10:18 : Doing pressure calculations.
+2014-06-09 16:10:18 : Doing pressure calculations.
+2014-06-09 16:10:18 : Doing pressure calculations.
+2014-06-09 16:10:18 : Doing pressure calculations.
+2014-06-09 16:10:18 : Doing pressure calculations.
+2014-06-09 16:10:18 : Doing pressure calculations.
+2014-06-09 16:10:18 : Doing pressure calculations.
+2014-06-09 16:10:18 : Doing pressure calculations.
+2014-06-09 16:10:18 : 9/1574 after 2 shove iterations
+2014-06-09 16:10:18 : Eroding 27 (537.711E3/520.567E1 fg)
+2014-06-09 16:10:18 : Detachment done in 0 sec
+2014-06-09 16:10:18 : Agents stepped/dead/born: 1367.0/27/207 done in 0 sec
+2014-06-09 16:10:18 : Simulating agents done in 0 sec
+2014-06-09 16:10:18 : System description finalized
+2014-06-09 16:10:18 : Computation time :0.1 minute(s) 
+ 	 -> Iter 9, Time: 9.0 achieved in 1.3 sec 
+
+2014-06-09 16:10:19 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:19 : Doing pressure calculations.
+2014-06-09 16:10:19 : Doing pressure calculations.
+2014-06-09 16:10:19 : Doing pressure calculations.
+2014-06-09 16:10:19 : Doing pressure calculations.
+2014-06-09 16:10:19 : Doing pressure calculations.
+2014-06-09 16:10:19 : Doing pressure calculations.
+2014-06-09 16:10:19 : Doing pressure calculations.
+2014-06-09 16:10:19 : Doing pressure calculations.
+2014-06-09 16:10:19 : Doing pressure calculations.
+2014-06-09 16:10:19 : Doing pressure calculations.
+2014-06-09 16:10:19 : Doing pressure calculations.
+2014-06-09 16:10:19 : Doing pressure calculations.
+2014-06-09 16:10:19 : Doing pressure calculations.
+2014-06-09 16:10:19 : Doing pressure calculations.
+2014-06-09 16:10:19 : Doing pressure calculations.
+2014-06-09 16:10:19 : Doing pressure calculations.
+2014-06-09 16:10:19 : Doing pressure calculations.
+2014-06-09 16:10:19 : Doing pressure calculations.
+2014-06-09 16:10:20 : Doing pressure calculations.
+2014-06-09 16:10:20 : Doing pressure calculations.
+2014-06-09 16:10:20 : 15/1773 after 2 shove iterations
+2014-06-09 16:10:20 : Eroding 39 (588.572E3/333.06E1 fg)
+2014-06-09 16:10:20 : Detachment done in 1 sec
+2014-06-09 16:10:20 : Agents stepped/dead/born: 1547.0/43/226 done in 0 sec
+2014-06-09 16:10:20 : Simulating agents done in 0 sec
+2014-06-09 16:10:20 : System description finalized
+2014-06-09 16:10:20 : Computation time :0.2 minute(s) 
+ 	 -> Iter 10, Time: 10.0 achieved in 1.4 sec 
+
+2014-06-09 16:10:20 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:20 : Doing pressure calculations.
+2014-06-09 16:10:20 : Doing pressure calculations.
+2014-06-09 16:10:20 : Doing pressure calculations.
+2014-06-09 16:10:20 : Doing pressure calculations.
+2014-06-09 16:10:20 : Doing pressure calculations.
+2014-06-09 16:10:20 : Doing pressure calculations.
+2014-06-09 16:10:20 : Doing pressure calculations.
+2014-06-09 16:10:20 : Doing pressure calculations.
+2014-06-09 16:10:20 : Doing pressure calculations.
+2014-06-09 16:10:21 : Doing pressure calculations.
+2014-06-09 16:10:21 : Doing pressure calculations.
+2014-06-09 16:10:21 : Doing pressure calculations.
+2014-06-09 16:10:21 : Doing pressure calculations.
+2014-06-09 16:10:21 : Doing pressure calculations.
+2014-06-09 16:10:21 : Doing pressure calculations.
+2014-06-09 16:10:21 : Doing pressure calculations.
+2014-06-09 16:10:21 : Doing pressure calculations.
+2014-06-09 16:10:21 : Doing pressure calculations.
+2014-06-09 16:10:21 : Doing pressure calculations.
+2014-06-09 16:10:21 : Doing pressure calculations.
+2014-06-09 16:10:21 : 16/1958 after 2 shove iterations
+2014-06-09 16:10:21 : Eroding 44 (705.737E3/232.831E1 fg)
+2014-06-09 16:10:21 : Detachment done in 1 sec
+2014-06-09 16:10:21 : Agents stepped/dead/born: 1730.0/44/228 done in 0 sec
+2014-06-09 16:10:21 : Simulating agents done in 0 sec
+2014-06-09 16:10:21 : System description finalized
+2014-06-09 16:10:21 : Computation time :0.2 minute(s) 
+ 	 -> Iter 11, Time: 11.0 achieved in 1.6 sec 
+
+2014-06-09 16:10:22 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:22 : Doing pressure calculations.
+2014-06-09 16:10:22 : Doing pressure calculations.
+2014-06-09 16:10:22 : Doing pressure calculations.
+2014-06-09 16:10:22 : Doing pressure calculations.
+2014-06-09 16:10:22 : Doing pressure calculations.
+2014-06-09 16:10:22 : Doing pressure calculations.
+2014-06-09 16:10:22 : Doing pressure calculations.
+2014-06-09 16:10:22 : Doing pressure calculations.
+2014-06-09 16:10:22 : Doing pressure calculations.
+2014-06-09 16:10:22 : Doing pressure calculations.
+2014-06-09 16:10:22 : Doing pressure calculations.
+2014-06-09 16:10:22 : Doing pressure calculations.
+2014-06-09 16:10:22 : Doing pressure calculations.
+2014-06-09 16:10:22 : Doing pressure calculations.
+2014-06-09 16:10:22 : Doing pressure calculations.
+2014-06-09 16:10:23 : Doing pressure calculations.
+2014-06-09 16:10:23 : Doing pressure calculations.
+2014-06-09 16:10:23 : Doing pressure calculations.
+2014-06-09 16:10:23 : Doing pressure calculations.
+2014-06-09 16:10:23 : Doing pressure calculations.
+2014-06-09 16:10:23 : 24/2145 after 2 shove iterations
+2014-06-09 16:10:23 : Eroding 45 (694.407E3/190.855E1 fg)
+2014-06-09 16:10:23 : Detachment done in 1 sec
+2014-06-09 16:10:23 : Agents stepped/dead/born: 1914.0/48/231 done in 0 sec
+2014-06-09 16:10:23 : Simulating agents done in 0 sec
+2014-06-09 16:10:23 : System description finalized
+2014-06-09 16:10:23 : Computation time :0.2 minute(s) 
+ 	 -> Iter 12, Time: 12.0 achieved in 1.6 sec 
+
+2014-06-09 16:10:23 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:23 : Doing pressure calculations.
+2014-06-09 16:10:23 : Doing pressure calculations.
+2014-06-09 16:10:23 : Doing pressure calculations.
+2014-06-09 16:10:23 : Doing pressure calculations.
+2014-06-09 16:10:24 : Doing pressure calculations.
+2014-06-09 16:10:24 : Doing pressure calculations.
+2014-06-09 16:10:24 : Doing pressure calculations.
+2014-06-09 16:10:24 : Doing pressure calculations.
+2014-06-09 16:10:24 : Doing pressure calculations.
+2014-06-09 16:10:24 : Doing pressure calculations.
+2014-06-09 16:10:24 : Doing pressure calculations.
+2014-06-09 16:10:24 : Doing pressure calculations.
+2014-06-09 16:10:24 : Doing pressure calculations.
+2014-06-09 16:10:24 : Doing pressure calculations.
+2014-06-09 16:10:24 : Doing pressure calculations.
+2014-06-09 16:10:25 : Doing pressure calculations.
+2014-06-09 16:10:25 : Doing pressure calculations.
+2014-06-09 16:10:25 : Doing pressure calculations.
+2014-06-09 16:10:25 : Doing pressure calculations.
+2014-06-09 16:10:25 : Doing pressure calculations.
+2014-06-09 16:10:25 : 35/2332 after 2 shove iterations
+2014-06-09 16:10:25 : Eroding 50 (783.82E3/138.823E2 fg)
+2014-06-09 16:10:25 : Detachment done in 1 sec
+2014-06-09 16:10:25 : Agents stepped/dead/born: 2097.0/53/235 done in 0 sec
+2014-06-09 16:10:25 : Simulating agents done in 0 sec
+2014-06-09 16:10:25 : System description finalized
+2014-06-09 16:10:25 : Computation time :0.2 minute(s) 
+ 	 -> Iter 13, Time: 13.0 achieved in 2.0 sec 
+
+2014-06-09 16:10:25 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:25 : Doing pressure calculations.
+2014-06-09 16:10:25 : Doing pressure calculations.
+2014-06-09 16:10:26 : Doing pressure calculations.
+2014-06-09 16:10:26 : Doing pressure calculations.
+2014-06-09 16:10:26 : Doing pressure calculations.
+2014-06-09 16:10:26 : Doing pressure calculations.
+2014-06-09 16:10:26 : Doing pressure calculations.
+2014-06-09 16:10:26 : Doing pressure calculations.
+2014-06-09 16:10:26 : Doing pressure calculations.
+2014-06-09 16:10:26 : Doing pressure calculations.
+2014-06-09 16:10:26 : Doing pressure calculations.
+2014-06-09 16:10:26 : Doing pressure calculations.
+2014-06-09 16:10:26 : Doing pressure calculations.
+2014-06-09 16:10:26 : Doing pressure calculations.
+2014-06-09 16:10:27 : Doing pressure calculations.
+2014-06-09 16:10:27 : Doing pressure calculations.
+2014-06-09 16:10:27 : Doing pressure calculations.
+2014-06-09 16:10:27 : Doing pressure calculations.
+2014-06-09 16:10:27 : Doing pressure calculations.
+2014-06-09 16:10:27 : Doing pressure calculations.
+2014-06-09 16:10:27 : 24/2534 after 2 shove iterations
+2014-06-09 16:10:27 : Eroding 70 (955.417E3/736.06E1 fg)
+2014-06-09 16:10:27 : Detachment done in 2 sec
+2014-06-09 16:10:27 : Agents stepped/dead/born: 2279.0/70/255 done in 0 sec
+2014-06-09 16:10:27 : Simulating agents done in 0 sec
+2014-06-09 16:10:28 : System description finalized
+2014-06-09 16:10:28 : Computation time :0.3 minute(s) 
+ 	 -> Iter 14, Time: 14.0 achieved in 2.5 sec 
+
+2014-06-09 16:10:28 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:28 : Doing pressure calculations.
+2014-06-09 16:10:28 : Doing pressure calculations.
+2014-06-09 16:10:28 : Doing pressure calculations.
+2014-06-09 16:10:28 : Doing pressure calculations.
+2014-06-09 16:10:28 : Doing pressure calculations.
+2014-06-09 16:10:28 : Doing pressure calculations.
+2014-06-09 16:10:28 : Doing pressure calculations.
+2014-06-09 16:10:28 : Doing pressure calculations.
+2014-06-09 16:10:28 : Doing pressure calculations.
+2014-06-09 16:10:29 : Doing pressure calculations.
+2014-06-09 16:10:29 : Doing pressure calculations.
+2014-06-09 16:10:29 : Doing pressure calculations.
+2014-06-09 16:10:29 : Doing pressure calculations.
+2014-06-09 16:10:29 : Doing pressure calculations.
+2014-06-09 16:10:29 : Doing pressure calculations.
+2014-06-09 16:10:29 : Doing pressure calculations.
+2014-06-09 16:10:29 : Doing pressure calculations.
+2014-06-09 16:10:29 : Doing pressure calculations.
+2014-06-09 16:10:29 : Doing pressure calculations.
+2014-06-09 16:10:29 : Doing pressure calculations.
+2014-06-09 16:10:30 : 39/2681 after 2 shove iterations
+2014-06-09 16:10:30 : Eroding 51 (836.403E3/397.291E1 fg)
+2014-06-09 16:10:30 : Detachment done in 1 sec
+2014-06-09 16:10:30 : Agents stepped/dead/born: 2464.0/56/217 done in 0 sec
+2014-06-09 16:10:30 : Simulating agents done in 0 sec
+2014-06-09 16:10:30 : System description finalized
+2014-06-09 16:10:30 : Computation time :0.3 minute(s) 
+ 	 -> Iter 15, Time: 15.0 achieved in 2.1 sec 
+
+2014-06-09 16:10:30 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:30 : Doing pressure calculations.
+2014-06-09 16:10:30 : Doing pressure calculations.
+2014-06-09 16:10:30 : Doing pressure calculations.
+2014-06-09 16:10:30 : Doing pressure calculations.
+2014-06-09 16:10:30 : Doing pressure calculations.
+2014-06-09 16:10:30 : Doing pressure calculations.
+2014-06-09 16:10:30 : Doing pressure calculations.
+2014-06-09 16:10:30 : Doing pressure calculations.
+2014-06-09 16:10:30 : Doing pressure calculations.
+2014-06-09 16:10:30 : Doing pressure calculations.
+2014-06-09 16:10:30 : Doing pressure calculations.
+2014-06-09 16:10:31 : Doing pressure calculations.
+2014-06-09 16:10:31 : Doing pressure calculations.
+2014-06-09 16:10:31 : Doing pressure calculations.
+2014-06-09 16:10:31 : Doing pressure calculations.
+2014-06-09 16:10:31 : Doing pressure calculations.
+2014-06-09 16:10:31 : Doing pressure calculations.
+2014-06-09 16:10:31 : Doing pressure calculations.
+2014-06-09 16:10:31 : Doing pressure calculations.
+2014-06-09 16:10:31 : Doing pressure calculations.
+2014-06-09 16:10:31 : 43/2738 after 2 shove iterations
+2014-06-09 16:10:31 : Eroding 62 (916.891E3/306.242E1 fg)
+2014-06-09 16:10:31 : Detachment done in 1 sec
+2014-06-09 16:10:31 : Agents stepped/dead/born: 2625.0/62/113 done in 0 sec
+2014-06-09 16:10:31 : Simulating agents done in 0 sec
+2014-06-09 16:10:31 : System description finalized
+2014-06-09 16:10:31 : Computation time :0.3 minute(s) 
+ 	 -> Iter 16, Time: 16.0 achieved in 1.7 sec 
+
+2014-06-09 16:10:32 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:32 : Doing pressure calculations.
+2014-06-09 16:10:32 : Doing pressure calculations.
+2014-06-09 16:10:32 : Doing pressure calculations.
+2014-06-09 16:10:32 : Doing pressure calculations.
+2014-06-09 16:10:32 : Doing pressure calculations.
+2014-06-09 16:10:32 : Doing pressure calculations.
+2014-06-09 16:10:32 : Doing pressure calculations.
+2014-06-09 16:10:32 : Doing pressure calculations.
+2014-06-09 16:10:32 : Doing pressure calculations.
+2014-06-09 16:10:32 : Doing pressure calculations.
+2014-06-09 16:10:32 : Doing pressure calculations.
+2014-06-09 16:10:32 : Doing pressure calculations.
+2014-06-09 16:10:32 : Doing pressure calculations.
+2014-06-09 16:10:32 : Doing pressure calculations.
+2014-06-09 16:10:32 : Doing pressure calculations.
+2014-06-09 16:10:32 : Doing pressure calculations.
+2014-06-09 16:10:32 : Doing pressure calculations.
+2014-06-09 16:10:32 : Doing pressure calculations.
+2014-06-09 16:10:32 : Doing pressure calculations.
+2014-06-09 16:10:33 : Doing pressure calculations.
+2014-06-09 16:10:33 : 42/2775 after 2 shove iterations
+2014-06-09 16:10:33 : Eroding 66 (880.276E3/794.847E1 fg)
+2014-06-09 16:10:33 : Detachment done in 1 sec
+2014-06-09 16:10:33 : Agents stepped/dead/born: 2676.0/66/99 done in 0 sec
+2014-06-09 16:10:33 : Simulating agents done in 0 sec
+2014-06-09 16:10:33 : System description finalized
+2014-06-09 16:10:33 : Computation time :0.4 minute(s) 
+ 	 -> Iter 17, Time: 17.0 achieved in 1.5 sec 
+
+2014-06-09 16:10:33 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:33 : Doing pressure calculations.
+2014-06-09 16:10:33 : Doing pressure calculations.
+2014-06-09 16:10:33 : Doing pressure calculations.
+2014-06-09 16:10:33 : Doing pressure calculations.
+2014-06-09 16:10:33 : Doing pressure calculations.
+2014-06-09 16:10:33 : Doing pressure calculations.
+2014-06-09 16:10:33 : Doing pressure calculations.
+2014-06-09 16:10:34 : Doing pressure calculations.
+2014-06-09 16:10:34 : Doing pressure calculations.
+2014-06-09 16:10:34 : Doing pressure calculations.
+2014-06-09 16:10:34 : Doing pressure calculations.
+2014-06-09 16:10:34 : Doing pressure calculations.
+2014-06-09 16:10:34 : Doing pressure calculations.
+2014-06-09 16:10:34 : Doing pressure calculations.
+2014-06-09 16:10:34 : Doing pressure calculations.
+2014-06-09 16:10:34 : Doing pressure calculations.
+2014-06-09 16:10:34 : Doing pressure calculations.
+2014-06-09 16:10:34 : Doing pressure calculations.
+2014-06-09 16:10:34 : Doing pressure calculations.
+2014-06-09 16:10:34 : Doing pressure calculations.
+2014-06-09 16:10:34 : 43/2825 after 2 shove iterations
+2014-06-09 16:10:34 : Eroding 68 (985.493E3/110.021E2 fg)
+2014-06-09 16:10:34 : Detachment done in 1 sec
+2014-06-09 16:10:34 : Agents stepped/dead/born: 2709.0/68/116 done in 0 sec
+2014-06-09 16:10:34 : Simulating agents done in 0 sec
+2014-06-09 16:10:34 : System description finalized
+2014-06-09 16:10:34 : Computation time :0.4 minute(s) 
+ 	 -> Iter 18, Time: 18.0 achieved in 1.5 sec 
+
+2014-06-09 16:10:35 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:35 : Doing pressure calculations.
+2014-06-09 16:10:35 : Doing pressure calculations.
+2014-06-09 16:10:35 : Doing pressure calculations.
+2014-06-09 16:10:35 : Doing pressure calculations.
+2014-06-09 16:10:35 : Doing pressure calculations.
+2014-06-09 16:10:35 : Doing pressure calculations.
+2014-06-09 16:10:35 : Doing pressure calculations.
+2014-06-09 16:10:35 : Doing pressure calculations.
+2014-06-09 16:10:35 : Doing pressure calculations.
+2014-06-09 16:10:35 : Doing pressure calculations.
+2014-06-09 16:10:35 : Doing pressure calculations.
+2014-06-09 16:10:35 : Doing pressure calculations.
+2014-06-09 16:10:35 : Doing pressure calculations.
+2014-06-09 16:10:35 : Doing pressure calculations.
+2014-06-09 16:10:35 : Doing pressure calculations.
+2014-06-09 16:10:35 : Doing pressure calculations.
+2014-06-09 16:10:35 : Doing pressure calculations.
+2014-06-09 16:10:36 : Doing pressure calculations.
+2014-06-09 16:10:36 : Doing pressure calculations.
+2014-06-09 16:10:36 : Doing pressure calculations.
+2014-06-09 16:10:36 : 46/2859 after 2 shove iterations
+2014-06-09 16:10:36 : Eroding 66 (902.575E3/816.59E1 fg)
+2014-06-09 16:10:36 : Detachment done in 1 sec
+2014-06-09 16:10:36 : Agents stepped/dead/born: 2757.0/66/102 done in 0 sec
+2014-06-09 16:10:36 : Simulating agents done in 0 sec
+2014-06-09 16:10:38 : System description finalized
+2014-06-09 16:10:38 : Computation time :0.5 minute(s) 
+ 	 -> Iter 19, Time: 19.0 achieved in 3.5 sec 
+
+2014-06-09 16:10:38 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:38 : Doing pressure calculations.
+2014-06-09 16:10:38 : Doing pressure calculations.
+2014-06-09 16:10:38 : Doing pressure calculations.
+2014-06-09 16:10:38 : Doing pressure calculations.
+2014-06-09 16:10:38 : Doing pressure calculations.
+2014-06-09 16:10:38 : Doing pressure calculations.
+2014-06-09 16:10:38 : Doing pressure calculations.
+2014-06-09 16:10:38 : Doing pressure calculations.
+2014-06-09 16:10:38 : Doing pressure calculations.
+2014-06-09 16:10:38 : Doing pressure calculations.
+2014-06-09 16:10:39 : Doing pressure calculations.
+2014-06-09 16:10:39 : Doing pressure calculations.
+2014-06-09 16:10:39 : Doing pressure calculations.
+2014-06-09 16:10:39 : Doing pressure calculations.
+2014-06-09 16:10:39 : Doing pressure calculations.
+2014-06-09 16:10:39 : Doing pressure calculations.
+2014-06-09 16:10:39 : Doing pressure calculations.
+2014-06-09 16:10:39 : Doing pressure calculations.
+2014-06-09 16:10:39 : Doing pressure calculations.
+2014-06-09 16:10:39 : Doing pressure calculations.
+2014-06-09 16:10:39 : 51/2892 after 2 shove iterations
+2014-06-09 16:10:39 : Eroding 65 (885.695E3/965.376E1 fg)
+2014-06-09 16:10:39 : Detachment done in 0 sec
+2014-06-09 16:10:39 : Agents stepped/dead/born: 2793.0/68/99 done in 0 sec
+2014-06-09 16:10:39 : Simulating agents done in 0 sec
+2014-06-09 16:10:40 : System description finalized
+2014-06-09 16:10:40 : Computation time :0.5 minute(s) 
+ 	 -> Iter 20, Time: 20.0 achieved in 1.6 sec 
+
+2014-06-09 16:10:40 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:40 : Doing pressure calculations.
+2014-06-09 16:10:40 : Doing pressure calculations.
+2014-06-09 16:10:40 : Doing pressure calculations.
+2014-06-09 16:10:40 : Doing pressure calculations.
+2014-06-09 16:10:40 : Doing pressure calculations.
+2014-06-09 16:10:40 : Doing pressure calculations.
+2014-06-09 16:10:40 : Doing pressure calculations.
+2014-06-09 16:10:40 : Doing pressure calculations.
+2014-06-09 16:10:40 : Doing pressure calculations.
+2014-06-09 16:10:40 : Doing pressure calculations.
+2014-06-09 16:10:40 : Doing pressure calculations.
+2014-06-09 16:10:40 : Doing pressure calculations.
+2014-06-09 16:10:40 : Doing pressure calculations.
+2014-06-09 16:10:40 : Doing pressure calculations.
+2014-06-09 16:10:40 : Doing pressure calculations.
+2014-06-09 16:10:41 : Doing pressure calculations.
+2014-06-09 16:10:41 : Doing pressure calculations.
+2014-06-09 16:10:41 : Doing pressure calculations.
+2014-06-09 16:10:41 : Doing pressure calculations.
+2014-06-09 16:10:41 : Doing pressure calculations.
+2014-06-09 16:10:41 : 61/2925 after 2 shove iterations
+2014-06-09 16:10:41 : Eroding 77 (103.366E4/755.584E1 fg)
+2014-06-09 16:10:41 : Detachment done in 0 sec
+2014-06-09 16:10:41 : Agents stepped/dead/born: 2824.0/77/101 done in 0 sec
+2014-06-09 16:10:41 : Simulating agents done in 0 sec
+2014-06-09 16:10:41 : System description finalized
+2014-06-09 16:10:41 : Computation time :0.5 minute(s) 
+ 	 -> Iter 21, Time: 21.0 achieved in 1.5 sec 
+
+2014-06-09 16:10:41 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:41 : Doing pressure calculations.
+2014-06-09 16:10:42 : Doing pressure calculations.
+2014-06-09 16:10:42 : Doing pressure calculations.
+2014-06-09 16:10:42 : Doing pressure calculations.
+2014-06-09 16:10:42 : Doing pressure calculations.
+2014-06-09 16:10:42 : Doing pressure calculations.
+2014-06-09 16:10:42 : Doing pressure calculations.
+2014-06-09 16:10:42 : Doing pressure calculations.
+2014-06-09 16:10:42 : Doing pressure calculations.
+2014-06-09 16:10:42 : Doing pressure calculations.
+2014-06-09 16:10:42 : Doing pressure calculations.
+2014-06-09 16:10:42 : Doing pressure calculations.
+2014-06-09 16:10:42 : Doing pressure calculations.
+2014-06-09 16:10:42 : Doing pressure calculations.
+2014-06-09 16:10:42 : Doing pressure calculations.
+2014-06-09 16:10:42 : Doing pressure calculations.
+2014-06-09 16:10:42 : Doing pressure calculations.
+2014-06-09 16:10:42 : Doing pressure calculations.
+2014-06-09 16:10:42 : Doing pressure calculations.
+2014-06-09 16:10:43 : Doing pressure calculations.
+2014-06-09 16:10:43 : 44/2958 after 2 shove iterations
+2014-06-09 16:10:43 : Eroding 76 (102.4E4/119.447E2 fg)
+2014-06-09 16:10:43 : Detachment done in 1 sec
+2014-06-09 16:10:43 : Agents stepped/dead/born: 2848.0/79/110 done in 0 sec
+2014-06-09 16:10:43 : Simulating agents done in 0 sec
+2014-06-09 16:10:43 : System description finalized
+2014-06-09 16:10:43 : Computation time :0.5 minute(s) 
+ 	 -> Iter 22, Time: 22.0 achieved in 1.9 sec 
+
+2014-06-09 16:10:43 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:43 : Doing pressure calculations.
+2014-06-09 16:10:43 : Doing pressure calculations.
+2014-06-09 16:10:43 : Doing pressure calculations.
+2014-06-09 16:10:43 : Doing pressure calculations.
+2014-06-09 16:10:43 : Doing pressure calculations.
+2014-06-09 16:10:43 : Doing pressure calculations.
+2014-06-09 16:10:43 : Doing pressure calculations.
+2014-06-09 16:10:43 : Doing pressure calculations.
+2014-06-09 16:10:43 : Doing pressure calculations.
+2014-06-09 16:10:43 : Doing pressure calculations.
+2014-06-09 16:10:43 : Doing pressure calculations.
+2014-06-09 16:10:43 : Doing pressure calculations.
+2014-06-09 16:10:44 : Doing pressure calculations.
+2014-06-09 16:10:44 : Doing pressure calculations.
+2014-06-09 16:10:44 : Doing pressure calculations.
+2014-06-09 16:10:44 : Doing pressure calculations.
+2014-06-09 16:10:44 : Doing pressure calculations.
+2014-06-09 16:10:44 : Doing pressure calculations.
+2014-06-09 16:10:44 : Doing pressure calculations.
+2014-06-09 16:10:44 : Doing pressure calculations.
+2014-06-09 16:10:44 : 35/2981 after 2 shove iterations
+2014-06-09 16:10:44 : Eroding 76 (978.332E3/104.739E2 fg)
+2014-06-09 16:10:44 : Detachment done in 0 sec
+2014-06-09 16:10:44 : Agents stepped/dead/born: 2879.0/76/102 done in 0 sec
+2014-06-09 16:10:44 : Simulating agents done in 0 sec
+2014-06-09 16:10:45 : System description finalized
+2014-06-09 16:10:45 : Computation time :0.6 minute(s) 
+ 	 -> Iter 23, Time: 23.0 achieved in 1.9 sec 
+
+2014-06-09 16:10:45 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:45 : Doing pressure calculations.
+2014-06-09 16:10:45 : Doing pressure calculations.
+2014-06-09 16:10:45 : Doing pressure calculations.
+2014-06-09 16:10:45 : Doing pressure calculations.
+2014-06-09 16:10:45 : Doing pressure calculations.
+2014-06-09 16:10:45 : Doing pressure calculations.
+2014-06-09 16:10:45 : Doing pressure calculations.
+2014-06-09 16:10:45 : Doing pressure calculations.
+2014-06-09 16:10:45 : Doing pressure calculations.
+2014-06-09 16:10:45 : Doing pressure calculations.
+2014-06-09 16:10:46 : Doing pressure calculations.
+2014-06-09 16:10:46 : Doing pressure calculations.
+2014-06-09 16:10:46 : Doing pressure calculations.
+2014-06-09 16:10:46 : Doing pressure calculations.
+2014-06-09 16:10:46 : Doing pressure calculations.
+2014-06-09 16:10:46 : Doing pressure calculations.
+2014-06-09 16:10:46 : Doing pressure calculations.
+2014-06-09 16:10:46 : Doing pressure calculations.
+2014-06-09 16:10:46 : Doing pressure calculations.
+2014-06-09 16:10:46 : Doing pressure calculations.
+2014-06-09 16:10:46 : 50/2995 after 2 shove iterations
+2014-06-09 16:10:46 : Eroding 70 (946.871E3/101.105E2 fg)
+2014-06-09 16:10:46 : Detachment done in 0 sec
+2014-06-09 16:10:46 : Agents stepped/dead/born: 2905.0/70/90 done in 0 sec
+2014-06-09 16:10:46 : Simulating agents done in 0 sec
+2014-06-09 16:10:46 : System description finalized
+2014-06-09 16:10:46 : Computation time :0.6 minute(s) 
+ 	 -> Iter 24, Time: 24.0 achieved in 1.5 sec 
+
+2014-06-09 16:10:47 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:47 : Doing pressure calculations.
+2014-06-09 16:10:47 : Doing pressure calculations.
+2014-06-09 16:10:47 : Doing pressure calculations.
+2014-06-09 16:10:47 : Doing pressure calculations.
+2014-06-09 16:10:47 : Doing pressure calculations.
+2014-06-09 16:10:47 : Doing pressure calculations.
+2014-06-09 16:10:47 : Doing pressure calculations.
+2014-06-09 16:10:47 : Doing pressure calculations.
+2014-06-09 16:10:47 : Doing pressure calculations.
+2014-06-09 16:10:47 : Doing pressure calculations.
+2014-06-09 16:10:47 : Doing pressure calculations.
+2014-06-09 16:10:47 : Doing pressure calculations.
+2014-06-09 16:10:47 : Doing pressure calculations.
+2014-06-09 16:10:47 : Doing pressure calculations.
+2014-06-09 16:10:47 : Doing pressure calculations.
+2014-06-09 16:10:47 : Doing pressure calculations.
+2014-06-09 16:10:47 : Doing pressure calculations.
+2014-06-09 16:10:47 : Doing pressure calculations.
+2014-06-09 16:10:48 : Doing pressure calculations.
+2014-06-09 16:10:48 : Doing pressure calculations.
+2014-06-09 16:10:48 : 74/3030 after 56 shove iterations
+2014-06-09 16:10:48 : Eroding 94 (119.242E4/578.596E1 fg)
+2014-06-09 16:10:48 : Detachment done in 1 sec
+2014-06-09 16:10:48 : Agents stepped/dead/born: 2925.0/94/105 done in 0 sec
+2014-06-09 16:10:48 : Simulating agents done in 0 sec
+2014-06-09 16:10:49 : System description finalized
+2014-06-09 16:10:49 : Computation time :0.6 minute(s) 
+ 	 -> Iter 25, Time: 25.0 achieved in 2.3 sec 
+
+2014-06-09 16:10:49 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:49 : Doing pressure calculations.
+2014-06-09 16:10:49 : Doing pressure calculations.
+2014-06-09 16:10:49 : Doing pressure calculations.
+2014-06-09 16:10:49 : Doing pressure calculations.
+2014-06-09 16:10:49 : Doing pressure calculations.
+2014-06-09 16:10:49 : Doing pressure calculations.
+2014-06-09 16:10:49 : Doing pressure calculations.
+2014-06-09 16:10:49 : Doing pressure calculations.
+2014-06-09 16:10:49 : Doing pressure calculations.
+2014-06-09 16:10:49 : Doing pressure calculations.
+2014-06-09 16:10:49 : Doing pressure calculations.
+2014-06-09 16:10:49 : Doing pressure calculations.
+2014-06-09 16:10:49 : Doing pressure calculations.
+2014-06-09 16:10:49 : Doing pressure calculations.
+2014-06-09 16:10:49 : Doing pressure calculations.
+2014-06-09 16:10:49 : Doing pressure calculations.
+2014-06-09 16:10:50 : Doing pressure calculations.
+2014-06-09 16:10:50 : Doing pressure calculations.
+2014-06-09 16:10:50 : Doing pressure calculations.
+2014-06-09 16:10:50 : Doing pressure calculations.
+2014-06-09 16:10:50 : 51/3045 after 2 shove iterations
+2014-06-09 16:10:50 : Eroding 74 (933.203E3/950.317E1 fg)
+2014-06-09 16:10:50 : Detachment done in 0 sec
+2014-06-09 16:10:50 : Agents stepped/dead/born: 2936.0/74/109 done in 0 sec
+2014-06-09 16:10:50 : Simulating agents done in 0 sec
+2014-06-09 16:10:50 : System description finalized
+2014-06-09 16:10:50 : Computation time :0.7 minute(s) 
+ 	 -> Iter 26, Time: 26.0 achieved in 1.4 sec 
+
+2014-06-09 16:10:50 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:50 : Doing pressure calculations.
+2014-06-09 16:10:50 : Doing pressure calculations.
+2014-06-09 16:10:50 : Doing pressure calculations.
+2014-06-09 16:10:50 : Doing pressure calculations.
+2014-06-09 16:10:51 : Doing pressure calculations.
+2014-06-09 16:10:51 : Doing pressure calculations.
+2014-06-09 16:10:51 : Doing pressure calculations.
+2014-06-09 16:10:51 : Doing pressure calculations.
+2014-06-09 16:10:51 : Doing pressure calculations.
+2014-06-09 16:10:51 : Doing pressure calculations.
+2014-06-09 16:10:51 : Doing pressure calculations.
+2014-06-09 16:10:51 : Doing pressure calculations.
+2014-06-09 16:10:51 : Doing pressure calculations.
+2014-06-09 16:10:51 : Doing pressure calculations.
+2014-06-09 16:10:51 : Doing pressure calculations.
+2014-06-09 16:10:51 : Doing pressure calculations.
+2014-06-09 16:10:51 : Doing pressure calculations.
+2014-06-09 16:10:51 : Doing pressure calculations.
+2014-06-09 16:10:51 : Doing pressure calculations.
+2014-06-09 16:10:51 : Doing pressure calculations.
+2014-06-09 16:10:51 : 43/3082 after 2 shove iterations
+2014-06-09 16:10:51 : Eroding 74 (963.114E3/497.78E1 fg)
+2014-06-09 16:10:51 : Detachment done in 1 sec
+2014-06-09 16:10:51 : Agents stepped/dead/born: 2971.0/74/111 done in 0 sec
+2014-06-09 16:10:51 : Simulating agents done in 0 sec
+2014-06-09 16:10:52 : System description finalized
+2014-06-09 16:10:52 : Computation time :0.7 minute(s) 
+ 	 -> Iter 27, Time: 27.0 achieved in 1.6 sec 
+
+2014-06-09 16:10:52 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:52 : Doing pressure calculations.
+2014-06-09 16:10:52 : Doing pressure calculations.
+2014-06-09 16:10:52 : Doing pressure calculations.
+2014-06-09 16:10:52 : Doing pressure calculations.
+2014-06-09 16:10:52 : Doing pressure calculations.
+2014-06-09 16:10:52 : Doing pressure calculations.
+2014-06-09 16:10:52 : Doing pressure calculations.
+2014-06-09 16:10:52 : Doing pressure calculations.
+2014-06-09 16:10:52 : Doing pressure calculations.
+2014-06-09 16:10:52 : Doing pressure calculations.
+2014-06-09 16:10:52 : Doing pressure calculations.
+2014-06-09 16:10:52 : Doing pressure calculations.
+2014-06-09 16:10:52 : Doing pressure calculations.
+2014-06-09 16:10:52 : Doing pressure calculations.
+2014-06-09 16:10:53 : Doing pressure calculations.
+2014-06-09 16:10:53 : Doing pressure calculations.
+2014-06-09 16:10:53 : Doing pressure calculations.
+2014-06-09 16:10:53 : Doing pressure calculations.
+2014-06-09 16:10:53 : Doing pressure calculations.
+2014-06-09 16:10:53 : Doing pressure calculations.
+2014-06-09 16:10:53 : 75/3122 after 45 shove iterations
+2014-06-09 16:10:53 : Eroding 101 (119.677E4/932.557E1 fg)
+2014-06-09 16:10:53 : Detachment done in 1 sec
+2014-06-09 16:10:53 : Agents stepped/dead/born: 3008.0/101/114 done in 0 sec
+2014-06-09 16:10:53 : Simulating agents done in 0 sec
+2014-06-09 16:10:54 : System description finalized
+2014-06-09 16:10:54 : Computation time :0.7 minute(s) 
+ 	 -> Iter 28, Time: 28.0 achieved in 2.2 sec 
+
+2014-06-09 16:10:54 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:54 : Doing pressure calculations.
+2014-06-09 16:10:54 : Doing pressure calculations.
+2014-06-09 16:10:54 : Doing pressure calculations.
+2014-06-09 16:10:54 : Doing pressure calculations.
+2014-06-09 16:10:54 : Doing pressure calculations.
+2014-06-09 16:10:54 : Doing pressure calculations.
+2014-06-09 16:10:54 : Doing pressure calculations.
+2014-06-09 16:10:54 : Doing pressure calculations.
+2014-06-09 16:10:54 : Doing pressure calculations.
+2014-06-09 16:10:54 : Doing pressure calculations.
+2014-06-09 16:10:54 : Doing pressure calculations.
+2014-06-09 16:10:54 : Doing pressure calculations.
+2014-06-09 16:10:55 : Doing pressure calculations.
+2014-06-09 16:10:55 : Doing pressure calculations.
+2014-06-09 16:10:55 : Doing pressure calculations.
+2014-06-09 16:10:55 : Doing pressure calculations.
+2014-06-09 16:10:55 : Doing pressure calculations.
+2014-06-09 16:10:55 : Doing pressure calculations.
+2014-06-09 16:10:55 : Doing pressure calculations.
+2014-06-09 16:10:55 : Doing pressure calculations.
+2014-06-09 16:10:55 : 67/3129 after 2 shove iterations
+2014-06-09 16:10:55 : Eroding 79 (100.042E4/316.194E1 fg)
+2014-06-09 16:10:55 : Detachment done in 0 sec
+2014-06-09 16:10:55 : Agents stepped/dead/born: 3021.0/79/108 done in 0 sec
+2014-06-09 16:10:55 : Simulating agents done in 0 sec
+2014-06-09 16:10:55 : System description finalized
+2014-06-09 16:10:55 : Computation time :0.7 minute(s) 
+ 	 -> Iter 29, Time: 29.0 achieved in 1.5 sec 
+
+2014-06-09 16:10:56 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:56 : Doing pressure calculations.
+2014-06-09 16:10:56 : Doing pressure calculations.
+2014-06-09 16:10:56 : Doing pressure calculations.
+2014-06-09 16:10:56 : Doing pressure calculations.
+2014-06-09 16:10:56 : Doing pressure calculations.
+2014-06-09 16:10:56 : Doing pressure calculations.
+2014-06-09 16:10:56 : Doing pressure calculations.
+2014-06-09 16:10:56 : Doing pressure calculations.
+2014-06-09 16:10:56 : Doing pressure calculations.
+2014-06-09 16:10:56 : Doing pressure calculations.
+2014-06-09 16:10:56 : Doing pressure calculations.
+2014-06-09 16:10:56 : Doing pressure calculations.
+2014-06-09 16:10:56 : Doing pressure calculations.
+2014-06-09 16:10:56 : Doing pressure calculations.
+2014-06-09 16:10:56 : Doing pressure calculations.
+2014-06-09 16:10:56 : Doing pressure calculations.
+2014-06-09 16:10:56 : Doing pressure calculations.
+2014-06-09 16:10:56 : Doing pressure calculations.
+2014-06-09 16:10:56 : Doing pressure calculations.
+2014-06-09 16:10:57 : Doing pressure calculations.
+2014-06-09 16:10:57 : 45/3161 after 2 shove iterations
+2014-06-09 16:10:57 : Eroding 86 (100.448E4/329.95E1 fg)
+2014-06-09 16:10:57 : Detachment done in 1 sec
+2014-06-09 16:10:57 : Agents stepped/dead/born: 3050.0/86/111 done in 0 sec
+2014-06-09 16:10:57 : Simulating agents done in 0 sec
+2014-06-09 16:10:57 : System description finalized
+2014-06-09 16:10:57 : Computation time :0.8 minute(s) 
+ 	 -> Iter 30, Time: 30.0 achieved in 1.7 sec 
+
+2014-06-09 16:10:57 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:57 : Doing pressure calculations.
+2014-06-09 16:10:57 : Doing pressure calculations.
+2014-06-09 16:10:57 : Doing pressure calculations.
+2014-06-09 16:10:57 : Doing pressure calculations.
+2014-06-09 16:10:57 : Doing pressure calculations.
+2014-06-09 16:10:57 : Doing pressure calculations.
+2014-06-09 16:10:57 : Doing pressure calculations.
+2014-06-09 16:10:58 : Doing pressure calculations.
+2014-06-09 16:10:58 : Doing pressure calculations.
+2014-06-09 16:10:58 : Doing pressure calculations.
+2014-06-09 16:10:58 : Doing pressure calculations.
+2014-06-09 16:10:58 : Doing pressure calculations.
+2014-06-09 16:10:58 : Doing pressure calculations.
+2014-06-09 16:10:58 : Doing pressure calculations.
+2014-06-09 16:10:58 : Doing pressure calculations.
+2014-06-09 16:10:58 : Doing pressure calculations.
+2014-06-09 16:10:58 : Doing pressure calculations.
+2014-06-09 16:10:58 : Doing pressure calculations.
+2014-06-09 16:10:58 : Doing pressure calculations.
+2014-06-09 16:10:58 : Doing pressure calculations.
+2014-06-09 16:10:58 : 52/3176 after 2 shove iterations
+2014-06-09 16:10:58 : Eroding 87 (101.661E4/832.757E1 fg)
+2014-06-09 16:10:58 : Detachment done in 1 sec
+2014-06-09 16:10:58 : Agents stepped/dead/born: 3075.0/90/101 done in 0 sec
+2014-06-09 16:10:58 : Simulating agents done in 0 sec
+2014-06-09 16:10:59 : System description finalized
+2014-06-09 16:10:59 : Computation time :0.8 minute(s) 
+ 	 -> Iter 31, Time: 31.0 achieved in 1.7 sec 
+
+2014-06-09 16:10:59 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:10:59 : Doing pressure calculations.
+2014-06-09 16:10:59 : Doing pressure calculations.
+2014-06-09 16:10:59 : Doing pressure calculations.
+2014-06-09 16:10:59 : Doing pressure calculations.
+2014-06-09 16:10:59 : Doing pressure calculations.
+2014-06-09 16:10:59 : Doing pressure calculations.
+2014-06-09 16:10:59 : Doing pressure calculations.
+2014-06-09 16:10:59 : Doing pressure calculations.
+2014-06-09 16:10:59 : Doing pressure calculations.
+2014-06-09 16:10:59 : Doing pressure calculations.
+2014-06-09 16:10:59 : Doing pressure calculations.
+2014-06-09 16:11:00 : Doing pressure calculations.
+2014-06-09 16:11:00 : Doing pressure calculations.
+2014-06-09 16:11:00 : Doing pressure calculations.
+2014-06-09 16:11:00 : Doing pressure calculations.
+2014-06-09 16:11:00 : Doing pressure calculations.
+2014-06-09 16:11:00 : Doing pressure calculations.
+2014-06-09 16:11:00 : Doing pressure calculations.
+2014-06-09 16:11:00 : Doing pressure calculations.
+2014-06-09 16:11:00 : Doing pressure calculations.
+2014-06-09 16:11:00 : 46/3202 after 2 shove iterations
+2014-06-09 16:11:00 : Eroding 96 (111.263E4/990.653E1 fg)
+2014-06-09 16:11:00 : Detachment done in 1 sec
+2014-06-09 16:11:00 : Agents stepped/dead/born: 3089.0/97/113 done in 0 sec
+2014-06-09 16:11:00 : Simulating agents done in 0 sec
+2014-06-09 16:11:01 : System description finalized
+2014-06-09 16:11:01 : Computation time :0.8 minute(s) 
+ 	 -> Iter 32, Time: 32.0 achieved in 1.9 sec 
+
+2014-06-09 16:11:01 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:01 : Doing pressure calculations.
+2014-06-09 16:11:01 : Doing pressure calculations.
+2014-06-09 16:11:01 : Doing pressure calculations.
+2014-06-09 16:11:01 : Doing pressure calculations.
+2014-06-09 16:11:01 : Doing pressure calculations.
+2014-06-09 16:11:01 : Doing pressure calculations.
+2014-06-09 16:11:01 : Doing pressure calculations.
+2014-06-09 16:11:01 : Doing pressure calculations.
+2014-06-09 16:11:01 : Doing pressure calculations.
+2014-06-09 16:11:01 : Doing pressure calculations.
+2014-06-09 16:11:01 : Doing pressure calculations.
+2014-06-09 16:11:01 : Doing pressure calculations.
+2014-06-09 16:11:01 : Doing pressure calculations.
+2014-06-09 16:11:02 : Doing pressure calculations.
+2014-06-09 16:11:02 : Doing pressure calculations.
+2014-06-09 16:11:02 : Doing pressure calculations.
+2014-06-09 16:11:02 : Doing pressure calculations.
+2014-06-09 16:11:02 : Doing pressure calculations.
+2014-06-09 16:11:02 : Doing pressure calculations.
+2014-06-09 16:11:02 : Doing pressure calculations.
+2014-06-09 16:11:02 : 47/3229 after 2 shove iterations
+2014-06-09 16:11:02 : Eroding 105 (111.26E4/371.809E2 fg)
+2014-06-09 16:11:02 : Detachment done in 1 sec
+2014-06-09 16:11:02 : Agents stepped/dead/born: 3106.0/107/123 done in 0 sec
+2014-06-09 16:11:02 : Simulating agents done in 0 sec
+2014-06-09 16:11:02 : System description finalized
+2014-06-09 16:11:02 : Computation time :0.9 minute(s) 
+ 	 -> Iter 33, Time: 33.0 achieved in 1.8 sec 
+
+2014-06-09 16:11:03 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:03 : Doing pressure calculations.
+2014-06-09 16:11:03 : Doing pressure calculations.
+2014-06-09 16:11:03 : Doing pressure calculations.
+2014-06-09 16:11:03 : Doing pressure calculations.
+2014-06-09 16:11:03 : Doing pressure calculations.
+2014-06-09 16:11:03 : Doing pressure calculations.
+2014-06-09 16:11:03 : Doing pressure calculations.
+2014-06-09 16:11:03 : Doing pressure calculations.
+2014-06-09 16:11:03 : Doing pressure calculations.
+2014-06-09 16:11:03 : Doing pressure calculations.
+2014-06-09 16:11:03 : Doing pressure calculations.
+2014-06-09 16:11:03 : Doing pressure calculations.
+2014-06-09 16:11:03 : Doing pressure calculations.
+2014-06-09 16:11:03 : Doing pressure calculations.
+2014-06-09 16:11:03 : Doing pressure calculations.
+2014-06-09 16:11:04 : Doing pressure calculations.
+2014-06-09 16:11:04 : Doing pressure calculations.
+2014-06-09 16:11:04 : Doing pressure calculations.
+2014-06-09 16:11:04 : Doing pressure calculations.
+2014-06-09 16:11:04 : Doing pressure calculations.
+2014-06-09 16:11:04 : 41/3233 after 2 shove iterations
+2014-06-09 16:11:04 : Eroding 98 (105.628E4/231.05E2 fg)
+2014-06-09 16:11:04 : Detachment done in 1 sec
+2014-06-09 16:11:04 : Agents stepped/dead/born: 3124.0/102/109 done in 0 sec
+2014-06-09 16:11:04 : Simulating agents done in 0 sec
+2014-06-09 16:11:04 : System description finalized
+2014-06-09 16:11:04 : Computation time :0.9 minute(s) 
+ 	 -> Iter 34, Time: 34.0 achieved in 1.8 sec 
+
+2014-06-09 16:11:04 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:04 : Doing pressure calculations.
+2014-06-09 16:11:04 : Doing pressure calculations.
+2014-06-09 16:11:05 : Doing pressure calculations.
+2014-06-09 16:11:05 : Doing pressure calculations.
+2014-06-09 16:11:05 : Doing pressure calculations.
+2014-06-09 16:11:05 : Doing pressure calculations.
+2014-06-09 16:11:05 : Doing pressure calculations.
+2014-06-09 16:11:05 : Doing pressure calculations.
+2014-06-09 16:11:05 : Doing pressure calculations.
+2014-06-09 16:11:05 : Doing pressure calculations.
+2014-06-09 16:11:05 : Doing pressure calculations.
+2014-06-09 16:11:05 : Doing pressure calculations.
+2014-06-09 16:11:05 : Doing pressure calculations.
+2014-06-09 16:11:05 : Doing pressure calculations.
+2014-06-09 16:11:05 : Doing pressure calculations.
+2014-06-09 16:11:05 : Doing pressure calculations.
+2014-06-09 16:11:05 : Doing pressure calculations.
+2014-06-09 16:11:05 : Doing pressure calculations.
+2014-06-09 16:11:05 : Doing pressure calculations.
+2014-06-09 16:11:06 : Doing pressure calculations.
+2014-06-09 16:11:06 : 53/3235 after 2 shove iterations
+2014-06-09 16:11:06 : Eroding 83 (105.464E4/362.911E2 fg)
+2014-06-09 16:11:06 : Detachment done in 1 sec
+2014-06-09 16:11:06 : Agents stepped/dead/born: 3132.0/84/103 done in 0 sec
+2014-06-09 16:11:06 : Simulating agents done in 0 sec
+2014-06-09 16:11:06 : System description finalized
+2014-06-09 16:11:06 : Computation time :0.9 minute(s) 
+ 	 -> Iter 35, Time: 35.0 achieved in 1.7 sec 
+
+2014-06-09 16:11:06 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:06 : Doing pressure calculations.
+2014-06-09 16:11:06 : Doing pressure calculations.
+2014-06-09 16:11:06 : Doing pressure calculations.
+2014-06-09 16:11:06 : Doing pressure calculations.
+2014-06-09 16:11:06 : Doing pressure calculations.
+2014-06-09 16:11:07 : Doing pressure calculations.
+2014-06-09 16:11:07 : Doing pressure calculations.
+2014-06-09 16:11:07 : Doing pressure calculations.
+2014-06-09 16:11:07 : Doing pressure calculations.
+2014-06-09 16:11:07 : Doing pressure calculations.
+2014-06-09 16:11:07 : Doing pressure calculations.
+2014-06-09 16:11:07 : Doing pressure calculations.
+2014-06-09 16:11:07 : Doing pressure calculations.
+2014-06-09 16:11:07 : Doing pressure calculations.
+2014-06-09 16:11:07 : Doing pressure calculations.
+2014-06-09 16:11:07 : Doing pressure calculations.
+2014-06-09 16:11:07 : Doing pressure calculations.
+2014-06-09 16:11:07 : Doing pressure calculations.
+2014-06-09 16:11:07 : Doing pressure calculations.
+2014-06-09 16:11:07 : Doing pressure calculations.
+2014-06-09 16:11:07 : 63/3269 after 2 shove iterations
+2014-06-09 16:11:07 : Eroding 101 (109.859E4/327.02E2 fg)
+2014-06-09 16:11:07 : Detachment done in 1 sec
+2014-06-09 16:11:07 : Agents stepped/dead/born: 3152.0/102/117 done in 0 sec
+2014-06-09 16:11:07 : Simulating agents done in 0 sec
+2014-06-09 16:11:08 : System description finalized
+2014-06-09 16:11:08 : Computation time :1.0 minute(s) 
+ 	 -> Iter 36, Time: 36.0 achieved in 2.0 sec 
+
+2014-06-09 16:11:08 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:08 : Doing pressure calculations.
+2014-06-09 16:11:08 : Doing pressure calculations.
+2014-06-09 16:11:08 : Doing pressure calculations.
+2014-06-09 16:11:08 : Doing pressure calculations.
+2014-06-09 16:11:08 : Doing pressure calculations.
+2014-06-09 16:11:08 : Doing pressure calculations.
+2014-06-09 16:11:09 : Doing pressure calculations.
+2014-06-09 16:11:09 : Doing pressure calculations.
+2014-06-09 16:11:09 : Doing pressure calculations.
+2014-06-09 16:11:09 : Doing pressure calculations.
+2014-06-09 16:11:09 : Doing pressure calculations.
+2014-06-09 16:11:09 : Doing pressure calculations.
+2014-06-09 16:11:09 : Doing pressure calculations.
+2014-06-09 16:11:09 : Doing pressure calculations.
+2014-06-09 16:11:09 : Doing pressure calculations.
+2014-06-09 16:11:09 : Doing pressure calculations.
+2014-06-09 16:11:09 : Doing pressure calculations.
+2014-06-09 16:11:09 : Doing pressure calculations.
+2014-06-09 16:11:09 : Doing pressure calculations.
+2014-06-09 16:11:09 : Doing pressure calculations.
+2014-06-09 16:11:09 : 42/3288 after 2 shove iterations
+2014-06-09 16:11:09 : Eroding 107 (118.208E4/532.05E2 fg)
+2014-06-09 16:11:09 : Detachment done in 1 sec
+2014-06-09 16:11:09 : Agents stepped/dead/born: 3168.0/108/120 done in 0 sec
+2014-06-09 16:11:09 : Simulating agents done in 0 sec
+2014-06-09 16:11:10 : System description finalized
+2014-06-09 16:11:10 : Computation time :1.0 minute(s) 
+ 	 -> Iter 37, Time: 37.0 achieved in 2.1 sec 
+
+2014-06-09 16:11:10 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:10 : Doing pressure calculations.
+2014-06-09 16:11:10 : Doing pressure calculations.
+2014-06-09 16:11:10 : Doing pressure calculations.
+2014-06-09 16:11:10 : Doing pressure calculations.
+2014-06-09 16:11:10 : Doing pressure calculations.
+2014-06-09 16:11:10 : Doing pressure calculations.
+2014-06-09 16:11:10 : Doing pressure calculations.
+2014-06-09 16:11:10 : Doing pressure calculations.
+2014-06-09 16:11:11 : Doing pressure calculations.
+2014-06-09 16:11:11 : Doing pressure calculations.
+2014-06-09 16:11:11 : Doing pressure calculations.
+2014-06-09 16:11:11 : Doing pressure calculations.
+2014-06-09 16:11:11 : Doing pressure calculations.
+2014-06-09 16:11:11 : Doing pressure calculations.
+2014-06-09 16:11:11 : Doing pressure calculations.
+2014-06-09 16:11:11 : Doing pressure calculations.
+2014-06-09 16:11:11 : Doing pressure calculations.
+2014-06-09 16:11:11 : Doing pressure calculations.
+2014-06-09 16:11:11 : Doing pressure calculations.
+2014-06-09 16:11:11 : Doing pressure calculations.
+2014-06-09 16:11:11 : 48/3284 after 2 shove iterations
+2014-06-09 16:11:11 : Eroding 98 (108.58E4/266.83E2 fg)
+2014-06-09 16:11:11 : Detachment done in 1 sec
+2014-06-09 16:11:11 : Agents stepped/dead/born: 3181.0/104/104 done in 0 sec
+2014-06-09 16:11:11 : Simulating agents done in 0 sec
+2014-06-09 16:11:12 : System description finalized
+2014-06-09 16:11:12 : Computation time :1.0 minute(s) 
+ 	 -> Iter 38, Time: 38.0 achieved in 1.8 sec 
+
+2014-06-09 16:11:12 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:12 : Doing pressure calculations.
+2014-06-09 16:11:12 : Doing pressure calculations.
+2014-06-09 16:11:12 : Doing pressure calculations.
+2014-06-09 16:11:12 : Doing pressure calculations.
+2014-06-09 16:11:12 : Doing pressure calculations.
+2014-06-09 16:11:12 : Doing pressure calculations.
+2014-06-09 16:11:12 : Doing pressure calculations.
+2014-06-09 16:11:12 : Doing pressure calculations.
+2014-06-09 16:11:12 : Doing pressure calculations.
+2014-06-09 16:11:13 : Doing pressure calculations.
+2014-06-09 16:11:13 : Doing pressure calculations.
+2014-06-09 16:11:13 : Doing pressure calculations.
+2014-06-09 16:11:13 : Doing pressure calculations.
+2014-06-09 16:11:13 : Doing pressure calculations.
+2014-06-09 16:11:13 : Doing pressure calculations.
+2014-06-09 16:11:13 : Doing pressure calculations.
+2014-06-09 16:11:13 : Doing pressure calculations.
+2014-06-09 16:11:13 : Doing pressure calculations.
+2014-06-09 16:11:13 : Doing pressure calculations.
+2014-06-09 16:11:13 : Doing pressure calculations.
+2014-06-09 16:11:13 : 65/3296 after 2 shove iterations
+2014-06-09 16:11:13 : Eroding 100 (112.878E4/370.149E2 fg)
+2014-06-09 16:11:13 : Detachment done in 1 sec
+2014-06-09 16:11:13 : Agents stepped/dead/born: 3183.0/107/113 done in 0 sec
+2014-06-09 16:11:13 : Simulating agents done in 0 sec
+2014-06-09 16:11:14 : System description finalized
+2014-06-09 16:11:14 : Computation time :1.1 minute(s) 
+ 	 -> Iter 39, Time: 39.0 achieved in 2.0 sec 
+
+2014-06-09 16:11:14 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:14 : Doing pressure calculations.
+2014-06-09 16:11:14 : Doing pressure calculations.
+2014-06-09 16:11:14 : Doing pressure calculations.
+2014-06-09 16:11:14 : Doing pressure calculations.
+2014-06-09 16:11:14 : Doing pressure calculations.
+2014-06-09 16:11:14 : Doing pressure calculations.
+2014-06-09 16:11:14 : Doing pressure calculations.
+2014-06-09 16:11:14 : Doing pressure calculations.
+2014-06-09 16:11:14 : Doing pressure calculations.
+2014-06-09 16:11:15 : Doing pressure calculations.
+2014-06-09 16:11:15 : Doing pressure calculations.
+2014-06-09 16:11:15 : Doing pressure calculations.
+2014-06-09 16:11:15 : Doing pressure calculations.
+2014-06-09 16:11:15 : Doing pressure calculations.
+2014-06-09 16:11:15 : Doing pressure calculations.
+2014-06-09 16:11:15 : Doing pressure calculations.
+2014-06-09 16:11:15 : Doing pressure calculations.
+2014-06-09 16:11:15 : Doing pressure calculations.
+2014-06-09 16:11:15 : Doing pressure calculations.
+2014-06-09 16:11:16 : Doing pressure calculations.
+2014-06-09 16:11:16 : 21/3312 after 2 shove iterations
+2014-06-09 16:11:16 : Eroding 101 (113.589E4/257.426E2 fg)
+2014-06-09 16:11:16 : Detachment done in 1 sec
+2014-06-09 16:11:16 : Agents stepped/dead/born: 3196.0/112/116 done in 0 sec
+2014-06-09 16:11:16 : Simulating agents done in 0 sec
+2014-06-09 16:11:16 : System description finalized
+2014-06-09 16:11:16 : Computation time :1.1 minute(s) 
+ 	 -> Iter 40, Time: 40.0 achieved in 2.4 sec 
+
+2014-06-09 16:11:16 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:16 : Doing pressure calculations.
+2014-06-09 16:11:16 : Doing pressure calculations.
+2014-06-09 16:11:16 : Doing pressure calculations.
+2014-06-09 16:11:17 : Doing pressure calculations.
+2014-06-09 16:11:17 : Doing pressure calculations.
+2014-06-09 16:11:17 : Doing pressure calculations.
+2014-06-09 16:11:17 : Doing pressure calculations.
+2014-06-09 16:11:17 : Doing pressure calculations.
+2014-06-09 16:11:17 : Doing pressure calculations.
+2014-06-09 16:11:17 : Doing pressure calculations.
+2014-06-09 16:11:17 : Doing pressure calculations.
+2014-06-09 16:11:17 : Doing pressure calculations.
+2014-06-09 16:11:17 : Doing pressure calculations.
+2014-06-09 16:11:17 : Doing pressure calculations.
+2014-06-09 16:11:17 : Doing pressure calculations.
+2014-06-09 16:11:17 : Doing pressure calculations.
+2014-06-09 16:11:17 : Doing pressure calculations.
+2014-06-09 16:11:17 : Doing pressure calculations.
+2014-06-09 16:11:18 : Doing pressure calculations.
+2014-06-09 16:11:18 : Doing pressure calculations.
+2014-06-09 16:11:18 : 38/3318 after 2 shove iterations
+2014-06-09 16:11:18 : Eroding 99 (110.207E4/277.663E2 fg)
+2014-06-09 16:11:18 : Detachment done in 1 sec
+2014-06-09 16:11:18 : Agents stepped/dead/born: 3211.0/103/107 done in 0 sec
+2014-06-09 16:11:18 : Simulating agents done in 0 sec
+2014-06-09 16:11:18 : System description finalized
+2014-06-09 16:11:18 : Computation time :1.1 minute(s) 
+ 	 -> Iter 41, Time: 41.0 achieved in 2.0 sec 
+
+2014-06-09 16:11:18 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:18 : Doing pressure calculations.
+2014-06-09 16:11:18 : Doing pressure calculations.
+2014-06-09 16:11:18 : Doing pressure calculations.
+2014-06-09 16:11:19 : Doing pressure calculations.
+2014-06-09 16:11:19 : Doing pressure calculations.
+2014-06-09 16:11:19 : Doing pressure calculations.
+2014-06-09 16:11:19 : Doing pressure calculations.
+2014-06-09 16:11:19 : Doing pressure calculations.
+2014-06-09 16:11:19 : Doing pressure calculations.
+2014-06-09 16:11:19 : Doing pressure calculations.
+2014-06-09 16:11:19 : Doing pressure calculations.
+2014-06-09 16:11:19 : Doing pressure calculations.
+2014-06-09 16:11:19 : Doing pressure calculations.
+2014-06-09 16:11:19 : Doing pressure calculations.
+2014-06-09 16:11:19 : Doing pressure calculations.
+2014-06-09 16:11:19 : Doing pressure calculations.
+2014-06-09 16:11:19 : Doing pressure calculations.
+2014-06-09 16:11:19 : Doing pressure calculations.
+2014-06-09 16:11:19 : Doing pressure calculations.
+2014-06-09 16:11:19 : Doing pressure calculations.
+2014-06-09 16:11:20 : 34/3304 after 2 shove iterations
+2014-06-09 16:11:20 : Eroding 88 (102.159E4/280.245E2 fg)
+2014-06-09 16:11:20 : Detachment done in 1 sec
+2014-06-09 16:11:20 : Agents stepped/dead/born: 3219.0/93/85 done in 0 sec
+2014-06-09 16:11:20 : Simulating agents done in 0 sec
+2014-06-09 16:11:20 : System description finalized
+2014-06-09 16:11:20 : Computation time :1.2 minute(s) 
+ 	 -> Iter 42, Time: 42.0 achieved in 1.8 sec 
+
+2014-06-09 16:11:20 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:20 : Doing pressure calculations.
+2014-06-09 16:11:20 : Doing pressure calculations.
+2014-06-09 16:11:20 : Doing pressure calculations.
+2014-06-09 16:11:20 : Doing pressure calculations.
+2014-06-09 16:11:20 : Doing pressure calculations.
+2014-06-09 16:11:20 : Doing pressure calculations.
+2014-06-09 16:11:20 : Doing pressure calculations.
+2014-06-09 16:11:21 : Doing pressure calculations.
+2014-06-09 16:11:21 : Doing pressure calculations.
+2014-06-09 16:11:21 : Doing pressure calculations.
+2014-06-09 16:11:21 : Doing pressure calculations.
+2014-06-09 16:11:21 : Doing pressure calculations.
+2014-06-09 16:11:21 : Doing pressure calculations.
+2014-06-09 16:11:21 : Doing pressure calculations.
+2014-06-09 16:11:21 : Doing pressure calculations.
+2014-06-09 16:11:21 : Doing pressure calculations.
+2014-06-09 16:11:21 : Doing pressure calculations.
+2014-06-09 16:11:21 : Doing pressure calculations.
+2014-06-09 16:11:21 : Doing pressure calculations.
+2014-06-09 16:11:22 : Doing pressure calculations.
+2014-06-09 16:11:22 : 40/3332 after 2 shove iterations
+2014-06-09 16:11:22 : Eroding 107 (113.447E4/231.191E2 fg)
+2014-06-09 16:11:22 : Detachment done in 1 sec
+2014-06-09 16:11:22 : Agents stepped/dead/born: 3216.0/114/116 done in 0 sec
+2014-06-09 16:11:22 : Simulating agents done in 0 sec
+2014-06-09 16:11:22 : System description finalized
+2014-06-09 16:11:22 : Computation time :1.2 minute(s) 
+ 	 -> Iter 43, Time: 43.0 achieved in 2.1 sec 
+
+2014-06-09 16:11:22 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:22 : Doing pressure calculations.
+2014-06-09 16:11:22 : Doing pressure calculations.
+2014-06-09 16:11:22 : Doing pressure calculations.
+2014-06-09 16:11:22 : Doing pressure calculations.
+2014-06-09 16:11:22 : Doing pressure calculations.
+2014-06-09 16:11:22 : Doing pressure calculations.
+2014-06-09 16:11:22 : Doing pressure calculations.
+2014-06-09 16:11:23 : Doing pressure calculations.
+2014-06-09 16:11:23 : Doing pressure calculations.
+2014-06-09 16:11:23 : Doing pressure calculations.
+2014-06-09 16:11:23 : Doing pressure calculations.
+2014-06-09 16:11:23 : Doing pressure calculations.
+2014-06-09 16:11:23 : Doing pressure calculations.
+2014-06-09 16:11:23 : Doing pressure calculations.
+2014-06-09 16:11:23 : Doing pressure calculations.
+2014-06-09 16:11:23 : Doing pressure calculations.
+2014-06-09 16:11:23 : Doing pressure calculations.
+2014-06-09 16:11:23 : Doing pressure calculations.
+2014-06-09 16:11:24 : Doing pressure calculations.
+2014-06-09 16:11:24 : Doing pressure calculations.
+2014-06-09 16:11:24 : 57/3327 after 2 shove iterations
+2014-06-09 16:11:24 : Eroding 97 (108.18E4/353.349E2 fg)
+2014-06-09 16:11:24 : Detachment done in 1 sec
+2014-06-09 16:11:24 : Agents stepped/dead/born: 3225.0/103/102 done in 0 sec
+2014-06-09 16:11:24 : Simulating agents done in 0 sec
+2014-06-09 16:11:24 : System description finalized
+2014-06-09 16:11:24 : Computation time :1.2 minute(s) 
+ 	 -> Iter 44, Time: 44.0 achieved in 2.1 sec 
+
+2014-06-09 16:11:24 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:24 : Doing pressure calculations.
+2014-06-09 16:11:24 : Doing pressure calculations.
+2014-06-09 16:11:24 : Doing pressure calculations.
+2014-06-09 16:11:24 : Doing pressure calculations.
+2014-06-09 16:11:25 : Doing pressure calculations.
+2014-06-09 16:11:25 : Doing pressure calculations.
+2014-06-09 16:11:25 : Doing pressure calculations.
+2014-06-09 16:11:25 : Doing pressure calculations.
+2014-06-09 16:11:25 : Doing pressure calculations.
+2014-06-09 16:11:25 : Doing pressure calculations.
+2014-06-09 16:11:25 : Doing pressure calculations.
+2014-06-09 16:11:25 : Doing pressure calculations.
+2014-06-09 16:11:25 : Doing pressure calculations.
+2014-06-09 16:11:25 : Doing pressure calculations.
+2014-06-09 16:11:25 : Doing pressure calculations.
+2014-06-09 16:11:25 : Doing pressure calculations.
+2014-06-09 16:11:25 : Doing pressure calculations.
+2014-06-09 16:11:26 : Doing pressure calculations.
+2014-06-09 16:11:26 : Doing pressure calculations.
+2014-06-09 16:11:26 : Doing pressure calculations.
+2014-06-09 16:11:26 : 41/3335 after 2 shove iterations
+2014-06-09 16:11:26 : Eroding 98 (109.088E4/482.538E2 fg)
+2014-06-09 16:11:26 : Detachment done in 1 sec
+2014-06-09 16:11:26 : Agents stepped/dead/born: 3230.0/109/106 done in 0 sec
+2014-06-09 16:11:26 : Simulating agents done in 0 sec
+2014-06-09 16:11:26 : System description finalized
+2014-06-09 16:11:26 : Computation time :1.3 minute(s) 
+ 	 -> Iter 45, Time: 45.0 achieved in 2.1 sec 
+
+2014-06-09 16:11:26 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:26 : Doing pressure calculations.
+2014-06-09 16:11:26 : Doing pressure calculations.
+2014-06-09 16:11:27 : Doing pressure calculations.
+2014-06-09 16:11:27 : Doing pressure calculations.
+2014-06-09 16:11:27 : Doing pressure calculations.
+2014-06-09 16:11:27 : Doing pressure calculations.
+2014-06-09 16:11:27 : Doing pressure calculations.
+2014-06-09 16:11:27 : Doing pressure calculations.
+2014-06-09 16:11:27 : Doing pressure calculations.
+2014-06-09 16:11:27 : Doing pressure calculations.
+2014-06-09 16:11:27 : Doing pressure calculations.
+2014-06-09 16:11:27 : Doing pressure calculations.
+2014-06-09 16:11:27 : Doing pressure calculations.
+2014-06-09 16:11:27 : Doing pressure calculations.
+2014-06-09 16:11:27 : Doing pressure calculations.
+2014-06-09 16:11:27 : Doing pressure calculations.
+2014-06-09 16:11:27 : Doing pressure calculations.
+2014-06-09 16:11:27 : Doing pressure calculations.
+2014-06-09 16:11:28 : Doing pressure calculations.
+2014-06-09 16:11:28 : Doing pressure calculations.
+2014-06-09 16:11:28 : 82/3337 after 2 shove iterations
+2014-06-09 16:11:28 : Eroding 86 (970.402E3/307.566E2 fg)
+2014-06-09 16:11:28 : Detachment done in 1 sec
+2014-06-09 16:11:28 : Agents stepped/dead/born: 3234.0/88/103 done in 0 sec
+2014-06-09 16:11:28 : Simulating agents done in 0 sec
+2014-06-09 16:11:28 : System description finalized
+2014-06-09 16:11:28 : Computation time :1.3 minute(s) 
+ 	 -> Iter 46, Time: 46.0 achieved in 1.9 sec 
+
+2014-06-09 16:11:28 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:28 : Doing pressure calculations.
+2014-06-09 16:11:28 : Doing pressure calculations.
+2014-06-09 16:11:28 : Doing pressure calculations.
+2014-06-09 16:11:29 : Doing pressure calculations.
+2014-06-09 16:11:29 : Doing pressure calculations.
+2014-06-09 16:11:29 : Doing pressure calculations.
+2014-06-09 16:11:29 : Doing pressure calculations.
+2014-06-09 16:11:29 : Doing pressure calculations.
+2014-06-09 16:11:29 : Doing pressure calculations.
+2014-06-09 16:11:29 : Doing pressure calculations.
+2014-06-09 16:11:29 : Doing pressure calculations.
+2014-06-09 16:11:29 : Doing pressure calculations.
+2014-06-09 16:11:29 : Doing pressure calculations.
+2014-06-09 16:11:29 : Doing pressure calculations.
+2014-06-09 16:11:29 : Doing pressure calculations.
+2014-06-09 16:11:29 : Doing pressure calculations.
+2014-06-09 16:11:30 : Doing pressure calculations.
+2014-06-09 16:11:30 : Doing pressure calculations.
+2014-06-09 16:11:30 : Doing pressure calculations.
+2014-06-09 16:11:30 : Doing pressure calculations.
+2014-06-09 16:11:30 : 49/3362 after 2 shove iterations
+2014-06-09 16:11:30 : Eroding 105 (120.915E4/435.936E2 fg)
+2014-06-09 16:11:30 : Detachment done in 1 sec
+2014-06-09 16:11:30 : Agents stepped/dead/born: 3251.0/110/111 done in 0 sec
+2014-06-09 16:11:30 : Simulating agents done in 0 sec
+2014-06-09 16:11:30 : System description finalized
+2014-06-09 16:11:30 : Computation time :1.3 minute(s) 
+ 	 -> Iter 47, Time: 47.0 achieved in 2.2 sec 
+
+2014-06-09 16:11:31 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:31 : Doing pressure calculations.
+2014-06-09 16:11:31 : Doing pressure calculations.
+2014-06-09 16:11:31 : Doing pressure calculations.
+2014-06-09 16:11:31 : Doing pressure calculations.
+2014-06-09 16:11:31 : Doing pressure calculations.
+2014-06-09 16:11:31 : Doing pressure calculations.
+2014-06-09 16:11:31 : Doing pressure calculations.
+2014-06-09 16:11:31 : Doing pressure calculations.
+2014-06-09 16:11:31 : Doing pressure calculations.
+2014-06-09 16:11:31 : Doing pressure calculations.
+2014-06-09 16:11:31 : Doing pressure calculations.
+2014-06-09 16:11:31 : Doing pressure calculations.
+2014-06-09 16:11:31 : Doing pressure calculations.
+2014-06-09 16:11:31 : Doing pressure calculations.
+2014-06-09 16:11:31 : Doing pressure calculations.
+2014-06-09 16:11:32 : Doing pressure calculations.
+2014-06-09 16:11:32 : Doing pressure calculations.
+2014-06-09 16:11:32 : Doing pressure calculations.
+2014-06-09 16:11:32 : Doing pressure calculations.
+2014-06-09 16:11:32 : Doing pressure calculations.
+2014-06-09 16:11:32 : 48/3360 after 2 shove iterations
+2014-06-09 16:11:32 : Eroding 98 (114.479E4/383.244E2 fg)
+2014-06-09 16:11:32 : Detachment done in 1 sec
+2014-06-09 16:11:32 : Agents stepped/dead/born: 3257.0/106/103 done in 0 sec
+2014-06-09 16:11:32 : Simulating agents done in 0 sec
+2014-06-09 16:11:33 : System description finalized
+2014-06-09 16:11:33 : Computation time :1.4 minute(s) 
+ 	 -> Iter 48, Time: 48.0 achieved in 2.3 sec 
+
+2014-06-09 16:11:33 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:33 : Doing pressure calculations.
+2014-06-09 16:11:33 : Doing pressure calculations.
+2014-06-09 16:11:33 : Doing pressure calculations.
+2014-06-09 16:11:33 : Doing pressure calculations.
+2014-06-09 16:11:33 : Doing pressure calculations.
+2014-06-09 16:11:33 : Doing pressure calculations.
+2014-06-09 16:11:33 : Doing pressure calculations.
+2014-06-09 16:11:33 : Doing pressure calculations.
+2014-06-09 16:11:33 : Doing pressure calculations.
+2014-06-09 16:11:34 : Doing pressure calculations.
+2014-06-09 16:11:34 : Doing pressure calculations.
+2014-06-09 16:11:34 : Doing pressure calculations.
+2014-06-09 16:11:34 : Doing pressure calculations.
+2014-06-09 16:11:34 : Doing pressure calculations.
+2014-06-09 16:11:34 : Doing pressure calculations.
+2014-06-09 16:11:34 : Doing pressure calculations.
+2014-06-09 16:11:34 : Doing pressure calculations.
+2014-06-09 16:11:34 : Doing pressure calculations.
+2014-06-09 16:11:34 : Doing pressure calculations.
+2014-06-09 16:11:34 : Doing pressure calculations.
+2014-06-09 16:11:34 : 48/3374 after 2 shove iterations
+2014-06-09 16:11:34 : Eroding 90 (100.072E4/260.267E2 fg)
+2014-06-09 16:11:34 : Detachment done in 1 sec
+2014-06-09 16:11:34 : Agents stepped/dead/born: 3262.0/92/113 done in 0 sec
+2014-06-09 16:11:34 : Simulating agents done in 0 sec
+2014-06-09 16:11:35 : System description finalized
+2014-06-09 16:11:35 : Computation time :1.4 minute(s) 
+ 	 -> Iter 49, Time: 49.0 achieved in 2.2 sec 
+
+2014-06-09 16:11:35 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:35 : Doing pressure calculations.
+2014-06-09 16:11:35 : Doing pressure calculations.
+2014-06-09 16:11:35 : Doing pressure calculations.
+2014-06-09 16:11:35 : Doing pressure calculations.
+2014-06-09 16:11:35 : Doing pressure calculations.
+2014-06-09 16:11:35 : Doing pressure calculations.
+2014-06-09 16:11:35 : Doing pressure calculations.
+2014-06-09 16:11:35 : Doing pressure calculations.
+2014-06-09 16:11:35 : Doing pressure calculations.
+2014-06-09 16:11:36 : Doing pressure calculations.
+2014-06-09 16:11:36 : Doing pressure calculations.
+2014-06-09 16:11:36 : Doing pressure calculations.
+2014-06-09 16:11:36 : Doing pressure calculations.
+2014-06-09 16:11:36 : Doing pressure calculations.
+2014-06-09 16:11:36 : Doing pressure calculations.
+2014-06-09 16:11:36 : Doing pressure calculations.
+2014-06-09 16:11:36 : Doing pressure calculations.
+2014-06-09 16:11:36 : Doing pressure calculations.
+2014-06-09 16:11:36 : Doing pressure calculations.
+2014-06-09 16:11:36 : Doing pressure calculations.
+2014-06-09 16:11:36 : 52/3397 after 2 shove iterations
+2014-06-09 16:11:36 : Eroding 110 (116.294E4/407.446E2 fg)
+2014-06-09 16:11:36 : Detachment done in 1 sec
+2014-06-09 16:11:36 : Agents stepped/dead/born: 3284.0/113/113 done in 0 sec
+2014-06-09 16:11:36 : Simulating agents done in 0 sec
+2014-06-09 16:11:37 : System description finalized
+2014-06-09 16:11:37 : Computation time :1.4 minute(s) 
+ 	 -> Iter 50, Time: 50.0 achieved in 2.1 sec 
+
+2014-06-09 16:11:37 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:37 : Doing pressure calculations.
+2014-06-09 16:11:37 : Doing pressure calculations.
+2014-06-09 16:11:37 : Doing pressure calculations.
+2014-06-09 16:11:37 : Doing pressure calculations.
+2014-06-09 16:11:38 : Doing pressure calculations.
+2014-06-09 16:11:38 : Doing pressure calculations.
+2014-06-09 16:11:38 : Doing pressure calculations.
+2014-06-09 16:11:38 : Doing pressure calculations.
+2014-06-09 16:11:38 : Doing pressure calculations.
+2014-06-09 16:11:38 : Doing pressure calculations.
+2014-06-09 16:11:38 : Doing pressure calculations.
+2014-06-09 16:11:38 : Doing pressure calculations.
+2014-06-09 16:11:38 : Doing pressure calculations.
+2014-06-09 16:11:38 : Doing pressure calculations.
+2014-06-09 16:11:38 : Doing pressure calculations.
+2014-06-09 16:11:38 : Doing pressure calculations.
+2014-06-09 16:11:38 : Doing pressure calculations.
+2014-06-09 16:11:38 : Doing pressure calculations.
+2014-06-09 16:11:38 : Doing pressure calculations.
+2014-06-09 16:11:38 : Doing pressure calculations.
+2014-06-09 16:11:39 : 43/3381 after 2 shove iterations
+2014-06-09 16:11:39 : Eroding 95 (101.103E4/290.238E2 fg)
+2014-06-09 16:11:39 : Detachment done in 1 sec
+2014-06-09 16:11:39 : Agents stepped/dead/born: 3287.0/104/95 done in 0 sec
+2014-06-09 16:11:39 : Simulating agents done in 0 sec
+2014-06-09 16:11:39 : System description finalized
+2014-06-09 16:11:39 : Computation time :1.5 minute(s) 
+ 	 -> Iter 51, Time: 51.0 achieved in 2.2 sec 
+
+2014-06-09 16:11:39 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:39 : Doing pressure calculations.
+2014-06-09 16:11:39 : Doing pressure calculations.
+2014-06-09 16:11:39 : Doing pressure calculations.
+2014-06-09 16:11:39 : Doing pressure calculations.
+2014-06-09 16:11:39 : Doing pressure calculations.
+2014-06-09 16:11:40 : Doing pressure calculations.
+2014-06-09 16:11:40 : Doing pressure calculations.
+2014-06-09 16:11:40 : Doing pressure calculations.
+2014-06-09 16:11:40 : Doing pressure calculations.
+2014-06-09 16:11:40 : Doing pressure calculations.
+2014-06-09 16:11:40 : Doing pressure calculations.
+2014-06-09 16:11:40 : Doing pressure calculations.
+2014-06-09 16:11:40 : Doing pressure calculations.
+2014-06-09 16:11:40 : Doing pressure calculations.
+2014-06-09 16:11:40 : Doing pressure calculations.
+2014-06-09 16:11:40 : Doing pressure calculations.
+2014-06-09 16:11:40 : Doing pressure calculations.
+2014-06-09 16:11:40 : Doing pressure calculations.
+2014-06-09 16:11:40 : Doing pressure calculations.
+2014-06-09 16:11:41 : Doing pressure calculations.
+2014-06-09 16:11:41 : 51/3388 after 2 shove iterations
+2014-06-09 16:11:41 : Eroding 107 (112.064E4/440.79E2 fg)
+2014-06-09 16:11:41 : Detachment done in 1 sec
+2014-06-09 16:11:41 : Agents stepped/dead/born: 3284.0/113/104 done in 0 sec
+2014-06-09 16:11:41 : Simulating agents done in 0 sec
+2014-06-09 16:11:41 : System description finalized
+2014-06-09 16:11:41 : Computation time :1.5 minute(s) 
+ 	 -> Iter 52, Time: 52.0 achieved in 2.2 sec 
+
+2014-06-09 16:11:42 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:42 : Doing pressure calculations.
+2014-06-09 16:11:42 : Doing pressure calculations.
+2014-06-09 16:11:42 : Doing pressure calculations.
+2014-06-09 16:11:42 : Doing pressure calculations.
+2014-06-09 16:11:42 : Doing pressure calculations.
+2014-06-09 16:11:42 : Doing pressure calculations.
+2014-06-09 16:11:42 : Doing pressure calculations.
+2014-06-09 16:11:42 : Doing pressure calculations.
+2014-06-09 16:11:42 : Doing pressure calculations.
+2014-06-09 16:11:42 : Doing pressure calculations.
+2014-06-09 16:11:42 : Doing pressure calculations.
+2014-06-09 16:11:42 : Doing pressure calculations.
+2014-06-09 16:11:42 : Doing pressure calculations.
+2014-06-09 16:11:42 : Doing pressure calculations.
+2014-06-09 16:11:42 : Doing pressure calculations.
+2014-06-09 16:11:43 : Doing pressure calculations.
+2014-06-09 16:11:43 : Doing pressure calculations.
+2014-06-09 16:11:43 : Doing pressure calculations.
+2014-06-09 16:11:43 : Doing pressure calculations.
+2014-06-09 16:11:43 : Doing pressure calculations.
+2014-06-09 16:11:43 : 33/3399 after 2 shove iterations
+2014-06-09 16:11:43 : Eroding 98 (106.842E4/217.371E2 fg)
+2014-06-09 16:11:43 : Detachment done in 1 sec
+2014-06-09 16:11:43 : Agents stepped/dead/born: 3281.0/100/118 done in 0 sec
+2014-06-09 16:11:43 : Simulating agents done in 0 sec
+2014-06-09 16:11:44 : System description finalized
+2014-06-09 16:11:44 : Computation time :1.5 minute(s) 
+ 	 -> Iter 53, Time: 53.0 achieved in 2.2 sec 
+
+2014-06-09 16:11:44 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:44 : Doing pressure calculations.
+2014-06-09 16:11:44 : Doing pressure calculations.
+2014-06-09 16:11:44 : Doing pressure calculations.
+2014-06-09 16:11:44 : Doing pressure calculations.
+2014-06-09 16:11:44 : Doing pressure calculations.
+2014-06-09 16:11:44 : Doing pressure calculations.
+2014-06-09 16:11:44 : Doing pressure calculations.
+2014-06-09 16:11:44 : Doing pressure calculations.
+2014-06-09 16:11:44 : Doing pressure calculations.
+2014-06-09 16:11:44 : Doing pressure calculations.
+2014-06-09 16:11:44 : Doing pressure calculations.
+2014-06-09 16:11:44 : Doing pressure calculations.
+2014-06-09 16:11:44 : Doing pressure calculations.
+2014-06-09 16:11:44 : Doing pressure calculations.
+2014-06-09 16:11:44 : Doing pressure calculations.
+2014-06-09 16:11:45 : Doing pressure calculations.
+2014-06-09 16:11:45 : Doing pressure calculations.
+2014-06-09 16:11:45 : Doing pressure calculations.
+2014-06-09 16:11:45 : Doing pressure calculations.
+2014-06-09 16:11:45 : Doing pressure calculations.
+2014-06-09 16:11:45 : 59/3404 after 2 shove iterations
+2014-06-09 16:11:45 : Eroding 97 (104.618E4/369.206E2 fg)
+2014-06-09 16:11:45 : Detachment done in 1 sec
+2014-06-09 16:11:45 : Agents stepped/dead/born: 3301.0/102/103 done in 0 sec
+2014-06-09 16:11:45 : Simulating agents done in 0 sec
+2014-06-09 16:11:46 : System description finalized
+2014-06-09 16:11:46 : Computation time :1.6 minute(s) 
+ 	 -> Iter 54, Time: 54.0 achieved in 2.0 sec 
+
+2014-06-09 16:11:46 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:46 : Doing pressure calculations.
+2014-06-09 16:11:46 : Doing pressure calculations.
+2014-06-09 16:11:46 : Doing pressure calculations.
+2014-06-09 16:11:46 : Doing pressure calculations.
+2014-06-09 16:11:46 : Doing pressure calculations.
+2014-06-09 16:11:46 : Doing pressure calculations.
+2014-06-09 16:11:46 : Doing pressure calculations.
+2014-06-09 16:11:46 : Doing pressure calculations.
+2014-06-09 16:11:46 : Doing pressure calculations.
+2014-06-09 16:11:46 : Doing pressure calculations.
+2014-06-09 16:11:46 : Doing pressure calculations.
+2014-06-09 16:11:46 : Doing pressure calculations.
+2014-06-09 16:11:47 : Doing pressure calculations.
+2014-06-09 16:11:47 : Doing pressure calculations.
+2014-06-09 16:11:47 : Doing pressure calculations.
+2014-06-09 16:11:47 : Doing pressure calculations.
+2014-06-09 16:11:47 : Doing pressure calculations.
+2014-06-09 16:11:47 : Doing pressure calculations.
+2014-06-09 16:11:47 : Doing pressure calculations.
+2014-06-09 16:11:47 : Doing pressure calculations.
+2014-06-09 16:11:47 : 42/3403 after 2 shove iterations
+2014-06-09 16:11:47 : Eroding 93 (113.496E4/331.069E2 fg)
+2014-06-09 16:11:47 : Detachment done in 1 sec
+2014-06-09 16:11:47 : Agents stepped/dead/born: 3307.0/101/96 done in 0 sec
+2014-06-09 16:11:47 : Simulating agents done in 0 sec
+2014-06-09 16:11:48 : System description finalized
+2014-06-09 16:11:48 : Computation time :1.6 minute(s) 
+ 	 -> Iter 55, Time: 55.0 achieved in 2.2 sec 
+
+2014-06-09 16:11:48 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:48 : Doing pressure calculations.
+2014-06-09 16:11:48 : Doing pressure calculations.
+2014-06-09 16:11:48 : Doing pressure calculations.
+2014-06-09 16:11:48 : Doing pressure calculations.
+2014-06-09 16:11:48 : Doing pressure calculations.
+2014-06-09 16:11:48 : Doing pressure calculations.
+2014-06-09 16:11:48 : Doing pressure calculations.
+2014-06-09 16:11:48 : Doing pressure calculations.
+2014-06-09 16:11:49 : Doing pressure calculations.
+2014-06-09 16:11:49 : Doing pressure calculations.
+2014-06-09 16:11:49 : Doing pressure calculations.
+2014-06-09 16:11:49 : Doing pressure calculations.
+2014-06-09 16:11:49 : Doing pressure calculations.
+2014-06-09 16:11:49 : Doing pressure calculations.
+2014-06-09 16:11:49 : Doing pressure calculations.
+2014-06-09 16:11:49 : Doing pressure calculations.
+2014-06-09 16:11:49 : Doing pressure calculations.
+2014-06-09 16:11:49 : Doing pressure calculations.
+2014-06-09 16:11:49 : Doing pressure calculations.
+2014-06-09 16:11:49 : Doing pressure calculations.
+2014-06-09 16:11:50 : 83/3409 after 64 shove iterations
+2014-06-09 16:11:50 : Eroding 105 (117.564E4/352.685E2 fg)
+2014-06-09 16:11:50 : Detachment done in 2 sec
+2014-06-09 16:11:50 : Agents stepped/dead/born: 3307.0/108/102 done in 0 sec
+2014-06-09 16:11:50 : Simulating agents done in 0 sec
+2014-06-09 16:11:51 : System description finalized
+2014-06-09 16:11:51 : Computation time :1.7 minute(s) 
+ 	 -> Iter 56, Time: 56.0 achieved in 3.0 sec 
+
+2014-06-09 16:11:51 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:51 : Doing pressure calculations.
+2014-06-09 16:11:51 : Doing pressure calculations.
+2014-06-09 16:11:51 : Doing pressure calculations.
+2014-06-09 16:11:51 : Doing pressure calculations.
+2014-06-09 16:11:51 : Doing pressure calculations.
+2014-06-09 16:11:51 : Doing pressure calculations.
+2014-06-09 16:11:51 : Doing pressure calculations.
+2014-06-09 16:11:51 : Doing pressure calculations.
+2014-06-09 16:11:51 : Doing pressure calculations.
+2014-06-09 16:11:51 : Doing pressure calculations.
+2014-06-09 16:11:51 : Doing pressure calculations.
+2014-06-09 16:11:51 : Doing pressure calculations.
+2014-06-09 16:11:51 : Doing pressure calculations.
+2014-06-09 16:11:51 : Doing pressure calculations.
+2014-06-09 16:11:52 : Doing pressure calculations.
+2014-06-09 16:11:52 : Doing pressure calculations.
+2014-06-09 16:11:52 : Doing pressure calculations.
+2014-06-09 16:11:52 : Doing pressure calculations.
+2014-06-09 16:11:52 : Doing pressure calculations.
+2014-06-09 16:11:52 : Doing pressure calculations.
+2014-06-09 16:11:52 : 43/3417 after 2 shove iterations
+2014-06-09 16:11:52 : Eroding 86 (936.777E3/277.733E2 fg)
+2014-06-09 16:11:52 : Detachment done in 0 sec
+2014-06-09 16:11:52 : Agents stepped/dead/born: 3304.0/88/113 done in 0 sec
+2014-06-09 16:11:52 : Simulating agents done in 0 sec
+2014-06-09 16:11:53 : System description finalized
+2014-06-09 16:11:53 : Computation time :1.7 minute(s) 
+ 	 -> Iter 57, Time: 57.0 achieved in 1.8 sec 
+
+2014-06-09 16:11:53 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:53 : Doing pressure calculations.
+2014-06-09 16:11:53 : Doing pressure calculations.
+2014-06-09 16:11:53 : Doing pressure calculations.
+2014-06-09 16:11:53 : Doing pressure calculations.
+2014-06-09 16:11:53 : Doing pressure calculations.
+2014-06-09 16:11:53 : Doing pressure calculations.
+2014-06-09 16:11:53 : Doing pressure calculations.
+2014-06-09 16:11:53 : Doing pressure calculations.
+2014-06-09 16:11:53 : Doing pressure calculations.
+2014-06-09 16:11:53 : Doing pressure calculations.
+2014-06-09 16:11:53 : Doing pressure calculations.
+2014-06-09 16:11:53 : Doing pressure calculations.
+2014-06-09 16:11:53 : Doing pressure calculations.
+2014-06-09 16:11:53 : Doing pressure calculations.
+2014-06-09 16:11:54 : Doing pressure calculations.
+2014-06-09 16:11:54 : Doing pressure calculations.
+2014-06-09 16:11:54 : Doing pressure calculations.
+2014-06-09 16:11:54 : Doing pressure calculations.
+2014-06-09 16:11:54 : Doing pressure calculations.
+2014-06-09 16:11:54 : Doing pressure calculations.
+2014-06-09 16:11:54 : 62/3437 after 2 shove iterations
+2014-06-09 16:11:54 : Eroding 98 (107.209E4/309.803E2 fg)
+2014-06-09 16:11:54 : Detachment done in 1 sec
+2014-06-09 16:11:54 : Agents stepped/dead/born: 3331.0/102/106 done in 0 sec
+2014-06-09 16:11:54 : Simulating agents done in 0 sec
+2014-06-09 16:11:55 : System description finalized
+2014-06-09 16:11:55 : Computation time :1.7 minute(s) 
+ 	 -> Iter 58, Time: 58.0 achieved in 2.4 sec 
+
+2014-06-09 16:11:55 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:55 : Doing pressure calculations.
+2014-06-09 16:11:55 : Doing pressure calculations.
+2014-06-09 16:11:55 : Doing pressure calculations.
+2014-06-09 16:11:55 : Doing pressure calculations.
+2014-06-09 16:11:55 : Doing pressure calculations.
+2014-06-09 16:11:56 : Doing pressure calculations.
+2014-06-09 16:11:56 : Doing pressure calculations.
+2014-06-09 16:11:56 : Doing pressure calculations.
+2014-06-09 16:11:56 : Doing pressure calculations.
+2014-06-09 16:11:56 : Doing pressure calculations.
+2014-06-09 16:11:56 : Doing pressure calculations.
+2014-06-09 16:11:56 : Doing pressure calculations.
+2014-06-09 16:11:56 : Doing pressure calculations.
+2014-06-09 16:11:56 : Doing pressure calculations.
+2014-06-09 16:11:56 : Doing pressure calculations.
+2014-06-09 16:11:56 : Doing pressure calculations.
+2014-06-09 16:11:56 : Doing pressure calculations.
+2014-06-09 16:11:56 : Doing pressure calculations.
+2014-06-09 16:11:56 : Doing pressure calculations.
+2014-06-09 16:11:56 : Doing pressure calculations.
+2014-06-09 16:11:56 : 58/3458 after 2 shove iterations
+2014-06-09 16:11:56 : Eroding 104 (106.719E4/272.932E2 fg)
+2014-06-09 16:11:56 : Detachment done in 1 sec
+2014-06-09 16:11:56 : Agents stepped/dead/born: 3339.0/105/119 done in 0 sec
+2014-06-09 16:11:56 : Simulating agents done in 0 sec
+2014-06-09 16:11:57 : System description finalized
+2014-06-09 16:11:57 : Computation time :1.8 minute(s) 
+ 	 -> Iter 59, Time: 59.0 achieved in 2.4 sec 
+
+2014-06-09 16:11:58 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:11:58 : Doing pressure calculations.
+2014-06-09 16:11:58 : Doing pressure calculations.
+2014-06-09 16:11:58 : Doing pressure calculations.
+2014-06-09 16:11:58 : Doing pressure calculations.
+2014-06-09 16:11:58 : Doing pressure calculations.
+2014-06-09 16:11:58 : Doing pressure calculations.
+2014-06-09 16:11:58 : Doing pressure calculations.
+2014-06-09 16:11:58 : Doing pressure calculations.
+2014-06-09 16:11:58 : Doing pressure calculations.
+2014-06-09 16:11:58 : Doing pressure calculations.
+2014-06-09 16:11:58 : Doing pressure calculations.
+2014-06-09 16:11:58 : Doing pressure calculations.
+2014-06-09 16:11:58 : Doing pressure calculations.
+2014-06-09 16:11:58 : Doing pressure calculations.
+2014-06-09 16:11:58 : Doing pressure calculations.
+2014-06-09 16:11:59 : Doing pressure calculations.
+2014-06-09 16:11:59 : Doing pressure calculations.
+2014-06-09 16:11:59 : Doing pressure calculations.
+2014-06-09 16:11:59 : Doing pressure calculations.
+2014-06-09 16:11:59 : Doing pressure calculations.
+2014-06-09 16:11:59 : 42/3454 after 2 shove iterations
+2014-06-09 16:11:59 : Eroding 92 (104.333E4/336.446E2 fg)
+2014-06-09 16:11:59 : Detachment done in 1 sec
+2014-06-09 16:11:59 : Agents stepped/dead/born: 3354.0/97/100 done in 0 sec
+2014-06-09 16:11:59 : Simulating agents done in 0 sec
+2014-06-09 16:12:00 : System description finalized
+2014-06-09 16:12:00 : Computation time :1.8 minute(s) 
+ 	 -> Iter 60, Time: 60.0 achieved in 2.3 sec 
+
+2014-06-09 16:12:00 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:12:00 : Doing pressure calculations.
+2014-06-09 16:12:00 : Doing pressure calculations.
+2014-06-09 16:12:00 : Doing pressure calculations.
+2014-06-09 16:12:00 : Doing pressure calculations.
+2014-06-09 16:12:00 : Doing pressure calculations.
+2014-06-09 16:12:00 : Doing pressure calculations.
+2014-06-09 16:12:00 : Doing pressure calculations.
+2014-06-09 16:12:00 : Doing pressure calculations.
+2014-06-09 16:12:00 : Doing pressure calculations.
+2014-06-09 16:12:00 : Doing pressure calculations.
+2014-06-09 16:12:00 : Doing pressure calculations.
+2014-06-09 16:12:00 : Doing pressure calculations.
+2014-06-09 16:12:00 : Doing pressure calculations.
+2014-06-09 16:12:01 : Doing pressure calculations.
+2014-06-09 16:12:01 : Doing pressure calculations.
+2014-06-09 16:12:01 : Doing pressure calculations.
+2014-06-09 16:12:01 : Doing pressure calculations.
+2014-06-09 16:12:01 : Doing pressure calculations.
+2014-06-09 16:12:01 : Doing pressure calculations.
+2014-06-09 16:12:01 : Doing pressure calculations.
+2014-06-09 16:12:01 : 47/3459 after 2 shove iterations
+2014-06-09 16:12:01 : Eroding 102 (112.899E4/305.425E2 fg)
+2014-06-09 16:12:01 : Detachment done in 1 sec
+2014-06-09 16:12:01 : Agents stepped/dead/born: 3362.0/108/97 done in 0 sec
+2014-06-09 16:12:01 : Simulating agents done in 0 sec
+2014-06-09 16:12:02 : System description finalized
+2014-06-09 16:12:02 : Computation time :1.9 minute(s) 
+ 	 -> Iter 61, Time: 61.0 achieved in 2.3 sec 
+
+2014-06-09 16:12:02 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:12:02 : Doing pressure calculations.
+2014-06-09 16:12:02 : Doing pressure calculations.
+2014-06-09 16:12:02 : Doing pressure calculations.
+2014-06-09 16:12:02 : Doing pressure calculations.
+2014-06-09 16:12:02 : Doing pressure calculations.
+2014-06-09 16:12:02 : Doing pressure calculations.
+2014-06-09 16:12:03 : Doing pressure calculations.
+2014-06-09 16:12:03 : Doing pressure calculations.
+2014-06-09 16:12:03 : Doing pressure calculations.
+2014-06-09 16:12:03 : Doing pressure calculations.
+2014-06-09 16:12:03 : Doing pressure calculations.
+2014-06-09 16:12:03 : Doing pressure calculations.
+2014-06-09 16:12:03 : Doing pressure calculations.
+2014-06-09 16:12:03 : Doing pressure calculations.
+2014-06-09 16:12:03 : Doing pressure calculations.
+2014-06-09 16:12:03 : Doing pressure calculations.
+2014-06-09 16:12:03 : Doing pressure calculations.
+2014-06-09 16:12:03 : Doing pressure calculations.
+2014-06-09 16:12:03 : Doing pressure calculations.
+2014-06-09 16:12:04 : Doing pressure calculations.
+2014-06-09 16:12:04 : 55/3468 after 2 shove iterations
+2014-06-09 16:12:04 : Eroding 98 (100.586E4/319.07E2 fg)
+2014-06-09 16:12:04 : Detachment done in 1 sec
+2014-06-09 16:12:04 : Agents stepped/dead/born: 3357.0/100/111 done in 0 sec
+2014-06-09 16:12:04 : Simulating agents done in 0 sec
+2014-06-09 16:12:04 : System description finalized
+2014-06-09 16:12:04 : Computation time :1.9 minute(s) 
+ 	 -> Iter 62, Time: 62.0 achieved in 2.5 sec 
+
+2014-06-09 16:12:05 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:12:05 : Doing pressure calculations.
+2014-06-09 16:12:05 : Doing pressure calculations.
+2014-06-09 16:12:05 : Doing pressure calculations.
+2014-06-09 16:12:05 : Doing pressure calculations.
+2014-06-09 16:12:05 : Doing pressure calculations.
+2014-06-09 16:12:05 : Doing pressure calculations.
+2014-06-09 16:12:05 : Doing pressure calculations.
+2014-06-09 16:12:05 : Doing pressure calculations.
+2014-06-09 16:12:05 : Doing pressure calculations.
+2014-06-09 16:12:05 : Doing pressure calculations.
+2014-06-09 16:12:05 : Doing pressure calculations.
+2014-06-09 16:12:05 : Doing pressure calculations.
+2014-06-09 16:12:05 : Doing pressure calculations.
+2014-06-09 16:12:05 : Doing pressure calculations.
+2014-06-09 16:12:06 : Doing pressure calculations.
+2014-06-09 16:12:06 : Doing pressure calculations.
+2014-06-09 16:12:06 : Doing pressure calculations.
+2014-06-09 16:12:06 : Doing pressure calculations.
+2014-06-09 16:12:06 : Doing pressure calculations.
+2014-06-09 16:12:06 : Doing pressure calculations.
+2014-06-09 16:12:06 : 70/3469 after 2 shove iterations
+2014-06-09 16:12:06 : Eroding 95 (102.607E4/333.351E2 fg)
+2014-06-09 16:12:06 : Detachment done in 1 sec
+2014-06-09 16:12:06 : Agents stepped/dead/born: 3370.0/105/99 done in 0 sec
+2014-06-09 16:12:06 : Simulating agents done in 0 sec
+2014-06-09 16:12:07 : System description finalized
+2014-06-09 16:12:07 : Computation time :1.9 minute(s) 
+ 	 -> Iter 63, Time: 63.0 achieved in 2.6 sec 
+
+2014-06-09 16:12:07 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:12:07 : Doing pressure calculations.
+2014-06-09 16:12:07 : Doing pressure calculations.
+2014-06-09 16:12:07 : Doing pressure calculations.
+2014-06-09 16:12:07 : Doing pressure calculations.
+2014-06-09 16:12:07 : Doing pressure calculations.
+2014-06-09 16:12:07 : Doing pressure calculations.
+2014-06-09 16:12:08 : Doing pressure calculations.
+2014-06-09 16:12:08 : Doing pressure calculations.
+2014-06-09 16:12:08 : Doing pressure calculations.
+2014-06-09 16:12:08 : Doing pressure calculations.
+2014-06-09 16:12:08 : Doing pressure calculations.
+2014-06-09 16:12:08 : Doing pressure calculations.
+2014-06-09 16:12:08 : Doing pressure calculations.
+2014-06-09 16:12:08 : Doing pressure calculations.
+2014-06-09 16:12:08 : Doing pressure calculations.
+2014-06-09 16:12:08 : Doing pressure calculations.
+2014-06-09 16:12:08 : Doing pressure calculations.
+2014-06-09 16:12:08 : Doing pressure calculations.
+2014-06-09 16:12:08 : Doing pressure calculations.
+2014-06-09 16:12:08 : Doing pressure calculations.
+2014-06-09 16:12:09 : 83/3481 after 47 shove iterations
+2014-06-09 16:12:09 : Eroding 109 (121.466E4/303.866E2 fg)
+2014-06-09 16:12:09 : Detachment done in 2 sec
+2014-06-09 16:12:09 : Agents stepped/dead/born: 3371.0/112/110 done in 0 sec
+2014-06-09 16:12:09 : Simulating agents done in 0 sec
+2014-06-09 16:12:10 : System description finalized
+2014-06-09 16:12:10 : Computation time :2.0 minute(s) 
+ 	 -> Iter 64, Time: 64.0 achieved in 3.5 sec 
+
+2014-06-09 16:12:11 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:12:11 : Doing pressure calculations.
+2014-06-09 16:12:11 : Doing pressure calculations.
+2014-06-09 16:12:11 : Doing pressure calculations.
+2014-06-09 16:12:11 : Doing pressure calculations.
+2014-06-09 16:12:11 : Doing pressure calculations.
+2014-06-09 16:12:11 : Doing pressure calculations.
+2014-06-09 16:12:11 : Doing pressure calculations.
+2014-06-09 16:12:11 : Doing pressure calculations.
+2014-06-09 16:12:11 : Doing pressure calculations.
+2014-06-09 16:12:11 : Doing pressure calculations.
+2014-06-09 16:12:11 : Doing pressure calculations.
+2014-06-09 16:12:11 : Doing pressure calculations.
+2014-06-09 16:12:11 : Doing pressure calculations.
+2014-06-09 16:12:11 : Doing pressure calculations.
+2014-06-09 16:12:11 : Doing pressure calculations.
+2014-06-09 16:12:11 : Doing pressure calculations.
+2014-06-09 16:12:11 : Doing pressure calculations.
+2014-06-09 16:12:12 : Doing pressure calculations.
+2014-06-09 16:12:12 : Doing pressure calculations.
+2014-06-09 16:12:12 : Doing pressure calculations.
+2014-06-09 16:12:12 : 77/3470 after 2 shove iterations
+2014-06-09 16:12:12 : Eroding 80 (908.212E3/301.828E2 fg)
+2014-06-09 16:12:12 : Detachment done in 1 sec
+2014-06-09 16:12:12 : Agents stepped/dead/born: 3372.0/85/98 done in 0 sec
+2014-06-09 16:12:12 : Simulating agents done in 0 sec
+2014-06-09 16:12:12 : System description finalized
+2014-06-09 16:12:12 : Computation time :2.0 minute(s) 
+ 	 -> Iter 65, Time: 65.0 achieved in 2.0 sec 
+
+2014-06-09 16:12:13 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:12:13 : Doing pressure calculations.
+2014-06-09 16:12:13 : Doing pressure calculations.
+2014-06-09 16:12:13 : Doing pressure calculations.
+2014-06-09 16:12:13 : Doing pressure calculations.
+2014-06-09 16:12:13 : Doing pressure calculations.
+2014-06-09 16:12:13 : Doing pressure calculations.
+2014-06-09 16:12:13 : Doing pressure calculations.
+2014-06-09 16:12:13 : Doing pressure calculations.
+2014-06-09 16:12:13 : Doing pressure calculations.
+2014-06-09 16:12:13 : Doing pressure calculations.
+2014-06-09 16:12:13 : Doing pressure calculations.
+2014-06-09 16:12:13 : Doing pressure calculations.
+2014-06-09 16:12:13 : Doing pressure calculations.
+2014-06-09 16:12:13 : Doing pressure calculations.
+2014-06-09 16:12:13 : Doing pressure calculations.
+2014-06-09 16:12:13 : Doing pressure calculations.
+2014-06-09 16:12:14 : Doing pressure calculations.
+2014-06-09 16:12:14 : Doing pressure calculations.
+2014-06-09 16:12:14 : Doing pressure calculations.
+2014-06-09 16:12:14 : Doing pressure calculations.
+2014-06-09 16:12:14 : 56/3500 after 2 shove iterations
+2014-06-09 16:12:14 : Eroding 103 (105.511E4/358.682E2 fg)
+2014-06-09 16:12:14 : Detachment done in 1 sec
+2014-06-09 16:12:14 : Agents stepped/dead/born: 3390.0/104/111 done in 0 sec
+2014-06-09 16:12:14 : Simulating agents done in 0 sec
+2014-06-09 16:12:15 : System description finalized
+2014-06-09 16:12:15 : Computation time :2.1 minute(s) 
+ 	 -> Iter 66, Time: 66.0 achieved in 2.5 sec 
+
+2014-06-09 16:12:15 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:12:15 : Doing pressure calculations.
+2014-06-09 16:12:15 : Doing pressure calculations.
+2014-06-09 16:12:15 : Doing pressure calculations.
+2014-06-09 16:12:15 : Doing pressure calculations.
+2014-06-09 16:12:15 : Doing pressure calculations.
+2014-06-09 16:12:15 : Doing pressure calculations.
+2014-06-09 16:12:15 : Doing pressure calculations.
+2014-06-09 16:12:15 : Doing pressure calculations.
+2014-06-09 16:12:16 : Doing pressure calculations.
+2014-06-09 16:12:16 : Doing pressure calculations.
+2014-06-09 16:12:16 : Doing pressure calculations.
+2014-06-09 16:12:16 : Doing pressure calculations.
+2014-06-09 16:12:16 : Doing pressure calculations.
+2014-06-09 16:12:16 : Doing pressure calculations.
+2014-06-09 16:12:16 : Doing pressure calculations.
+2014-06-09 16:12:16 : Doing pressure calculations.
+2014-06-09 16:12:16 : Doing pressure calculations.
+2014-06-09 16:12:16 : Doing pressure calculations.
+2014-06-09 16:12:16 : Doing pressure calculations.
+2014-06-09 16:12:16 : Doing pressure calculations.
+2014-06-09 16:12:16 : 73/3493 after 2 shove iterations
+2014-06-09 16:12:16 : Eroding 89 (985.931E3/425.046E2 fg)
+2014-06-09 16:12:16 : Detachment done in 1 sec
+2014-06-09 16:12:16 : Agents stepped/dead/born: 3397.0/93/96 done in 0 sec
+2014-06-09 16:12:16 : Simulating agents done in 0 sec
+2014-06-09 16:12:17 : System description finalized
+2014-06-09 16:12:17 : Computation time :2.1 minute(s) 
+ 	 -> Iter 67, Time: 67.0 achieved in 2.3 sec 
+
+2014-06-09 16:12:17 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:12:17 : Doing pressure calculations.
+2014-06-09 16:12:18 : Doing pressure calculations.
+2014-06-09 16:12:18 : Doing pressure calculations.
+2014-06-09 16:12:18 : Doing pressure calculations.
+2014-06-09 16:12:18 : Doing pressure calculations.
+2014-06-09 16:12:18 : Doing pressure calculations.
+2014-06-09 16:12:18 : Doing pressure calculations.
+2014-06-09 16:12:18 : Doing pressure calculations.
+2014-06-09 16:12:18 : Doing pressure calculations.
+2014-06-09 16:12:18 : Doing pressure calculations.
+2014-06-09 16:12:18 : Doing pressure calculations.
+2014-06-09 16:12:18 : Doing pressure calculations.
+2014-06-09 16:12:19 : Doing pressure calculations.
+2014-06-09 16:12:19 : Doing pressure calculations.
+2014-06-09 16:12:19 : Doing pressure calculations.
+2014-06-09 16:12:19 : Doing pressure calculations.
+2014-06-09 16:12:19 : Doing pressure calculations.
+2014-06-09 16:12:19 : Doing pressure calculations.
+2014-06-09 16:12:19 : Doing pressure calculations.
+2014-06-09 16:12:19 : Doing pressure calculations.
+2014-06-09 16:12:19 : 64/3526 after 2 shove iterations
+2014-06-09 16:12:19 : Eroding 113 (115.754E4/311.372E2 fg)
+2014-06-09 16:12:19 : Detachment done in 1 sec
+2014-06-09 16:12:19 : Agents stepped/dead/born: 3404.0/120/122 done in 0 sec
+2014-06-09 16:12:19 : Simulating agents done in 0 sec
+2014-06-09 16:12:20 : System description finalized
+2014-06-09 16:12:20 : Computation time :2.2 minute(s) 
+ 	 -> Iter 68, Time: 68.0 achieved in 2.8 sec 
+
+2014-06-09 16:12:20 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:12:20 : Doing pressure calculations.
+2014-06-09 16:12:20 : Doing pressure calculations.
+2014-06-09 16:12:20 : Doing pressure calculations.
+2014-06-09 16:12:20 : Doing pressure calculations.
+2014-06-09 16:12:20 : Doing pressure calculations.
+2014-06-09 16:12:20 : Doing pressure calculations.
+2014-06-09 16:12:20 : Doing pressure calculations.
+2014-06-09 16:12:21 : Doing pressure calculations.
+2014-06-09 16:12:21 : Doing pressure calculations.
+2014-06-09 16:12:21 : Doing pressure calculations.
+2014-06-09 16:12:21 : Doing pressure calculations.
+2014-06-09 16:12:21 : Doing pressure calculations.
+2014-06-09 16:12:21 : Doing pressure calculations.
+2014-06-09 16:12:21 : Doing pressure calculations.
+2014-06-09 16:12:21 : Doing pressure calculations.
+2014-06-09 16:12:21 : Doing pressure calculations.
+2014-06-09 16:12:21 : Doing pressure calculations.
+2014-06-09 16:12:21 : Doing pressure calculations.
+2014-06-09 16:12:21 : Doing pressure calculations.
+2014-06-09 16:12:22 : Doing pressure calculations.
+2014-06-09 16:12:22 : 63/3507 after 2 shove iterations
+2014-06-09 16:12:22 : Eroding 91 (941.39E3/350.426E2 fg)
+2014-06-09 16:12:22 : Detachment done in 1 sec
+2014-06-09 16:12:22 : Agents stepped/dead/born: 3409.0/94/98 done in 0 sec
+2014-06-09 16:12:22 : Simulating agents done in 0 sec
+2014-06-09 16:12:22 : System description finalized
+2014-06-09 16:12:22 : Computation time :2.2 minute(s) 
+ 	 -> Iter 69, Time: 69.0 achieved in 2.4 sec 
+
+2014-06-09 16:12:23 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:12:23 : Doing pressure calculations.
+2014-06-09 16:12:23 : Doing pressure calculations.
+2014-06-09 16:12:23 : Doing pressure calculations.
+2014-06-09 16:12:23 : Doing pressure calculations.
+2014-06-09 16:12:23 : Doing pressure calculations.
+2014-06-09 16:12:23 : Doing pressure calculations.
+2014-06-09 16:12:23 : Doing pressure calculations.
+2014-06-09 16:12:23 : Doing pressure calculations.
+2014-06-09 16:12:23 : Doing pressure calculations.
+2014-06-09 16:12:23 : Doing pressure calculations.
+2014-06-09 16:12:23 : Doing pressure calculations.
+2014-06-09 16:12:23 : Doing pressure calculations.
+2014-06-09 16:12:24 : Doing pressure calculations.
+2014-06-09 16:12:24 : Doing pressure calculations.
+2014-06-09 16:12:24 : Doing pressure calculations.
+2014-06-09 16:12:24 : Doing pressure calculations.
+2014-06-09 16:12:24 : Doing pressure calculations.
+2014-06-09 16:12:24 : Doing pressure calculations.
+2014-06-09 16:12:24 : Doing pressure calculations.
+2014-06-09 16:12:24 : Doing pressure calculations.
+2014-06-09 16:12:24 : 66/3523 after 2 shove iterations
+2014-06-09 16:12:24 : Eroding 99 (107.249E4/251.613E2 fg)
+2014-06-09 16:12:24 : Detachment done in 1 sec
+2014-06-09 16:12:24 : Agents stepped/dead/born: 3416.0/101/108 done in 0 sec
+2014-06-09 16:12:24 : Simulating agents done in 0 sec
+2014-06-09 16:12:25 : System description finalized
+2014-06-09 16:12:25 : Computation time :2.2 minute(s) 
+ 	 -> Iter 70, Time: 70.0 achieved in 2.5 sec 
+
+2014-06-09 16:12:25 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:12:25 : Doing pressure calculations.
+2014-06-09 16:12:25 : Doing pressure calculations.
+2014-06-09 16:12:26 : Doing pressure calculations.
+2014-06-09 16:12:26 : Doing pressure calculations.
+2014-06-09 16:12:26 : Doing pressure calculations.
+2014-06-09 16:12:26 : Doing pressure calculations.
+2014-06-09 16:12:26 : Doing pressure calculations.
+2014-06-09 16:12:26 : Doing pressure calculations.
+2014-06-09 16:12:26 : Doing pressure calculations.
+2014-06-09 16:12:26 : Doing pressure calculations.
+2014-06-09 16:12:26 : Doing pressure calculations.
+2014-06-09 16:12:26 : Doing pressure calculations.
+2014-06-09 16:12:26 : Doing pressure calculations.
+2014-06-09 16:12:26 : Doing pressure calculations.
+2014-06-09 16:12:26 : Doing pressure calculations.
+2014-06-09 16:12:26 : Doing pressure calculations.
+2014-06-09 16:12:27 : Doing pressure calculations.
+2014-06-09 16:12:27 : Doing pressure calculations.
+2014-06-09 16:12:27 : Doing pressure calculations.
+2014-06-09 16:12:27 : Doing pressure calculations.
+2014-06-09 16:12:27 : 63/3531 after 2 shove iterations
+2014-06-09 16:12:27 : Eroding 103 (109.285E4/305.122E2 fg)
+2014-06-09 16:12:27 : Detachment done in 1 sec
+2014-06-09 16:12:27 : Agents stepped/dead/born: 3424.0/105/107 done in 0 sec
+2014-06-09 16:12:27 : Simulating agents done in 0 sec
+2014-06-09 16:12:28 : System description finalized
+2014-06-09 16:12:28 : Computation time :2.3 minute(s) 
+ 	 -> Iter 71, Time: 71.0 achieved in 2.7 sec 
+
+2014-06-09 16:12:28 : Solving Diffusion-reaction done in 0 sec
+2014-06-09 16:12:28 : Doing pressure calculations.
+2014-06-09 16:12:28 : Doing pressure calculations.
+2014-06-09 16:12:28 : Doing pressure calculations.
+2014-06-09 16:12:28 : Doing pressure calculations.
+2014-06-09 16:12:28 : Doing pressure calculations.
+2014-06-09 16:12:28 : Doing pressure calculations.
+2014-06-09 16:12:28 : Doing pressure calculations.
+2014-06-09 16:12:28 : Doing pressure calculations.
+2014-06-09 16:12:28 : Doing pressure calculations.
+2014-06-09 16:12:28 : Doing pressure calculations.
+2014-06-09 16:12:29 : Doing pressure calculations.
+2014-06-09 16:12:29 : Doing pressure calculations.
+2014-06-09 16:12:29 : Doing pressure calculations.
+2014-06-09 16:12:29 : Doing pressure calculations.
+2014-06-09 16:12:29 : Doing pressure calculations.
+2014-06-09 16:12:29 : Doing pressure calculations.
+2014-06-09 16:12:29 : Doing pressure calculations.
+2014-06-09 16:12:29 : Doing pressure calculations.
+2014-06-09 16:12:29 : Doing pressure calculations.
+2014-06-09 16:12:29 : Doing pressure calculations.
+2014-06-09 16:12:30 : 86/3529 after 74 shove iterations
+2014-06-09 16:12:30 : Eroding 113 (120.451E4/427.505E2 fg)
+2014-06-09 16:12:30 : Detachment done in 2 sec
+2014-06-09 16:12:30 : Agents stepped/dead/born: 3428.0/115/101 done in 0 sec
+2014-06-09 16:12:30 : Simulating agents done in 0 sec
+2014-06-09 16:12:31 : System description finalized
+2014-06-09 16:12:31 : Computation time :2.3 minute(s) 
+ 	 -> Iter 72, Time: 72.0 achieved in 3.6 sec 
+
+2014-06-09 16:12:31 : Simulation succesfully achieved in 2.34 minutes.
+2014-06-09 16:12:31 : Wrote random number generator

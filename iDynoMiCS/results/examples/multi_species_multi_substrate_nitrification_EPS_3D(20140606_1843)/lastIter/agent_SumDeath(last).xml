@@ -1,0 +1,16 @@
+<idynomics>
+ <simulation iterate="144" time="72.0" unit="hour">
+<grid resolution="8.0" nI="33" nJ="33" nK="33"/>
+<species name="MyAutotrophEPS" header="population,mass,growthRate" >
+0.0,0.0,0.0</species>
+<species name="MyHeterotrophEPS" header="population,mass,growthRate" >
+0.0,0.0,0.0</species>
+<species name="MyAutotrophs" header="population,mass,growthRate" >
+0.0,0.0,0.0</species>
+<species name="MyHeterotroph" header="population,mass,growthRate" >
+0.0,0.0,0.0</species>
+<species name="MySwitchHeterotroph" header="population,mass,growthRate" >
+0.0,0.0,0.0</species>
+
+</simulation>
+</idynomics>

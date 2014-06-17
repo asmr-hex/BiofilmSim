@@ -1,0 +1,811 @@
+2014-06-16 17:50:33 : Read in random number generator
+2014-06-16 17:50:33 : Setting initial 0.01
+2014-06-16 17:50:33 : Setting initial 0.0
+2014-06-16 17:50:33 : 		MyCOD (0)
+2014-06-16 17:50:33 : 		pressure (1)
+2014-06-16 17:50:33 : 	 Reactions: 
+
+2014-06-16 17:50:33 : Reaction 0 is autocatalyic
+2014-06-16 17:50:33 : 		MyGrowthHeterotrophs (0)
+2014-06-16 17:50:33 : 	 done
+2014-06-16 17:50:33 : 		MyHeterotroph (0)
+2014-06-16 17:50:33 : Agent time step is... 0.05
+2014-06-16 17:50:33 :  3675 grid elements, resolution: 8.0 micrometers
+2014-06-16 17:50:33 : Guessing MyHeterotroph initial mass at: 7539.822368615503
+2014-06-16 17:50:34 : System description finalized
+2014-06-16 17:50:34 : Initialization (../results/tests/simple(20140616_1750)/simple.xml):OK
+2014-06-16 17:50:34 : ==============================================================
+2014-06-16 17:50:34 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:34 : 11 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:34 : 6 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:34 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:34 : Doing pressure calculations.
+2014-06-16 17:50:34 : Doing pressure calculations.
+2014-06-16 17:50:34 : Doing pressure calculations.
+2014-06-16 17:50:34 : Doing pressure calculations.
+2014-06-16 17:50:34 : Doing pressure calculations.
+2014-06-16 17:50:34 : Doing pressure calculations.
+2014-06-16 17:50:34 : Doing pressure calculations.
+2014-06-16 17:50:34 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : 0/10 after 2 shove iterations
+2014-06-16 17:50:35 : Eroding 0 (113.256E-1/225.092E-2 fg)
+2014-06-16 17:50:35 : Detachment done in 0 sec
+2014-06-16 17:50:35 : Agents stepped/dead/born: 5.0/0/5 done in 0 sec
+2014-06-16 17:50:35 : Simulating agents done in 0 sec
+2014-06-16 17:50:35 : System description finalized
+2014-06-16 17:50:35 : Computation time :0.0 minute(s) 
+ 	 -> Iter 1, Time: 1.0 achieved in 0.6 sec 
+
+2014-06-16 17:50:35 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:35 : 13 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:35 : 8 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:35 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : 0/33 after 2 shove iterations
+2014-06-16 17:50:35 : Eroding 0 (775.729E-1/106.882E-2 fg)
+2014-06-16 17:50:35 : Detachment done in 0 sec
+2014-06-16 17:50:35 : Agents stepped/dead/born: 15.0/0/18 done in 0 sec
+2014-06-16 17:50:35 : Simulating agents done in 0 sec
+2014-06-16 17:50:35 : System description finalized
+2014-06-16 17:50:35 : Computation time :0.0 minute(s) 
+ 	 -> Iter 2, Time: 2.0 achieved in 0.5 sec 
+
+2014-06-16 17:50:35 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:35 : 15 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:35 : 10 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:35 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:35 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : 0/71 after 2 shove iterations
+2014-06-16 17:50:36 : Eroding 0 (329.175E0/106.384E-2 fg)
+2014-06-16 17:50:36 : Detachment done in 0 sec
+2014-06-16 17:50:36 : Agents stepped/dead/born: 38.0/0/33 done in 0 sec
+2014-06-16 17:50:36 : Simulating agents done in 0 sec
+2014-06-16 17:50:36 : System description finalized
+2014-06-16 17:50:36 : Computation time :0.0 minute(s) 
+ 	 -> Iter 3, Time: 3.0 achieved in 0.5 sec 
+
+2014-06-16 17:50:36 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:36 : 12 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:36 : 7 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:36 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : Doing pressure calculations.
+2014-06-16 17:50:36 : 0/151 after 2 shove iterations
+2014-06-16 17:50:36 : Eroding 0 (999.16E0/431.475E-2 fg)
+2014-06-16 17:50:36 : Detachment done in 0 sec
+2014-06-16 17:50:36 : Agents stepped/dead/born: 76.0/0/75 done in 0 sec
+2014-06-16 17:50:36 : Simulating agents done in 0 sec
+2014-06-16 17:50:36 : System description finalized
+2014-06-16 17:50:36 : Computation time :0.0 minute(s) 
+ 	 -> Iter 4, Time: 4.0 achieved in 0.5 sec 
+
+2014-06-16 17:50:36 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:36 : 20 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:36 : 15 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:37 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : 3/283 after 2 shove iterations
+2014-06-16 17:50:37 : Eroding 0 (303.443E1/276.559E-1 fg)
+2014-06-16 17:50:37 : Detachment done in 0 sec
+2014-06-16 17:50:37 : Agents stepped/dead/born: 156.0/0/127 done in 0 sec
+2014-06-16 17:50:37 : Simulating agents done in 0 sec
+2014-06-16 17:50:37 : System description finalized
+2014-06-16 17:50:37 : Computation time :0.0 minute(s) 
+ 	 -> Iter 5, Time: 5.0 achieved in 0.7 sec 
+
+2014-06-16 17:50:37 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:37 : 20 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:37 : 15 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:37 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:37 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : 2/424 after 2 shove iterations
+2014-06-16 17:50:38 : Eroding 0 (566.606E1/163.972E-1 fg)
+2014-06-16 17:50:38 : Detachment done in 0 sec
+2014-06-16 17:50:38 : Agents stepped/dead/born: 288.0/0/136 done in 0 sec
+2014-06-16 17:50:38 : Simulating agents done in 0 sec
+2014-06-16 17:50:38 : System description finalized
+2014-06-16 17:50:38 : Computation time :0.1 minute(s) 
+ 	 -> Iter 6, Time: 6.0 achieved in 0.6 sec 
+
+2014-06-16 17:50:38 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:38 : 13 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:38 : 8 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:38 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : 11/574 after 3 shove iterations
+2014-06-16 17:50:38 : Eroding 0 (894.295E1/777.92E-1 fg)
+2014-06-16 17:50:38 : Detachment done in 0 sec
+2014-06-16 17:50:38 : Agents stepped/dead/born: 429.0/0/145 done in 0 sec
+2014-06-16 17:50:38 : Simulating agents done in 0 sec
+2014-06-16 17:50:38 : System description finalized
+2014-06-16 17:50:38 : Computation time :0.1 minute(s) 
+ 	 -> Iter 7, Time: 7.0 achieved in 0.7 sec 
+
+2014-06-16 17:50:38 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:38 : 9 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:38 : 4 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:38 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:38 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : 15/725 after 2 shove iterations
+2014-06-16 17:50:39 : Eroding 0 (117.311E2/211.413E0 fg)
+2014-06-16 17:50:39 : Detachment done in 0 sec
+2014-06-16 17:50:39 : Agents stepped/dead/born: 579.0/0/146 done in 0 sec
+2014-06-16 17:50:39 : Simulating agents done in 0 sec
+2014-06-16 17:50:39 : System description finalized
+2014-06-16 17:50:39 : Computation time :0.1 minute(s) 
+ 	 -> Iter 8, Time: 8.0 achieved in 0.7 sec 
+
+2014-06-16 17:50:39 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:39 : 14 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:39 : 9 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:39 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:39 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : 15/873 after 2 shove iterations
+2014-06-16 17:50:40 : Eroding 0 (148.342E2/375.778E0 fg)
+2014-06-16 17:50:40 : Detachment done in 0 sec
+2014-06-16 17:50:40 : Agents stepped/dead/born: 730.0/0/143 done in 0 sec
+2014-06-16 17:50:40 : Simulating agents done in 0 sec
+2014-06-16 17:50:40 : System description finalized
+2014-06-16 17:50:40 : Computation time :0.1 minute(s) 
+ 	 -> Iter 9, Time: 9.0 achieved in 0.8 sec 
+
+2014-06-16 17:50:40 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:40 : 18 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:40 : 13 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:40 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:40 : Doing pressure calculations.
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:41 : 19/1024 after 2 shove iterations
+2014-06-16 17:50:41 : Eroding 0 (214.166E2/620.068E0 fg)
+2014-06-16 17:50:41 : Detachment done in 0 sec
+2014-06-16 17:50:41 : Agents stepped/dead/born: 878.0/0/146 done in 0 sec
+2014-06-16 17:50:41 : Simulating agents done in 0 sec
+2014-06-16 17:50:41 : System description finalized
+2014-06-16 17:50:41 : Computation time :0.1 minute(s) 
+ 	 -> Iter 10, Time: 10.0 achieved in 0.9 sec 
+
+2014-06-16 17:50:41 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:41 : 7 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:41 : 2 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:41 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:41 : Doing pressure calculations.
+2014-06-16 17:50:42 : 16/1168 after 2 shove iterations
+2014-06-16 17:50:42 : Eroding 0 (285.679E2/666.727E0 fg)
+2014-06-16 17:50:42 : Detachment done in 0 sec
+2014-06-16 17:50:42 : Agents stepped/dead/born: 1029.0/0/139 done in 0 sec
+2014-06-16 17:50:42 : Simulating agents done in 0 sec
+2014-06-16 17:50:42 : System description finalized
+2014-06-16 17:50:42 : Computation time :0.1 minute(s) 
+ 	 -> Iter 11, Time: 11.0 achieved in 1.0 sec 
+
+2014-06-16 17:50:42 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:42 : 16 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:42 : 11 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:42 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:42 : Doing pressure calculations.
+2014-06-16 17:50:42 : Doing pressure calculations.
+2014-06-16 17:50:42 : Doing pressure calculations.
+2014-06-16 17:50:42 : Doing pressure calculations.
+2014-06-16 17:50:42 : Doing pressure calculations.
+2014-06-16 17:50:42 : Doing pressure calculations.
+2014-06-16 17:50:42 : Doing pressure calculations.
+2014-06-16 17:50:42 : Doing pressure calculations.
+2014-06-16 17:50:42 : Doing pressure calculations.
+2014-06-16 17:50:42 : Doing pressure calculations.
+2014-06-16 17:50:42 : Doing pressure calculations.
+2014-06-16 17:50:42 : Doing pressure calculations.
+2014-06-16 17:50:42 : Doing pressure calculations.
+2014-06-16 17:50:42 : Doing pressure calculations.
+2014-06-16 17:50:42 : Doing pressure calculations.
+2014-06-16 17:50:42 : Doing pressure calculations.
+2014-06-16 17:50:42 : Doing pressure calculations.
+2014-06-16 17:50:42 : Doing pressure calculations.
+2014-06-16 17:50:43 : Doing pressure calculations.
+2014-06-16 17:50:43 : Doing pressure calculations.
+2014-06-16 17:50:43 : 22/1297 after 2 shove iterations
+2014-06-16 17:50:43 : Eroding 0 (341.534E2/107.411E1 fg)
+2014-06-16 17:50:43 : Detachment done in 0 sec
+2014-06-16 17:50:43 : Agents stepped/dead/born: 1173.0/0/124 done in 0 sec
+2014-06-16 17:50:43 : Simulating agents done in 0 sec
+2014-06-16 17:50:43 : System description finalized
+2014-06-16 17:50:43 : Computation time :0.1 minute(s) 
+ 	 -> Iter 12, Time: 12.0 achieved in 1.1 sec 
+
+2014-06-16 17:50:43 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:43 : 10 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:43 : 5 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:43 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:43 : Doing pressure calculations.
+2014-06-16 17:50:43 : Doing pressure calculations.
+2014-06-16 17:50:43 : Doing pressure calculations.
+2014-06-16 17:50:43 : Doing pressure calculations.
+2014-06-16 17:50:43 : Doing pressure calculations.
+2014-06-16 17:50:43 : Doing pressure calculations.
+2014-06-16 17:50:43 : Doing pressure calculations.
+2014-06-16 17:50:43 : Doing pressure calculations.
+2014-06-16 17:50:43 : Doing pressure calculations.
+2014-06-16 17:50:43 : Doing pressure calculations.
+2014-06-16 17:50:43 : Doing pressure calculations.
+2014-06-16 17:50:43 : Doing pressure calculations.
+2014-06-16 17:50:43 : Doing pressure calculations.
+2014-06-16 17:50:43 : Doing pressure calculations.
+2014-06-16 17:50:44 : Doing pressure calculations.
+2014-06-16 17:50:44 : Doing pressure calculations.
+2014-06-16 17:50:44 : Doing pressure calculations.
+2014-06-16 17:50:44 : Doing pressure calculations.
+2014-06-16 17:50:44 : Doing pressure calculations.
+2014-06-16 17:50:44 : Doing pressure calculations.
+2014-06-16 17:50:44 : 22/1449 after 2 shove iterations
+2014-06-16 17:50:44 : Eroding 0 (449.159E2/919.244E0 fg)
+2014-06-16 17:50:44 : Detachment done in 0 sec
+2014-06-16 17:50:44 : Agents stepped/dead/born: 1302.0/0/147 done in 0 sec
+2014-06-16 17:50:44 : Simulating agents done in 0 sec
+2014-06-16 17:50:44 : System description finalized
+2014-06-16 17:50:44 : Computation time :0.2 minute(s) 
+ 	 -> Iter 13, Time: 13.0 achieved in 1.3 sec 
+
+2014-06-16 17:50:44 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:44 : 6 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:44 : 1 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:44 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:44 : Doing pressure calculations.
+2014-06-16 17:50:44 : Doing pressure calculations.
+2014-06-16 17:50:44 : Doing pressure calculations.
+2014-06-16 17:50:44 : Doing pressure calculations.
+2014-06-16 17:50:44 : Doing pressure calculations.
+2014-06-16 17:50:45 : Doing pressure calculations.
+2014-06-16 17:50:45 : Doing pressure calculations.
+2014-06-16 17:50:45 : Doing pressure calculations.
+2014-06-16 17:50:45 : Doing pressure calculations.
+2014-06-16 17:50:45 : Doing pressure calculations.
+2014-06-16 17:50:45 : Doing pressure calculations.
+2014-06-16 17:50:45 : Doing pressure calculations.
+2014-06-16 17:50:45 : Doing pressure calculations.
+2014-06-16 17:50:45 : Doing pressure calculations.
+2014-06-16 17:50:45 : Doing pressure calculations.
+2014-06-16 17:50:45 : Doing pressure calculations.
+2014-06-16 17:50:45 : Doing pressure calculations.
+2014-06-16 17:50:45 : Doing pressure calculations.
+2014-06-16 17:50:45 : Doing pressure calculations.
+2014-06-16 17:50:45 : Doing pressure calculations.
+2014-06-16 17:50:45 : 27/1581 after 2 shove iterations
+2014-06-16 17:50:45 : Eroding 0 (483.088E2/813.084E0 fg)
+2014-06-16 17:50:45 : Detachment done in 0 sec
+2014-06-16 17:50:45 : Agents stepped/dead/born: 1454.0/0/127 done in 0 sec
+2014-06-16 17:50:45 : Simulating agents done in 0 sec
+2014-06-16 17:50:45 : System description finalized
+2014-06-16 17:50:45 : Computation time :0.2 minute(s) 
+ 	 -> Iter 14, Time: 14.0 achieved in 1.3 sec 
+
+2014-06-16 17:50:45 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:45 : 9 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:45 : 4 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:46 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:46 : Doing pressure calculations.
+2014-06-16 17:50:46 : Doing pressure calculations.
+2014-06-16 17:50:46 : Doing pressure calculations.
+2014-06-16 17:50:46 : Doing pressure calculations.
+2014-06-16 17:50:46 : Doing pressure calculations.
+2014-06-16 17:50:46 : Doing pressure calculations.
+2014-06-16 17:50:46 : Doing pressure calculations.
+2014-06-16 17:50:46 : Doing pressure calculations.
+2014-06-16 17:50:46 : Doing pressure calculations.
+2014-06-16 17:50:46 : Doing pressure calculations.
+2014-06-16 17:50:46 : Doing pressure calculations.
+2014-06-16 17:50:46 : Doing pressure calculations.
+2014-06-16 17:50:46 : Doing pressure calculations.
+2014-06-16 17:50:46 : Doing pressure calculations.
+2014-06-16 17:50:46 : Doing pressure calculations.
+2014-06-16 17:50:47 : Doing pressure calculations.
+2014-06-16 17:50:47 : Doing pressure calculations.
+2014-06-16 17:50:47 : Doing pressure calculations.
+2014-06-16 17:50:47 : Doing pressure calculations.
+2014-06-16 17:50:47 : Doing pressure calculations.
+2014-06-16 17:50:47 : 33/1729 after 2 shove iterations
+2014-06-16 17:50:47 : Eroding 0 (604.248E2/520.557E1 fg)
+2014-06-16 17:50:47 : Detachment done in 1 sec
+2014-06-16 17:50:47 : Agents stepped/dead/born: 1586.0/0/143 done in 0 sec
+2014-06-16 17:50:47 : Simulating agents done in 0 sec
+2014-06-16 17:50:47 : System description finalized
+2014-06-16 17:50:47 : Computation time :0.2 minute(s) 
+ 	 -> Iter 15, Time: 15.0 achieved in 1.7 sec 
+
+2014-06-16 17:50:47 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:47 : 9 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:47 : 4 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:47 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:47 : Doing pressure calculations.
+2014-06-16 17:50:47 : Doing pressure calculations.
+2014-06-16 17:50:48 : Doing pressure calculations.
+2014-06-16 17:50:48 : Doing pressure calculations.
+2014-06-16 17:50:48 : Doing pressure calculations.
+2014-06-16 17:50:48 : Doing pressure calculations.
+2014-06-16 17:50:48 : Doing pressure calculations.
+2014-06-16 17:50:48 : Doing pressure calculations.
+2014-06-16 17:50:48 : Doing pressure calculations.
+2014-06-16 17:50:48 : Doing pressure calculations.
+2014-06-16 17:50:48 : Doing pressure calculations.
+2014-06-16 17:50:48 : Doing pressure calculations.
+2014-06-16 17:50:48 : Doing pressure calculations.
+2014-06-16 17:50:48 : Doing pressure calculations.
+2014-06-16 17:50:48 : Doing pressure calculations.
+2014-06-16 17:50:48 : Doing pressure calculations.
+2014-06-16 17:50:48 : Doing pressure calculations.
+2014-06-16 17:50:48 : Doing pressure calculations.
+2014-06-16 17:50:48 : Doing pressure calculations.
+2014-06-16 17:50:49 : Doing pressure calculations.
+2014-06-16 17:50:49 : 22/1873 after 2 shove iterations
+2014-06-16 17:50:49 : Eroding 0 (712.925E2/233.692E1 fg)
+2014-06-16 17:50:49 : Detachment done in 1 sec
+2014-06-16 17:50:49 : Agents stepped/dead/born: 1734.0/0/139 done in 0 sec
+2014-06-16 17:50:49 : Simulating agents done in 0 sec
+2014-06-16 17:50:49 : System description finalized
+2014-06-16 17:50:49 : Computation time :0.2 minute(s) 
+ 	 -> Iter 16, Time: 16.0 achieved in 1.6 sec 
+
+2014-06-16 17:50:49 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:49 : 6 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:49 : 1 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:49 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:49 : Doing pressure calculations.
+2014-06-16 17:50:49 : Doing pressure calculations.
+2014-06-16 17:50:49 : Doing pressure calculations.
+2014-06-16 17:50:49 : Doing pressure calculations.
+2014-06-16 17:50:49 : Doing pressure calculations.
+2014-06-16 17:50:49 : Doing pressure calculations.
+2014-06-16 17:50:49 : Doing pressure calculations.
+2014-06-16 17:50:49 : Doing pressure calculations.
+2014-06-16 17:50:49 : Doing pressure calculations.
+2014-06-16 17:50:50 : Doing pressure calculations.
+2014-06-16 17:50:50 : Doing pressure calculations.
+2014-06-16 17:50:50 : Doing pressure calculations.
+2014-06-16 17:50:50 : Doing pressure calculations.
+2014-06-16 17:50:50 : Doing pressure calculations.
+2014-06-16 17:50:50 : Doing pressure calculations.
+2014-06-16 17:50:50 : Doing pressure calculations.
+2014-06-16 17:50:50 : Doing pressure calculations.
+2014-06-16 17:50:50 : Doing pressure calculations.
+2014-06-16 17:50:50 : Doing pressure calculations.
+2014-06-16 17:50:50 : Doing pressure calculations.
+2014-06-16 17:50:50 : 33/2000 after 2 shove iterations
+2014-06-16 17:50:50 : Eroding 0 (788.305E2/194.84E1 fg)
+2014-06-16 17:50:50 : Detachment done in 1 sec
+2014-06-16 17:50:50 : Agents stepped/dead/born: 1878.0/0/122 done in 0 sec
+2014-06-16 17:50:50 : Simulating agents done in 0 sec
+2014-06-16 17:50:51 : System description finalized
+2014-06-16 17:50:51 : Computation time :0.3 minute(s) 
+ 	 -> Iter 17, Time: 17.0 achieved in 1.9 sec 
+
+2014-06-16 17:50:51 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:51 : 12 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:51 : 7 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:51 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:51 : Doing pressure calculations.
+2014-06-16 17:50:51 : Doing pressure calculations.
+2014-06-16 17:50:51 : Doing pressure calculations.
+2014-06-16 17:50:51 : Doing pressure calculations.
+2014-06-16 17:50:51 : Doing pressure calculations.
+2014-06-16 17:50:51 : Doing pressure calculations.
+2014-06-16 17:50:51 : Doing pressure calculations.
+2014-06-16 17:50:51 : Doing pressure calculations.
+2014-06-16 17:50:51 : Doing pressure calculations.
+2014-06-16 17:50:52 : Doing pressure calculations.
+2014-06-16 17:50:52 : Doing pressure calculations.
+2014-06-16 17:50:52 : Doing pressure calculations.
+2014-06-16 17:50:52 : Doing pressure calculations.
+2014-06-16 17:50:52 : Doing pressure calculations.
+2014-06-16 17:50:52 : Doing pressure calculations.
+2014-06-16 17:50:52 : Doing pressure calculations.
+2014-06-16 17:50:52 : Doing pressure calculations.
+2014-06-16 17:50:52 : Doing pressure calculations.
+2014-06-16 17:50:52 : Doing pressure calculations.
+2014-06-16 17:50:52 : Doing pressure calculations.
+2014-06-16 17:50:53 : 50/2129 after 72 shove iterations
+2014-06-16 17:50:53 : Eroding 0 (102.761E3/212.932E1 fg)
+2014-06-16 17:50:53 : Detachment done in 1 sec
+2014-06-16 17:50:53 : Agents stepped/dead/born: 2005.0/0/124 done in 0 sec
+2014-06-16 17:50:53 : Simulating agents done in 0 sec
+2014-06-16 17:50:53 : System description finalized
+2014-06-16 17:50:53 : Computation time :0.3 minute(s) 
+ 	 -> Iter 18, Time: 18.0 achieved in 2.5 sec 
+
+2014-06-16 17:50:53 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:53 : 15 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:53 : 10 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:53 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:53 : Doing pressure calculations.
+2014-06-16 17:50:53 : Doing pressure calculations.
+2014-06-16 17:50:53 : Doing pressure calculations.
+2014-06-16 17:50:53 : Doing pressure calculations.
+2014-06-16 17:50:53 : Doing pressure calculations.
+2014-06-16 17:50:54 : Doing pressure calculations.
+2014-06-16 17:50:54 : Doing pressure calculations.
+2014-06-16 17:50:54 : Doing pressure calculations.
+2014-06-16 17:50:54 : Doing pressure calculations.
+2014-06-16 17:50:54 : Doing pressure calculations.
+2014-06-16 17:50:54 : Doing pressure calculations.
+2014-06-16 17:50:54 : Doing pressure calculations.
+2014-06-16 17:50:54 : Doing pressure calculations.
+2014-06-16 17:50:54 : Doing pressure calculations.
+2014-06-16 17:50:54 : Doing pressure calculations.
+2014-06-16 17:50:54 : Doing pressure calculations.
+2014-06-16 17:50:54 : Doing pressure calculations.
+2014-06-16 17:50:54 : Doing pressure calculations.
+2014-06-16 17:50:54 : Doing pressure calculations.
+2014-06-16 17:50:54 : Doing pressure calculations.
+2014-06-16 17:50:55 : 56/2283 after 118 shove iterations
+2014-06-16 17:50:55 : Eroding 0 (102.43E3/268.886E1 fg)
+2014-06-16 17:50:55 : Detachment done in 2 sec
+2014-06-16 17:50:55 : Agents stepped/dead/born: 2134.0/0/149 done in 0 sec
+2014-06-16 17:50:55 : Simulating agents done in 0 sec
+2014-06-16 17:50:56 : System description finalized
+2014-06-16 17:50:56 : Computation time :0.4 minute(s) 
+ 	 -> Iter 19, Time: 19.0 achieved in 2.5 sec 
+
+2014-06-16 17:50:56 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:56 : 9 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:56 : 4 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:56 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:56 : Doing pressure calculations.
+2014-06-16 17:50:56 : Doing pressure calculations.
+2014-06-16 17:50:56 : Doing pressure calculations.
+2014-06-16 17:50:56 : Doing pressure calculations.
+2014-06-16 17:50:56 : Doing pressure calculations.
+2014-06-16 17:50:56 : Doing pressure calculations.
+2014-06-16 17:50:56 : Doing pressure calculations.
+2014-06-16 17:50:56 : Doing pressure calculations.
+2014-06-16 17:50:56 : Doing pressure calculations.
+2014-06-16 17:50:56 : Doing pressure calculations.
+2014-06-16 17:50:56 : Doing pressure calculations.
+2014-06-16 17:50:56 : Doing pressure calculations.
+2014-06-16 17:50:56 : Doing pressure calculations.
+2014-06-16 17:50:56 : Doing pressure calculations.
+2014-06-16 17:50:57 : Doing pressure calculations.
+2014-06-16 17:50:57 : Doing pressure calculations.
+2014-06-16 17:50:57 : Doing pressure calculations.
+2014-06-16 17:50:57 : Doing pressure calculations.
+2014-06-16 17:50:57 : Doing pressure calculations.
+2014-06-16 17:50:57 : Doing pressure calculations.
+2014-06-16 17:50:57 : 42/2417 after 2 shove iterations
+2014-06-16 17:50:57 : Eroding 0 (121.689E3/942.866E1 fg)
+2014-06-16 17:50:57 : Detachment done in 1 sec
+2014-06-16 17:50:57 : Agents stepped/dead/born: 2288.0/0/129 done in 0 sec
+2014-06-16 17:50:57 : Simulating agents done in 0 sec
+2014-06-16 17:50:57 : System description finalized
+2014-06-16 17:50:57 : Computation time :0.4 minute(s) 
+ 	 -> Iter 20, Time: 20.0 achieved in 1.6 sec 
+
+2014-06-16 17:50:57 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:50:57 : 7 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:50:57 : 2 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:50:59 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:50:59 : Doing pressure calculations.
+2014-06-16 17:50:59 : Doing pressure calculations.
+2014-06-16 17:50:59 : Doing pressure calculations.
+2014-06-16 17:50:59 : Doing pressure calculations.
+2014-06-16 17:50:59 : Doing pressure calculations.
+2014-06-16 17:50:59 : Doing pressure calculations.
+2014-06-16 17:50:59 : Doing pressure calculations.
+2014-06-16 17:50:59 : Doing pressure calculations.
+2014-06-16 17:50:59 : Doing pressure calculations.
+2014-06-16 17:50:59 : Doing pressure calculations.
+2014-06-16 17:50:59 : Doing pressure calculations.
+2014-06-16 17:50:59 : Doing pressure calculations.
+2014-06-16 17:50:59 : Doing pressure calculations.
+2014-06-16 17:50:59 : Doing pressure calculations.
+2014-06-16 17:50:59 : Doing pressure calculations.
+2014-06-16 17:50:59 : Doing pressure calculations.
+2014-06-16 17:50:59 : Doing pressure calculations.
+2014-06-16 17:50:59 : Doing pressure calculations.
+2014-06-16 17:50:59 : Doing pressure calculations.
+2014-06-16 17:51:00 : Doing pressure calculations.
+2014-06-16 17:51:00 : 48/2544 after 2 shove iterations
+2014-06-16 17:51:00 : Eroding 0 (136.814E3/419.946E1 fg)
+2014-06-16 17:51:00 : Detachment done in 1 sec
+2014-06-16 17:51:00 : Agents stepped/dead/born: 2422.0/0/122 done in 0 sec
+2014-06-16 17:51:00 : Simulating agents done in 0 sec
+2014-06-16 17:51:00 : System description finalized
+2014-06-16 17:51:00 : Computation time :0.4 minute(s) 
+ 	 -> Iter 21, Time: 21.0 achieved in 2.6 sec 
+
+2014-06-16 17:51:00 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:51:00 : 8 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:51:00 : 3 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:51:01 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:51:01 : Doing pressure calculations.
+2014-06-16 17:51:01 : Doing pressure calculations.
+2014-06-16 17:51:01 : Doing pressure calculations.
+2014-06-16 17:51:01 : Doing pressure calculations.
+2014-06-16 17:51:01 : Doing pressure calculations.
+2014-06-16 17:51:01 : Doing pressure calculations.
+2014-06-16 17:51:01 : Doing pressure calculations.
+2014-06-16 17:51:01 : Doing pressure calculations.
+2014-06-16 17:51:01 : Doing pressure calculations.
+2014-06-16 17:51:02 : Doing pressure calculations.
+2014-06-16 17:51:02 : Doing pressure calculations.
+2014-06-16 17:51:02 : Doing pressure calculations.
+2014-06-16 17:51:02 : Doing pressure calculations.
+2014-06-16 17:51:02 : Doing pressure calculations.
+2014-06-16 17:51:02 : Doing pressure calculations.
+2014-06-16 17:51:02 : Doing pressure calculations.
+2014-06-16 17:51:02 : Doing pressure calculations.
+2014-06-16 17:51:02 : Doing pressure calculations.
+2014-06-16 17:51:02 : Doing pressure calculations.
+2014-06-16 17:51:02 : Doing pressure calculations.
+2014-06-16 17:51:03 : 62/2668 after 101 shove iterations
+2014-06-16 17:51:03 : Eroding 0 (170.362E3/385.692E1 fg)
+2014-06-16 17:51:03 : Detachment done in 1 sec
+2014-06-16 17:51:03 : Agents stepped/dead/born: 2549.0/0/119 done in 0 sec
+2014-06-16 17:51:03 : Simulating agents done in 0 sec
+2014-06-16 17:51:03 : System description finalized
+2014-06-16 17:51:03 : Computation time :0.5 minute(s) 
+ 	 -> Iter 22, Time: 22.0 achieved in 3.7 sec 
+
+2014-06-16 17:51:03 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:51:03 : 13 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:51:03 : 8 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:51:04 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:51:04 : Doing pressure calculations.
+2014-06-16 17:51:04 : Doing pressure calculations.
+2014-06-16 17:51:04 : Doing pressure calculations.
+2014-06-16 17:51:04 : Doing pressure calculations.
+2014-06-16 17:51:04 : Doing pressure calculations.
+2014-06-16 17:51:04 : Doing pressure calculations.
+2014-06-16 17:51:04 : Doing pressure calculations.
+2014-06-16 17:51:04 : Doing pressure calculations.
+2014-06-16 17:51:04 : Doing pressure calculations.
+2014-06-16 17:51:05 : Doing pressure calculations.
+2014-06-16 17:51:05 : Doing pressure calculations.
+2014-06-16 17:51:05 : Doing pressure calculations.
+2014-06-16 17:51:05 : Doing pressure calculations.
+2014-06-16 17:51:05 : Doing pressure calculations.
+2014-06-16 17:51:05 : Doing pressure calculations.
+2014-06-16 17:51:05 : Doing pressure calculations.
+2014-06-16 17:51:05 : Doing pressure calculations.
+2014-06-16 17:51:05 : Doing pressure calculations.
+2014-06-16 17:51:05 : Doing pressure calculations.
+2014-06-16 17:51:05 : Doing pressure calculations.
+2014-06-16 17:51:05 : 43/2802 after 2 shove iterations
+2014-06-16 17:51:05 : Eroding 0 (152.165E3/922.589E1 fg)
+2014-06-16 17:51:05 : Detachment done in 1 sec
+2014-06-16 17:51:05 : Agents stepped/dead/born: 2673.0/0/129 done in 0 sec
+2014-06-16 17:51:05 : Simulating agents done in 0 sec
+2014-06-16 17:51:06 : System description finalized
+2014-06-16 17:51:06 : Computation time :0.5 minute(s) 
+ 	 -> Iter 23, Time: 23.0 achieved in 2.1 sec 
+
+2014-06-16 17:51:06 : 5.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-16 17:51:06 : 8 agents of species MyHeterotroph attempted to attach
+2014-06-16 17:51:06 : 3 agents of species MyHeterotroph returned to the bulk
+2014-06-16 17:51:06 : Solving Diffusion-reaction done in 0 sec
+2014-06-16 17:51:06 : Doing pressure calculations.
+2014-06-16 17:51:06 : Doing pressure calculations.
+2014-06-16 17:51:06 : Doing pressure calculations.
+2014-06-16 17:51:06 : Doing pressure calculations.
+2014-06-16 17:51:06 : Doing pressure calculations.
+2014-06-16 17:51:06 : Doing pressure calculations.
+2014-06-16 17:51:06 : Doing pressure calculations.
+2014-06-16 17:51:06 : Doing pressure calculations.
+2014-06-16 17:51:06 : Doing pressure calculations.
+2014-06-16 17:51:06 : Doing pressure calculations.
+2014-06-16 17:51:06 : Doing pressure calculations.
+2014-06-16 17:51:06 : Doing pressure calculations.
+2014-06-16 17:51:06 : Doing pressure calculations.
+2014-06-16 17:51:06 : Doing pressure calculations.
+2014-06-16 17:51:07 : Doing pressure calculations.
+2014-06-16 17:51:07 : Doing pressure calculations.
+2014-06-16 17:51:07 : Doing pressure calculations.
+2014-06-16 17:51:07 : Doing pressure calculations.
+2014-06-16 17:51:07 : Doing pressure calculations.
+2014-06-16 17:51:07 : Doing pressure calculations.
+2014-06-16 17:51:07 : 44/2938 after 2 shove iterations
+2014-06-16 17:51:07 : Eroding 0 (182.742E3/480.943E1 fg)
+2014-06-16 17:51:07 : Detachment done in 1 sec
+2014-06-16 17:51:07 : Agents stepped/dead/born: 2807.0/0/131 done in 0 sec
+2014-06-16 17:51:07 : Simulating agents done in 0 sec
+2014-06-16 17:51:08 : System description finalized
+2014-06-16 17:51:08 : Computation time :0.6 minute(s) 
+ 	 -> Iter 24, Time: 24.0 achieved in 2.0 sec 
+
+2014-06-16 17:51:08 : Simulation succesfully achieved in 0.56 minutes.
+2014-06-16 17:51:08 : Wrote random number generator

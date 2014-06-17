@@ -1,0 +1,12 @@
+2014-06-10 12:45:54 : Read in random number generator
+2014-06-10 12:45:54 : Setting initial 0.01
+2014-06-10 12:45:54 : Setting initial 0.0
+2014-06-10 12:45:55 : 		MyCOD (0)
+2014-06-10 12:45:55 : 		pressure (1)
+2014-06-10 12:45:55 : 	 Reactions: 
+
+2014-06-10 12:45:55 : Reaction 0 is autocatalyic
+2014-06-10 12:45:55 : 		MyGrowthHeterotrophs (0)
+2014-06-10 12:45:55 : 	 done
+2014-06-10 12:45:55 : 		MyHeterotroph (0)
+2014-06-10 12:45:55 : Agent time step is... 0.05

@@ -1,0 +1,58 @@
+2014-06-09 13:29:25 : Read in random number generator
+2014-06-09 13:29:25 : Using adaptive time stepping.
+2014-06-09 13:29:25 : Setting initial 0.01
+2014-06-09 13:29:25 : Setting initial 0.0060
+2014-06-09 13:29:25 : Setting initial 0.0
+2014-06-09 13:29:25 : Setting initial 1.0E-5
+2014-06-09 13:29:25 : Setting initial 0.0
+2014-06-09 13:29:25 : 		o2d (0)
+2014-06-09 13:29:25 : 		MyNH4 (1)
+2014-06-09 13:29:25 : 		MyNO3 (2)
+2014-06-09 13:29:25 : 		MyCOD (3)
+2014-06-09 13:29:25 : 		pressure (4)
+2014-06-09 13:29:25 : 	 Reactions: 
+
+2014-06-09 13:29:25 : Reaction 0 is autocatalyic
+2014-06-09 13:29:25 : 		MyGrowthAutotrophs (0)
+2014-06-09 13:29:25 : Reaction 0 is autocatalyic
+2014-06-09 13:29:25 : 		MyMaintenanceAutotrophs (1)
+2014-06-09 13:29:25 : Reaction 0 is autocatalyic
+2014-06-09 13:29:25 : 		MyInactivationAutotrophs (2)
+2014-06-09 13:29:25 : Reaction 0 is autocatalyic
+2014-06-09 13:29:25 : 		MyGrowthHeterotrophs (3)
+2014-06-09 13:29:25 : Reaction 0 is autocatalyic
+2014-06-09 13:29:25 : 		MyAnaerobicGrowthHeterotrophs (4)
+2014-06-09 13:29:25 : Reaction 0 is autocatalyic
+2014-06-09 13:29:25 : 		MyMaintenanceHeterotrophs (5)
+2014-06-09 13:29:25 : Reaction 0 is autocatalyic
+2014-06-09 13:29:25 : 		MyAnaerobicMaintenanceHeterotrophs (6)
+2014-06-09 13:29:25 : Reaction 0 is autocatalyic
+2014-06-09 13:29:25 : 		MyInactivationHeterotrophs (7)
+2014-06-09 13:29:25 : 	 done
+2014-06-09 13:29:26 : 		MyAutotrophs (0)
+2014-06-09 13:29:26 : 		MyHeterotroph (1)
+2014-06-09 13:29:26 : 		MySwitchHeterotroph (2)
+2014-06-09 13:29:26 : Agent time step is... 0.05
+2014-06-09 13:29:26 :  3675 grid elements, resolution: 8.0 micrometers
+2014-06-09 13:29:26 : Guessing MyAutotrophs initial mass at: 7539.822368615503
+2014-06-09 13:29:26 : Guessing MyHeterotroph initial mass at: 7539.822368615503
+2014-06-09 13:29:26 : Guessing MySwitchHeterotroph initial mass at: 16964.600329384884
+2014-06-09 13:29:26 : System description finalized
+2014-06-09 13:29:26 : Initialization (../results/examples/multi_species_multi_substrate_nitrification_2D_SelfAttachment(20140609_1329)/multi_species_multi_substrate_nitrification_2D_SelfAttachment.xml):OK
+2014-06-09 13:29:29 : Solving Diffusion-reaction done in 2 sec
+2014-06-09 13:29:29 : Doing pressure calculations.
+2014-06-09 13:29:29 : Doing pressure calculations.
+2014-06-09 13:29:29 : 0/0 after 2 shove iterations
+2014-06-09 13:29:29 : Detachment done in 0 sec
+2014-06-09 13:29:29 : Agents stepped/dead/born: 0.0/0/0 done in 0 sec
+2014-06-09 13:29:29 : Simulating agents done in 0 sec
+2014-06-09 13:29:29 : System description finalized
+2014-06-09 13:29:29 : Computation time :0.0 minute(s) 
+ 	 -> Iter 1, Time: 0.1 achieved in 3.0 sec 
+
+2014-06-09 13:29:29 : 1.0 agents of species MyAutotrophs for self-attachment successfully created
+2014-06-09 13:29:29 : 1 agents of species MyAutotrophs attempted to attach
+2014-06-09 13:29:29 : 0 agents of species MyAutotrophs returned to the bulk
+2014-06-09 13:29:29 : 1.0 agents of species MyHeterotroph for self-attachment successfully created
+2014-06-09 13:29:29 : 4 agents of species MyHeterotroph attempted to attach
+2014-06-09 13:29:29 : 3 agents of species MyHeterotroph returned to the bulk

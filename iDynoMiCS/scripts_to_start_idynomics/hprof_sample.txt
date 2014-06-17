@@ -1,0 +1,2044 @@
+JAVA PROFILE 1.0.1, created Mon Jun  9 19:21:00 2014
+
+Header for -agentlib:hprof (or -Xrunhprof) ASCII Output (JDK 5.0 JVMTI based)
+
+%W% %E%
+
+ Copyright (c) 2006 Sun Microsystems, Inc. All  Rights Reserved.
+
+WARNING!  This file format is under development, and is subject to
+change without notice.
+
+This file contains the following types of records:
+
+THREAD START
+THREAD END      mark the lifetime of Java threads
+
+TRACE           represents a Java stack trace.  Each trace consists
+                of a series of stack frames.  Other records refer to
+                TRACEs to identify (1) where object allocations have
+                taken place, (2) the frames in which GC roots were
+                found, and (3) frequently executed methods.
+
+HEAP DUMP       is a complete snapshot of all live objects in the Java
+                heap.  Following distinctions are made:
+
+                ROOT    root set as determined by GC
+                CLS     classes 
+                OBJ     instances
+                ARR     arrays
+
+SITES           is a sorted list of allocation sites.  This identifies
+                the most heavily allocated object types, and the TRACE
+                at which those allocations occurred.
+
+CPU SAMPLES     is a statistical profile of program execution.  The VM
+                periodically samples all running threads, and assigns
+                a quantum to active TRACEs in those threads.  Entries
+                in this record are TRACEs ranked by the percentage of
+                total quanta they consumed; top-ranked TRACEs are
+                typically hot spots in the program.
+
+CPU TIME        is a profile of program execution obtained by measuring
+                the time spent in individual methods (excluding the time
+                spent in callees), as well as by counting the number of
+                times each method is called. Entries in this record are
+                TRACEs ranked by the percentage of total CPU time. The
+                "count" field indicates the number of times each TRACE 
+                is invoked.
+
+MONITOR TIME    is a profile of monitor contention obtained by measuring
+                the time spent by a thread waiting to enter a monitor.
+                Entries in this record are TRACEs ranked by the percentage
+                of total monitor contention time and a brief description
+                of the monitor.  The "count" field indicates the number of 
+                times the monitor was contended at that TRACE.
+
+MONITOR DUMP    is a complete snapshot of all the monitors and threads in 
+                the System.
+
+HEAP DUMP, SITES, CPU SAMPLES|TIME and MONITOR DUMP|TIME records are generated 
+at program exit.  They can also be obtained during program execution by typing 
+Ctrl-\ (on Solaris) or by typing Ctrl-Break (on Win32).
+
+--------
+
+THREAD START (obj=50000158, id = 200001, name="main", group="main")
+THREAD START (obj=50000425, id = 200004, name="Keep-Alive-Timer", group="system")
+THREAD START (obj=5000048a, id = 200005, name="TrueZIP InputStream Reader", group="main")
+THREAD START (obj=50000506, id = 200006, name="Thread-2", group="main")
+THREAD START (obj=50000507, id = 200007, name="AWT-Shutdown", group="main")
+THREAD START (obj=500005ff, id = 200009, name="Poller SunPKCS11-Darwin", group="main")
+THREAD END (id = 200007)
+THREAD START (obj=50000618, id = 200010, name="Thread-3", group="main")
+THREAD END (id = 200010)
+THREAD START (obj=50000621, id = 200011, name="AWT-Shutdown", group="main")
+THREAD END (id = 200011)
+THREAD START (obj=50000621, id = 200012, name="AWT-Shutdown", group="main")
+THREAD END (id = 200004)
+THREAD END (id = 200012)
+THREAD START (obj=50000625, id = 200013, name="AWT-Shutdown", group="main")
+THREAD END (id = 200013)
+THREAD END (id = 200001)
+THREAD START (obj=50000631, id = 200014, name="DestroyJavaVM", group="main")
+THREAD START (obj=50000634, id = 200015, name="Thread-1", group="main")
+THREAD START (obj=50000635, id = 200016, name="TrueZIP ArchiveController Shutdown Hook", group="main")
+THREAD END (id = 200015)
+THREAD END (id = 200016)
+THREAD END (id = 200014)
+TRACE 300568:
+	java.lang.StrictMath.floor(StrictMath.java:323)
+	java.lang.Math.floor(Math.java:407)
+	simulator.geometry.Domain.checkDilationRadius(Domain.java:613)
+	simulator.geometry.Domain.calculateComputationDomainGrids(Domain.java:483)
+TRACE 300707:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:203)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.SinglegridPressure.relax(SinglegridPressure.java:139)
+	simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction(Solver_pressure.java:117)
+TRACE 300708:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:206)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.SinglegridPressure.relax(SinglegridPressure.java:139)
+	simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction(Solver_pressure.java:117)
+TRACE 300699:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:203)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:346)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+TRACE 300817:
+	java.util.LinkedList.addAll(LinkedList.java:247)
+	simulator.AgentContainer.getPotentialShovers(AgentContainer.java:701)
+	simulator.agent.LocatedAgent.getPotentialShovers(LocatedAgent.java:715)
+	simulator.agent.LocatedAgent.interact(LocatedAgent.java:536)
+TRACE 300714:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:207)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.SinglegridPressure.relax(SinglegridPressure.java:139)
+	simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction(Solver_pressure.java:117)
+TRACE 300829:
+	simulator.agent.LocatedAgent.interact(LocatedAgent.java:543)
+	simulator.AgentContainer.performMove(AgentContainer.java:629)
+	simulator.AgentContainer.shoveAllLocated(AgentContainer.java:588)
+	simulator.AgentContainer.step(AgentContainer.java:385)
+TRACE 300698:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:206)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:346)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+TRACE 300794:
+	java.util.zip.Deflater.deflateBytes(Deflater.java:Unknown line)
+	java.util.zip.Deflater.deflate(Deflater.java:306)
+	de.schlichtherle.util.zip.BasicZipOutputStream.deflate(BasicZipOutputStream.java:435)
+	de.schlichtherle.util.zip.BasicZipOutputStream.write(BasicZipOutputStream.java:422)
+TRACE 300681:
+	java.io.FileInputStream.readBytes(FileInputStream.java:Unknown line)
+	java.io.FileInputStream.read(FileInputStream.java:220)
+	de.schlichtherle.io.Streams$1Reader.run(Streams.java:127)
+	java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:439)
+TRACE 300807:
+	java.io.RandomAccessFile.write(RandomAccessFile.java:Unknown line)
+	de.schlichtherle.io.Files.isWritableOrCreatable(Files.java:189)
+	de.schlichtherle.io.UpdatingArchiveController.mount0(UpdatingArchiveController.java:163)
+	de.schlichtherle.io.UpdatingArchiveController.mount(UpdatingArchiveController.java:127)
+TRACE 300697:
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:323)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:202)
+	simulator.diffusionSolver.Solver_multigrid.solveDiffusionReaction(Solver_multigrid.java:138)
+TRACE 300692:
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:323)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:177)
+	simulator.diffusionSolver.Solver_multigrid.solveDiffusionReaction(Solver_multigrid.java:138)
+TRACE 300703:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:207)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:346)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+TRACE 300721:
+	java.lang.StrictMath.expm1(StrictMath.java:Unknown line)
+	java.lang.Math.expm1(Math.java:1184)
+	simulator.agent.ActiveAgent.grow(ActiveAgent.java:378)
+	simulator.agent.zoo.Bacterium.internalStep(Bacterium.java:279)
+TRACE 300700:
+	simulator.reaction.ReactionFactor.computeSpecificGrowthRate(ReactionFactor.java:245)
+	simulator.reaction.ReactionFactor.computeUptakeRate(ReactionFactor.java:204)
+	simulator.reaction.Reaction.applyReaction(Reaction.java:488)
+	simulator.diffusionSolver.Solver_multigrid.updateReacRateAndDiffRate(Solver_multigrid.java:283)
+TRACE 300809:
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:312)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:202)
+	simulator.diffusionSolver.Solver_multigrid.solveDiffusionReaction(Solver_multigrid.java:138)
+TRACE 300731:
+	simulator.diffusionSolver.multigrid.SinglegridPressure.relax(SinglegridPressure.java:108)
+	simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction(Solver_pressure.java:117)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:214)
+	simulator.AgentContainer.followPressure(AgentContainer.java:521)
+TRACE 300695:
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:312)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:177)
+	simulator.diffusionSolver.Solver_multigrid.solveDiffusionReaction(Solver_multigrid.java:138)
+TRACE 300754:
+	simulator.SpatialGrid.setAllValueAt(SpatialGrid.java:781)
+	simulator.diffusionSolver.multigrid.MultigridSolute.resetReaction(MultigridSolute.java:470)
+	simulator.diffusionSolver.Solver_multigrid.updateReacRateAndDiffRate(Solver_multigrid.java:275)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:261)
+TRACE 300696:
+	simulator.geometry.shape.Planar.followBoundary(Planar.java:326)
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:200)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:346)
+TRACE 300756:
+	simulator.SpatialGrid.setAllValueAt(SpatialGrid.java:781)
+	simulator.diffusionSolver.multigrid.MultigridSolute.resetReaction(MultigridSolute.java:471)
+	simulator.diffusionSolver.Solver_multigrid.updateReacRateAndDiffRate(Solver_multigrid.java:275)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:261)
+TRACE 300811:
+	simulator.diffusionSolver.multigrid.SinglegridPressure.relax(SinglegridPressure.java:119)
+	simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction(Solver_pressure.java:117)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:214)
+	simulator.AgentContainer.followPressure(AgentContainer.java:521)
+TRACE 300717:
+	simulator.SpatialGrid.getGradient(SpatialGrid.java:577)
+	simulator.agent.LocatedGroup.computeMove(LocatedGroup.java:252)
+	simulator.AgentContainer.followPressure(AgentContainer.java:532)
+	simulator.AgentContainer.step(AgentContainer.java:339)
+TRACE 300913:
+	simulator.agent.LocatedAgent.interact(LocatedAgent.java:543)
+	simulator.AgentContainer.performMove(AgentContainer.java:629)
+	simulator.AgentContainer.shoveAllLocated(AgentContainer.java:588)
+	simulator.AgentContainer.step(AgentContainer.java:442)
+TRACE 300733:
+	simulator.geometry.Domain.calculateComputationDomainGrids(Domain.java:483)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:447)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:96)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:213)
+TRACE 300799:
+	java.lang.StrictMath.log(StrictMath.java:Unknown line)
+	java.util.Random.nextGaussian(Random.java:458)
+	utils.ExtraMath.getNormRand(ExtraMath.java:559)
+	utils.ExtraMath.deviateFromCV(ExtraMath.java:589)
+TRACE 300651:
+	java.io.RandomAccessFile.write(RandomAccessFile.java:Unknown line)
+	de.schlichtherle.io.Files.isWritableOrCreatable(Files.java:193)
+	de.schlichtherle.io.UpdatingArchiveController.mount0(UpdatingArchiveController.java:163)
+	de.schlichtherle.io.UpdatingArchiveController.mount(UpdatingArchiveController.java:127)
+TRACE 300788:
+	simulator.AgentContainer.fitAgentVolumeRateOnGrid(AgentContainer.java:943)
+	simulator.diffusionSolver.Solver_pressure.updateBioVolume(Solver_pressure.java:129)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:102)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:213)
+TRACE 300709:
+	simulator.AgentContainer.fitAgentMassOnGrid(AgentContainer.java:925)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:441)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:96)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:213)
+TRACE 300858:
+	simulator.agent.LocatedAgent.fitVolRateOnGrid(LocatedAgent.java:888)
+	simulator.AgentContainer.fitAgentVolumeRateOnGrid(AgentContainer.java:945)
+	simulator.diffusionSolver.Solver_pressure.updateBioVolume(Solver_pressure.java:129)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:102)
+TRACE 300753:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:219)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:346)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+TRACE 300716:
+	simulator.AgentContainer.followPressure(AgentContainer.java:553)
+	simulator.AgentContainer.step(AgentContainer.java:339)
+	simulator.Simulator.step(Simulator.java:370)
+	simulator.Simulator.run(Simulator.java:316)
+TRACE 300718:
+	simulator.AgentContainer.followPressure(AgentContainer.java:532)
+	simulator.AgentContainer.step(AgentContainer.java:339)
+	simulator.Simulator.step(Simulator.java:370)
+	simulator.Simulator.run(Simulator.java:316)
+TRACE 300763:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:219)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.SinglegridPressure.relax(SinglegridPressure.java:139)
+	simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction(Solver_pressure.java:117)
+TRACE 300702:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:221)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:346)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+TRACE 300966:
+	simulator.geometry.Domain.testCrossedBoundary(Domain.java:317)
+	simulator.agent.LocatedAgent.checkBoundaries(LocatedAgent.java:810)
+	simulator.agent.LocatedAgent.move(LocatedAgent.java:788)
+	simulator.AgentContainer.followPressure(AgentContainer.java:560)
+TRACE 300857:
+	java.util.LinkedList.addAll(LinkedList.java:278)
+	java.util.LinkedList.addAll(LinkedList.java:247)
+	simulator.AgentContainer.getPotentialShovers(AgentContainer.java:701)
+	simulator.agent.LocatedAgent.getPotentialShovers(LocatedAgent.java:715)
+TRACE 300833:
+	java.util.LinkedList.clear(LinkedList.java:298)
+	simulator.agent.LocatedAgent.interact(LocatedAgent.java:548)
+	simulator.AgentContainer.performMove(AgentContainer.java:629)
+	simulator.AgentContainer.shoveAllLocated(AgentContainer.java:588)
+TRACE 300456:
+	java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:Unknown line)
+	java.net.InetAddress$1.lookupAllHostAddr(InetAddress.java:883)
+	java.net.InetAddress.getAddressFromNameService(InetAddress.java:1236)
+	java.net.InetAddress.getAllByName0(InetAddress.java:1187)
+TRACE 300887:
+	simulator.agent.LocatedAgent.fitMassOnGrid(LocatedAgent.java:874)
+	simulator.AgentContainer.fitAgentMassOnGrid(AgentContainer.java:929)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:441)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:96)
+TRACE 300845:
+	simulator.geometry.Domain.testCrossedBoundary(Domain.java:317)
+	simulator.agent.LocatedAgent.checkBoundaries(LocatedAgent.java:810)
+	simulator.agent.LocatedAgent.move(LocatedAgent.java:788)
+	simulator.agent.LocatedAgent.interact(LocatedAgent.java:558)
+TRACE 300769:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:203)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:455)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:96)
+TRACE 300764:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:203)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:454)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:96)
+TRACE 300867:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.CountingOutputStream.write(CountingOutputStream.java:78)
+	de.schlichtherle.io.Streams.cat(Streams.java:176)
+TRACE 300784:
+	simulator.geometry.boundaryConditions.BoundaryBulk.refreshBoundary(BoundaryBulk.java:95)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:346)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+TRACE 300920:
+	simulator.agent.LocatedAgent.move(LocatedAgent.java:772)
+	simulator.agent.LocatedAgent.interact(LocatedAgent.java:532)
+	simulator.AgentContainer.performMove(AgentContainer.java:629)
+	simulator.AgentContainer.shoveAllLocated(AgentContainer.java:588)
+TRACE 300704:
+	simulator.geometry.boundaryConditions.BoundaryZeroFlux.refreshBoundary(BoundaryZeroFlux.java:73)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:346)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+TRACE 300865:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.write(LEDataOutputStream.java:112)
+	de.schlichtherle.util.zip.BasicZipOutputStream.write(BasicZipOutputStream.java:425)
+TRACE 300912:
+	simulator.geometry.Domain.testCrossedBoundary(Domain.java:317)
+	simulator.agent.LocatedAgent.checkBoundaries(LocatedAgent.java:810)
+	simulator.agent.LocatedAgent.move(LocatedAgent.java:788)
+	simulator.agent.LocatedAgent.interact(LocatedAgent.java:532)
+TRACE 300758:
+	simulator.diffusionSolver.Solver_multigrid.updateReacRateAndDiffRate(Solver_multigrid.java:283)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:261)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:202)
+	simulator.diffusionSolver.Solver_multigrid.solveDiffusionReaction(Solver_multigrid.java:138)
+TRACE 300949:
+	simulator.AgentContainer.fitAgentVolumeRateOnGrid(AgentContainer.java:944)
+	simulator.diffusionSolver.Solver_pressure.updateBioVolume(Solver_pressure.java:129)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:102)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:213)
+TRACE 300723:
+	simulator.geometry.Domain.calculateComputationDomainGrids(Domain.java:473)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:447)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:96)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:213)
+TRACE 300720:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:221)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.SinglegridPressure.relax(SinglegridPressure.java:139)
+	simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction(Solver_pressure.java:117)
+TRACE 300774:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:203)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:449)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:96)
+TRACE 300816:
+	java.util.LinkedList.toArray(LinkedList.java:863)
+	java.util.LinkedList.addAll(LinkedList.java:269)
+	java.util.LinkedList.addAll(LinkedList.java:247)
+	simulator.AgentContainer.getPotentialShovers(AgentContainer.java:701)
+TRACE 300755:
+	simulator.diffusionSolver.Solver_multigrid.updateReacRateAndDiffRate(Solver_multigrid.java:283)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:261)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:177)
+	simulator.diffusionSolver.Solver_multigrid.solveDiffusionReaction(Solver_multigrid.java:138)
+TRACE 301032:
+	simulator.agent.LocatedGroup.addMoveToAgents(LocatedGroup.java:274)
+	simulator.AgentContainer.followPressure(AgentContainer.java:553)
+	simulator.AgentContainer.step(AgentContainer.java:339)
+	simulator.Simulator.step(Simulator.java:370)
+TRACE 300967:
+	simulator.agent.LocatedGroup.addMoveToAgents(LocatedGroup.java:271)
+	simulator.AgentContainer.followPressure(AgentContainer.java:553)
+	simulator.AgentContainer.step(AgentContainer.java:339)
+	simulator.Simulator.step(Simulator.java:370)
+TRACE 300860:
+	simulator.agent.LocatedAgent.move(LocatedAgent.java:792)
+	simulator.AgentContainer.followPressure(AgentContainer.java:560)
+	simulator.AgentContainer.step(AgentContainer.java:339)
+	simulator.Simulator.step(Simulator.java:370)
+TRACE 300878:
+	simulator.geometry.boundaryConditions.BoundaryBulk.refreshBoundary(BoundaryBulk.java:95)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.SinglegridPressure.relax(SinglegridPressure.java:139)
+	simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction(Solver_pressure.java:117)
+TRACE 300783:
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:323)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+	simulator.diffusionSolver.Solver_multigrid.solveCoarsest(Solver_multigrid.java:252)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:190)
+TRACE 300847:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:206)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:455)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:96)
+TRACE 300864:
+	java.io.FileOutputStream.close0(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.close(FileOutputStream.java:326)
+	java.io.FilterOutputStream.close(FilterOutputStream.java:143)
+	java.io.FilterOutputStream.close(FilterOutputStream.java:143)
+TRACE 301016:
+	simulator.AgentContainer.fitAgentMassOnGrid(AgentContainer.java:927)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:441)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:96)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:213)
+TRACE 300772:
+	simulator.geometry.boundaryConditions.BoundaryZeroFlux.refreshBoundary(BoundaryZeroFlux.java:73)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.SinglegridPressure.relax(SinglegridPressure.java:139)
+	simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction(Solver_pressure.java:117)
+TRACE 300822:
+	java.util.zip.CRC32.updateBytes(CRC32.java:Unknown line)
+	java.util.zip.CRC32.update(CRC32.java:45)
+	de.schlichtherle.util.zip.BasicZipOutputStream.write(BasicZipOutputStream.java:423)
+	de.schlichtherle.io.archive.zip.Zip32OutputArchive$EntryOutputStream.write(Zip32OutputArchive.java:228)
+TRACE 300742:
+	java.lang.StrictMath.floor(StrictMath.java:323)
+	java.lang.Math.floor(Math.java:407)
+	simulator.geometry.Domain.checkDilationRadius(Domain.java:601)
+	simulator.geometry.Domain.calculateComputationDomainGrids(Domain.java:483)
+TRACE 300907:
+	java.io.RandomAccessFile.length(RandomAccessFile.java:Unknown line)
+	de.schlichtherle.io.rof.FilterReadOnlyFile.length(FilterReadOnlyFile.java:82)
+	de.schlichtherle.io.rof.BufferedReadOnlyFile.length(BufferedReadOnlyFile.java:192)
+	de.schlichtherle.io.rof.BufferedReadOnlyFile.read(BufferedReadOnlyFile.java:240)
+TRACE 300789:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:206)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:454)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:96)
+TRACE 300880:
+	java.io.RandomAccessFile.readBytes(RandomAccessFile.java:Unknown line)
+	java.io.RandomAccessFile.read(RandomAccessFile.java:338)
+	de.schlichtherle.io.CountingReadOnlyFile.read(CountingReadOnlyFile.java:81)
+	de.schlichtherle.util.zip.BasicZipFile$IntervalInputStream.read(BasicZipFile.java:1353)
+TRACE 300808:
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:312)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+	simulator.diffusionSolver.Solver_multigrid.solveCoarsest(Solver_multigrid.java:252)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:190)
+TRACE 300969:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeInt(LEDataOutputStream.java:204)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeLocalFileHeader(BasicZipOutputStream.java:340)
+TRACE 300884:
+	simulator.geometry.boundaryConditions.BoundaryZeroFlux.refreshBoundary(BoundaryZeroFlux.java:69)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:346)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+TRACE 300832:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:206)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:449)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:96)
+TRACE 300770:
+	utils.MatrixOperations.copyValuesTo(MatrixOperations.java:271)
+	simulator.SpatialGrid.setGrid(SpatialGrid.java:950)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:99)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:213)
+TRACE 300977:
+	sun.misc.Unsafe.unpark(Unsafe.java:Unknown line)
+	java.util.concurrent.locks.LockSupport.unpark(LockSupport.java:122)
+	java.util.concurrent.SynchronousQueue$TransferStack$SNode.tryMatch(SynchronousQueue.java:242)
+	java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:344)
+TRACE 301069:
+	simulator.agent.LocatedAgent.move(LocatedAgent.java:792)
+	simulator.agent.LocatedAgent.interact(LocatedAgent.java:558)
+	simulator.AgentContainer.performMove(AgentContainer.java:629)
+	simulator.AgentContainer.shoveAllLocated(AgentContainer.java:588)
+TRACE 300779:
+	java.nio.Buffer.<init>(Buffer.java:170)
+	java.nio.ByteBuffer.<init>(ByteBuffer.java:259)
+	java.nio.HeapByteBuffer.<init>(HeapByteBuffer.java:52)
+	java.nio.ByteBuffer.wrap(ByteBuffer.java:350)
+TRACE 300856:
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:105)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:213)
+	simulator.AgentContainer.followPressure(AgentContainer.java:521)
+	simulator.AgentContainer.step(AgentContainer.java:339)
+TRACE 300876:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:215)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:346)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+TRACE 300781:
+	java.io.FileOutputStream.close0(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.close(FileOutputStream.java:326)
+	java.io.FilterOutputStream.close(FilterOutputStream.java:143)
+	de.schlichtherle.io.Files.cp(Files.java:779)
+TRACE 300792:
+	java.util.LinkedList.listIterator(LinkedList.java:667)
+	java.util.AbstractList.listIterator(AbstractList.java:284)
+	java.util.AbstractSequentialList.iterator(AbstractSequentialList.java:222)
+	simulator.AgentContainer.fitAgentMassOnGrid(AgentContainer.java:927)
+TRACE 300467:
+	java.net.SocketInputStream.socketRead0(SocketInputStream.java:Unknown line)
+	java.net.SocketInputStream.read(SocketInputStream.java:129)
+	java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	java.io.BufferedInputStream.read1(BufferedInputStream.java:258)
+TRACE 300462:
+	java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:Unknown line)
+	java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:382)
+	java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:241)
+	java.net.PlainSocketImpl.connect(PlainSocketImpl.java:228)
+TRACE 300841:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:210)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:346)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+TRACE 300820:
+	sun.nio.cs.SingleByteEncoder.encodeLoop(SingleByteEncoder.java:130)
+	java.nio.charset.CharsetEncoder.encode(CharsetEncoder.java:544)
+	java.lang.StringCoding$StringEncoder.encode(StringCoding.java:240)
+	java.lang.StringCoding.encode(StringCoding.java:272)
+TRACE 300719:
+	utils.MatrixOperations.copyValuesTo(MatrixOperations.java:271)
+	simulator.SpatialGrid.setGrid(SpatialGrid.java:950)
+	simulator.AgentContainer.followPressure(AgentContainer.java:527)
+	simulator.AgentContainer.step(AgentContainer.java:339)
+TRACE 300706:
+	simulator.geometry.boundaryConditions.BoundaryZeroFlux.refreshBoundary(BoundaryZeroFlux.java:75)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:346)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+TRACE 300981:
+	simulator.agent.LocatedAgent.move(LocatedAgent.java:772)
+	simulator.agent.LocatedAgent.interact(LocatedAgent.java:558)
+	simulator.AgentContainer.performMove(AgentContainer.java:629)
+	simulator.AgentContainer.shoveAllLocated(AgentContainer.java:588)
+TRACE 300766:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:207)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:455)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:96)
+TRACE 300806:
+	java.io.UnixFileSystem.canonicalize0(UnixFileSystem.java:Unknown line)
+	java.io.UnixFileSystem.canonicalize(UnixFileSystem.java:157)
+	java.io.File.getCanonicalPath(File.java:559)
+	java.io.File.getCanonicalFile(File.java:583)
+TRACE 300837:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.write(LEDataOutputStream.java:112)
+	java.io.FilterOutputStream.write(FilterOutputStream.java:80)
+TRACE 300844:
+	sun.security.pkcs11.wrapper.PKCS11.C_GetSlotInfo(PKCS11.java:Unknown line)
+	sun.security.pkcs11.SunPKCS11.initToken(SunPKCS11.java:767)
+	sun.security.pkcs11.SunPKCS11.access$100(SunPKCS11.java:42)
+	sun.security.pkcs11.SunPKCS11$TokenPoller.run(SunPKCS11.java:700)
+TRACE 301027:
+	sun.nio.cs.SingleByteEncoder.encodeLoop(SingleByteEncoder.java:130)
+	java.nio.charset.CharsetEncoder.encode(CharsetEncoder.java:544)
+	sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:252)
+	sun.nio.cs.StreamEncoder.write(StreamEncoder.java:106)
+TRACE 300980:
+	simulator.diffusionSolver.multigrid.SinglegridPressure.relax(SinglegridPressure.java:108)
+	simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction(Solver_pressure.java:117)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:214)
+	simulator.Simulator.step(Simulator.java:360)
+TRACE 300573:
+	java.lang.ClassLoader$NativeLibrary.load(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1833)
+	java.lang.ClassLoader.loadLibrary(ClassLoader.java:1730)
+	java.lang.Runtime.loadLibrary0(Runtime.java:823)
+TRACE 301082:
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:678)
+	java.lang.StringBuilder.append(StringBuilder.java:239)
+	simulator.agent.LocatedAgent.writeOutput(LocatedAgent.java:947)
+TRACE 301079:
+	simulator.agent.LocatedAgent.move(LocatedAgent.java:792)
+	simulator.agent.LocatedAgent.interact(LocatedAgent.java:532)
+	simulator.AgentContainer.performMove(AgentContainer.java:629)
+	simulator.AgentContainer.shoveAllLocated(AgentContainer.java:588)
+TRACE 300934:
+	simulator.geometry.boundaryConditions.BoundaryZeroFlux.refreshBoundary(BoundaryZeroFlux.java:75)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.SinglegridPressure.relax(SinglegridPressure.java:139)
+	simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction(Solver_pressure.java:117)
+TRACE 300701:
+	simulator.geometry.boundaryConditions.BoundaryBulk.refreshBoundary(BoundaryBulk.java:93)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:346)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+TRACE 300839:
+	java.lang.Thread.isInterrupted(Thread.java:Unknown line)
+	java.lang.Thread.isInterrupted(Thread.java:966)
+	java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:403)
+	java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:323)
+TRACE 300925:
+	simulator.geometry.boundaryConditions.BoundaryZeroFlux.refreshBoundary(BoundaryZeroFlux.java:69)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.SinglegridPressure.relax(SinglegridPressure.java:139)
+	simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction(Solver_pressure.java:117)
+TRACE 301050:
+	simulator.diffusionSolver.multigrid.SinglegridPressure.relax(SinglegridPressure.java:122)
+	simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction(Solver_pressure.java:117)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:214)
+	simulator.AgentContainer.followPressure(AgentContainer.java:521)
+TRACE 300904:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeInt(LEDataOutputStream.java:204)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeLocalFileHeader(BasicZipOutputStream.java:363)
+TRACE 300886:
+	simulator.SpatialGrid.setAllValueAt(SpatialGrid.java:781)
+	simulator.AgentContainer.fitAgentVolumeRateOnGrid(AgentContainer.java:942)
+	simulator.diffusionSolver.Solver_pressure.updateBioVolume(Solver_pressure.java:129)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:102)
+TRACE 300914:
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.Double.toString(Double.java:179)
+	simulator.SpatialGrid.writeReport(SpatialGrid.java:1001)
+	simulator.Simulator.writeReport(Simulator.java:1218)
+TRACE 300919:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:269)
+	utils.LogFile.writeLog(LogFile.java:115)
+	simulator.AgentContainer.followPressure(AgentContainer.java:513)
+TRACE 300866:
+	sun.misc.FloatingDecimal.developLongDigits(FloatingDecimal.java:349)
+	sun.misc.FloatingDecimal.dtoa(FloatingDecimal.java:547)
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:678)
+TRACE 300958:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeShort(LEDataOutputStream.java:181)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeLocalFileHeader(BasicZipOutputStream.java:386)
+TRACE 300780:
+	java.io.RandomAccessFile.seek(RandomAccessFile.java:Unknown line)
+	de.schlichtherle.io.rof.FilterReadOnlyFile.seek(FilterReadOnlyFile.java:90)
+	de.schlichtherle.util.zip.BasicZipFile.getInputStream(BasicZipFile.java:935)
+	de.schlichtherle.io.archive.zip.Zip32InputArchive.getInputStream(Zip32InputArchive.java:83)
+TRACE 300890:
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:323)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+	simulator.diffusionSolver.Solver_multigrid.solveCoarsest(Solver_multigrid.java:252)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:163)
+TRACE 301004:
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:678)
+	java.lang.StringBuilder.append(StringBuilder.java:239)
+	povray.VectorProperty.toString(VectorProperty.java:94)
+TRACE 300633:
+	java.util.Arrays.copyOf(Arrays.java:2882)
+	java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:100)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:390)
+	java.lang.StringBuilder.append(StringBuilder.java:119)
+TRACE 300672:
+	java.lang.System.arraycopy(System.java:Unknown line)
+	java.io.BufferedOutputStream.write(BufferedOutputStream.java:111)
+	java.io.FilterOutputStream.write(FilterOutputStream.java:80)
+	utils.ResultFile.write(ResultFile.java:141)
+TRACE 300900:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeInt(LEDataOutputStream.java:204)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeCentralFileHeader(BasicZipOutputStream.java:586)
+TRACE 300882:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeShort(LEDataOutputStream.java:181)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeLocalFileHeader(BasicZipOutputStream.java:354)
+TRACE 300846:
+	simulator.SpatialGrid.setAllValueAt(SpatialGrid.java:781)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:444)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:96)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:213)
+TRACE 300813:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:207)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:454)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:96)
+TRACE 300818:
+	simulator.geometry.boundaryConditions.BoundaryBulk.refreshBoundary(BoundaryBulk.java:93)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.SinglegridPressure.relax(SinglegridPressure.java:139)
+	simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction(Solver_pressure.java:117)
+TRACE 300875:
+	simulator.AgentContainer.fitAgentMassOnGrid(AgentContainer.java:925)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:441)
+	simulator.diffusionSolver.Solver_multigrid.initializeConcentrationFields(Solver_multigrid.java:106)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:213)
+TRACE 300823:
+	java.lang.System.arraycopy(System.java:Unknown line)
+	java.lang.AbstractStringBuilder.insert(AbstractStringBuilder.java:1170)
+	java.lang.StringBuffer.insert(StringBuffer.java:497)
+	de.schlichtherle.io.File.init(File.java:900)
+TRACE 300730:
+	java.util.LinkedList.listIterator(LinkedList.java:667)
+	java.util.AbstractList.listIterator(AbstractList.java:284)
+	java.util.AbstractSequentialList.iterator(AbstractSequentialList.java:222)
+	simulator.AgentContainer.fitAgentVolumeRateOnGrid(AgentContainer.java:944)
+TRACE 301097:
+	java.util.Random.nextInt(Random.java:257)
+	java.util.Collections.shuffle(Collections.java:446)
+	simulator.AgentContainer.step(AgentContainer.java:348)
+	simulator.Simulator.step(Simulator.java:370)
+TRACE 301073:
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:678)
+	java.lang.StringBuilder.append(StringBuilder.java:239)
+	simulator.agent.ActiveAgent.writeOutput(ActiveAgent.java:640)
+TRACE 300802:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:65)
+	java.io.BufferedOutputStream.flush(BufferedOutputStream.java:123)
+TRACE 301064:
+	simulator.diffusionSolver.multigrid.SinglegridPressure.relax(SinglegridPressure.java:119)
+	simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction(Solver_pressure.java:117)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:214)
+	simulator.Simulator.step(Simulator.java:360)
+TRACE 300972:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:194)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:346)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+TRACE 300909:
+	simulator.reaction.ReactionFactor.computeUptakeRate(ReactionFactor.java:204)
+	simulator.reaction.Reaction.applyReaction(Reaction.java:488)
+	simulator.diffusionSolver.Solver_multigrid.updateReacRateAndDiffRate(Solver_multigrid.java:283)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:261)
+TRACE 301054:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeShort(LEDataOutputStream.java:181)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeCentralFileHeader(BasicZipOutputStream.java:596)
+TRACE 300776:
+	simulator.AgentContainer.writeGrids(AgentContainer.java:974)
+	simulator.Simulator.writeReport(Simulator.java:1235)
+	simulator.Simulator.step(Simulator.java:383)
+	simulator.Simulator.run(Simulator.java:316)
+TRACE 300777:
+	java.lang.Object.notifyAll(Object.java:Unknown line)
+	java.lang.ref.ReferenceQueue.enqueue(ReferenceQueue.java:51)
+	java.lang.ref.Reference$ReferenceHandler.run(Reference.java:129)
+TRACE 300848:
+	java.util.LinkedList.listIterator(LinkedList.java:667)
+	java.util.AbstractList.listIterator(AbstractList.java:284)
+	java.util.AbstractSequentialList.iterator(AbstractSequentialList.java:222)
+	simulator.agent.LocatedGroup.addMoveToAgents(LocatedGroup.java:271)
+TRACE 301087:
+	java.io.FileOutputStream.open(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.<init>(FileOutputStream.java:194)
+	java.io.FileOutputStream.<init>(FileOutputStream.java:145)
+	de.schlichtherle.io.UpdatingArchiveController.reassemble(UpdatingArchiveController.java:982)
+TRACE 300992:
+	sun.misc.FloatingDecimal.countBits(FloatingDecimal.java:84)
+	sun.misc.FloatingDecimal.dtoa(FloatingDecimal.java:513)
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.Double.toString(Double.java:179)
+TRACE 301224:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeShort(LEDataOutputStream.java:181)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeCentralFileHeader(BasicZipOutputStream.java:570)
+TRACE 300891:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:211)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:346)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+TRACE 301060:
+	java.lang.StringBuilder.append(StringBuilder.java:189)
+	sun.misc.FloatingDecimal.appendTo(FloatingDecimal.java:973)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:678)
+	java.lang.StringBuilder.append(StringBuilder.java:239)
+TRACE 300986:
+	java.util.zip.Deflater.deflateBytes(Deflater.java:Unknown line)
+	java.util.zip.Deflater.deflate(Deflater.java:306)
+	de.schlichtherle.util.zip.BasicZipOutputStream.deflate(BasicZipOutputStream.java:435)
+	de.schlichtherle.util.zip.BasicZipOutputStream.closeEntry(BasicZipOutputStream.java:477)
+TRACE 301019:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.FileOutputStream.write(FileOutputStream.java:173)
+	java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:65)
+TRACE 300874:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeShort(LEDataOutputStream.java:181)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeCentralFileHeader(BasicZipOutputStream.java:603)
+TRACE 300778:
+	simulator.geometry.Domain.calculateComputationDomainGrids(Domain.java:483)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:447)
+	simulator.Simulator.writeReport(Simulator.java:1240)
+	simulator.Simulator.step(Simulator.java:383)
+TRACE 301220:
+	sun.misc.FloatingDecimal.dtoa(FloatingDecimal.java:835)
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:678)
+	java.lang.StringBuilder.append(StringBuilder.java:239)
+TRACE 300801:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:207)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:449)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:96)
+TRACE 301013:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:203)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.computeResidual(MultigridSolute.java:420)
+	simulator.diffusionSolver.multigrid.MultigridSolute.downward1(MultigridSolute.java:235)
+TRACE 300931:
+	java.lang.StringCoding$StringDecoder.decode(StringCoding.java:133)
+	java.lang.StringCoding.decode(StringCoding.java:173)
+	java.lang.String.<init>(String.java:443)
+	java.lang.String.<init>(String.java:515)
+TRACE 300828:
+	simulator.SpatialGrid.setAllValueAt(SpatialGrid.java:781)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:439)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:96)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:213)
+TRACE 300968:
+	java.io.RandomAccessFile.seek(RandomAccessFile.java:Unknown line)
+	de.schlichtherle.io.rof.FilterReadOnlyFile.seek(FilterReadOnlyFile.java:90)
+	de.schlichtherle.util.zip.BasicZipFile$IntervalInputStream.read(BasicZipFile.java:1352)
+	de.schlichtherle.io.Streams$1Reader.run(Streams.java:127)
+TRACE 301103:
+	sun.misc.FloatingDecimal.countBits(FloatingDecimal.java:84)
+	sun.misc.FloatingDecimal.dtoa(FloatingDecimal.java:513)
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:678)
+TRACE 301045:
+	java.lang.Object.<init>(Object.java:20)
+	java.io.InputStream.<init>(InputStream.java:26)
+	de.schlichtherle.util.zip.BasicZipFile$AccountedInputStream.<init>(BasicZipFile.java:1396)
+	de.schlichtherle.util.zip.BasicZipFile$IntervalInputStream.<init>(BasicZipFile.java:1299)
+TRACE 300982:
+	simulator.SpatialGrid.getGradient(SpatialGrid.java:577)
+	simulator.agent.LocatedGroup.computeMove(LocatedGroup.java:252)
+	simulator.AgentContainer.followPressure(AgentContainer.java:532)
+	simulator.AgentContainer.step(AgentContainer.java:339)
+TRACE 300836:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeShort(LEDataOutputStream.java:181)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeLocalFileHeader(BasicZipOutputStream.java:380)
+TRACE 301101:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeInt(LEDataOutputStream.java:204)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeLocalFileHeader(BasicZipOutputStream.java:375)
+TRACE 300710:
+	java.lang.ref.Reference$ReferenceHandler.run(Reference.java:109)
+TRACE 300906:
+	java.lang.Thread.currentThread(Thread.java:Unknown line)
+	java.util.concurrent.locks.ReentrantLock$Sync.tryRelease(ReentrantLock.java:126)
+	java.util.concurrent.locks.AbstractQueuedSynchronizer.release(AbstractQueuedSynchronizer.java:1239)
+	java.util.concurrent.locks.ReentrantLock.unlock(ReentrantLock.java:431)
+TRACE 301137:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeShort(LEDataOutputStream.java:181)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeCentralFileHeader(BasicZipOutputStream.java:567)
+TRACE 300859:
+	java.lang.StrictMath.expm1(StrictMath.java:Unknown line)
+	java.lang.Math.expm1(Math.java:1184)
+	simulator.agent.ActiveAgent.updateGrowthRates(ActiveAgent.java:422)
+	simulator.agent.LocatedAgent.divideCompounds(LocatedAgent.java:459)
+TRACE 301232:
+	java.lang.Double.valueOf(Double.java:492)
+	utils.ExtraMath.sum(ExtraMath.java:309)
+	simulator.agent.ActiveAgent.updateMass(ActiveAgent.java:452)
+	simulator.agent.LocatedAgent.updateSize(LocatedAgent.java:316)
+TRACE 301226:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:202)
+	sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:263)
+TRACE 300868:
+	java.util.AbstractList.iterator(AbstractList.java:273)
+	simulator.diffusionSolver.Solver_multigrid.updateReacRateAndDiffRate(Solver_multigrid.java:274)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:261)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:202)
+TRACE 301009:
+	java.io.RandomAccessFile.readBytes(RandomAccessFile.java:Unknown line)
+	java.io.RandomAccessFile.read(RandomAccessFile.java:338)
+	de.schlichtherle.io.CountingReadOnlyFile.read(CountingReadOnlyFile.java:81)
+	de.schlichtherle.io.rof.AbstractReadOnlyFile.readFully(AbstractReadOnlyFile.java:48)
+TRACE 300885:
+	simulator.SpatialGrid.getGradient(SpatialGrid.java:577)
+	simulator.agent.LocatedGroup.computeMove(LocatedGroup.java:252)
+	simulator.AgentContainer.followPressure(AgentContainer.java:532)
+	simulator.AgentContainer.step(AgentContainer.java:339)
+TRACE 301010:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeInt(LEDataOutputStream.java:204)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeCentralFileHeader(BasicZipOutputStream.java:564)
+TRACE 300973:
+	simulator.agent.LocatedGroup.remove(LocatedGroup.java:305)
+	simulator.AgentContainer.registerMove(AgentContainer.java:905)
+	simulator.agent.LocatedAgent.move(LocatedAgent.java:792)
+	simulator.agent.LocatedAgent.interact(LocatedAgent.java:532)
+TRACE 300682:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:203)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:455)
+	simulator.diffusionSolver.Solver_multigrid.initializeConcentrationFields(Solver_multigrid.java:106)
+TRACE 301030:
+	java.lang.ref.Reference$ReferenceHandler.run(Reference.java:118)
+TRACE 300965:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:212)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:346)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+TRACE 301171:
+	java.util.LinkedList.indexOf(LinkedList.java:401)
+	java.util.LinkedList.contains(LinkedList.java:177)
+	simulator.detachment.LevelSet.addToCloseAndUpdate(LevelSet.java:241)
+	simulator.detachment.LevelSet.computeLevelSet(LevelSet.java:217)
+TRACE 301167:
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:678)
+	java.lang.StringBuilder.append(StringBuilder.java:239)
+	povray.ParticleWithCapsule.toString(ParticleWithCapsule.java:213)
+TRACE 301166:
+	java.util.Arrays.copyOf(Arrays.java:2882)
+	java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:100)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:390)
+	java.lang.StringBuffer.append(StringBuffer.java:224)
+TRACE 301161:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeShort(LEDataOutputStream.java:181)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeCentralFileHeader(BasicZipOutputStream.java:576)
+TRACE 300952:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeInt(LEDataOutputStream.java:204)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeCentralFileHeader(BasicZipOutputStream.java:584)
+TRACE 300943:
+	simulator.geometry.Domain.getInterface(Domain.java:533)
+	simulator.Simulator.writeReport(Simulator.java:1200)
+	simulator.Simulator.step(Simulator.java:383)
+	simulator.Simulator.run(Simulator.java:316)
+TRACE 300902:
+	simulator.AgentContainer.followPressure(AgentContainer.java:560)
+	simulator.AgentContainer.step(AgentContainer.java:339)
+	simulator.Simulator.step(Simulator.java:370)
+	simulator.Simulator.run(Simulator.java:316)
+TRACE 301119:
+	java.lang.Thread.currentThread(Thread.java:Unknown line)
+	java.util.concurrent.locks.ReentrantLock$NonfairSync.lock(ReentrantLock.java:184)
+	java.util.concurrent.locks.ReentrantLock.lock(ReentrantLock.java:262)
+	java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:872)
+TRACE 301104:
+	java.lang.String.valueOf(String.java:2973)
+	java.lang.Double.toString(Double.java:603)
+	java.lang.String.valueOf(String.java:2826)
+	java.lang.StringBuffer.append(StringBuffer.java:219)
+TRACE 300923:
+	java.lang.Thread.currentThread(Thread.java:Unknown line)
+	java.lang.Thread.interrupted(Thread.java:949)
+	java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:881)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+TRACE 300650:
+	java.io.RandomAccessFile.read(RandomAccessFile.java:Unknown line)
+	de.schlichtherle.io.Files.isWritableOrCreatable(Files.java:179)
+	de.schlichtherle.io.UpdatingArchiveController.mount0(UpdatingArchiveController.java:163)
+	de.schlichtherle.io.UpdatingArchiveController.mount(UpdatingArchiveController.java:127)
+TRACE 301091:
+	simulator.agent.LocatedAgent.move(LocatedAgent.java:784)
+	simulator.agent.LocatedAgent.interact(LocatedAgent.java:558)
+	simulator.AgentContainer.performMove(AgentContainer.java:629)
+	simulator.AgentContainer.shoveAllLocated(AgentContainer.java:588)
+TRACE 300881:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeInt(LEDataOutputStream.java:204)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeCentralFileHeader(BasicZipOutputStream.java:615)
+TRACE 300996:
+	java.util.AbstractList.iterator(AbstractList.java:273)
+	simulator.diffusionSolver.Solver_multigrid.updateReacRateAndDiffRate(Solver_multigrid.java:274)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:261)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:177)
+TRACE 300994:
+	de.schlichtherle.io.Streams$1Reader.run(Streams.java:140)
+	java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:439)
+	java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	java.util.concurrent.FutureTask.run(FutureTask.java:138)
+TRACE 300984:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:194)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.SinglegridPressure.relax(SinglegridPressure.java:139)
+	simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction(Solver_pressure.java:117)
+TRACE 301022:
+	java.io.UnixFileSystem.getLastModifiedTime(UnixFileSystem.java:Unknown line)
+	java.io.File.lastModified(File.java:826)
+	de.schlichtherle.io.UpdatingArchiveController.reassemble(UpdatingArchiveController.java:1004)
+	de.schlichtherle.io.UpdatingArchiveController.umount0(UpdatingArchiveController.java:705)
+TRACE 301023:
+	simulator.Simulator.getParticleIndex(Simulator.java:1481)
+	simulator.agent.zoo.Bacterium.getActiveFrac(Bacterium.java:524)
+	povray.ParticleWithCapsule.<init>(ParticleWithCapsule.java:105)
+	povray.Biofilm3D.particlesToFile(Biofilm3D.java:294)
+TRACE 300976:
+	java.lang.Object.notify(Object.java:Unknown line)
+	de.schlichtherle.io.Streams.cat(Streams.java:192)
+	de.schlichtherle.io.UpdatingArchiveController.update(UpdatingArchiveController.java:835)
+	de.schlichtherle.io.UpdatingArchiveController.umount0(UpdatingArchiveController.java:697)
+TRACE 301029:
+	simulator.diffusionSolver.multigrid.MultigridSolute.computeResidual(MultigridSolute.java:411)
+	simulator.diffusionSolver.multigrid.MultigridSolute.downward1(MultigridSolute.java:235)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:179)
+	simulator.diffusionSolver.Solver_multigrid.solveDiffusionReaction(Solver_multigrid.java:138)
+TRACE 300963:
+	sun.nio.cs.StreamEncoder.write(StreamEncoder.java:114)
+	java.io.OutputStreamWriter.write(OutputStreamWriter.java:203)
+	java.io.Writer.write(Writer.java:140)
+	povray.Biofilm3D.particlesToFile(Biofilm3D.java:295)
+TRACE 301040:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeInt(LEDataOutputStream.java:204)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeCentralFileHeader(BasicZipOutputStream.java:585)
+TRACE 300947:
+	simulator.geometry.Domain.calculateComputationDomainGrids(Domain.java:473)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:447)
+	simulator.diffusionSolver.Solver_multigrid.initializeConcentrationFields(Solver_multigrid.java:106)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:213)
+TRACE 300918:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:203)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:449)
+	simulator.diffusionSolver.Solver_multigrid.initializeConcentrationFields(Solver_multigrid.java:106)
+TRACE 300898:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeInt(LEDataOutputStream.java:204)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeLocalFileHeader(BasicZipOutputStream.java:374)
+TRACE 300897:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeShort(LEDataOutputStream.java:181)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeLocalFileHeader(BasicZipOutputStream.java:357)
+TRACE 300894:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:221)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:455)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:96)
+TRACE 301262:
+	java.util.Collections.shuffle(Collections.java:442)
+	simulator.AgentContainer.step(AgentContainer.java:348)
+	simulator.Simulator.step(Simulator.java:370)
+	simulator.Simulator.run(Simulator.java:316)
+TRACE 301259:
+	java.lang.Double.doubleToRawLongBits(Double.java:Unknown line)
+	sun.misc.FpUtils.rawCopySign(FpUtils.java:183)
+	sun.misc.FpUtils.copySign(FpUtils.java:1043)
+	sun.misc.FpUtils.signum(FpUtils.java:1188)
+TRACE 300883:
+	sun.misc.Unsafe.compareAndSwapInt(Unsafe.java:Unknown line)
+	java.util.concurrent.locks.AbstractQueuedSynchronizer.compareAndSetState(AbstractQueuedSynchronizer.java:537)
+	java.util.concurrent.locks.ReentrantLock$NonfairSync.lock(ReentrantLock.java:183)
+	java.util.concurrent.locks.ReentrantLock.lock(ReentrantLock.java:262)
+TRACE 301071:
+	java.io.FileOutputStream.open(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.<init>(FileOutputStream.java:194)
+	java.io.FileOutputStream.<init>(FileOutputStream.java:145)
+	de.schlichtherle.io.UpdatingArchiveController.initOutArchive(UpdatingArchiveController.java:561)
+TRACE 301072:
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:678)
+	java.lang.StringBuilder.append(StringBuilder.java:239)
+	simulator.agent.LocatedAgent.writeOutput(LocatedAgent.java:946)
+TRACE 301085:
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.Double.toString(Double.java:179)
+	java.lang.String.valueOf(String.java:2973)
+	java.lang.Double.toString(Double.java:603)
+TRACE 300861:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:203)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:449)
+	simulator.Simulator.writeReport(Simulator.java:1199)
+TRACE 300843:
+	simulator.diffusionSolver.multigrid.MultigridSolute.computeResidual(MultigridSolute.java:408)
+	simulator.diffusionSolver.multigrid.MultigridSolute.downward1(MultigridSolute.java:235)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:179)
+	simulator.diffusionSolver.Solver_multigrid.solveDiffusionReaction(Solver_multigrid.java:138)
+TRACE 300842:
+	simulator.diffusionSolver.multigrid.MultigridSolute.computeResidual(MultigridSolute.java:402)
+	simulator.diffusionSolver.multigrid.MultigridSolute.downward1(MultigridSolute.java:235)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:179)
+	simulator.diffusionSolver.Solver_multigrid.solveDiffusionReaction(Solver_multigrid.java:138)
+TRACE 301100:
+	simulator.agent.LocatedAgent.fitReacRateOnGrid(LocatedAgent.java:910)
+	simulator.reaction.Reaction.fitGuildOnGrid(Reaction.java:616)
+	simulator.reaction.Reaction.writeReport(Reaction.java:598)
+	simulator.Simulator.writeReport(Simulator.java:1224)
+TRACE 301102:
+	simulator.AgentContainer.performMove(AgentContainer.java:629)
+	simulator.AgentContainer.shoveAllLocated(AgentContainer.java:588)
+	simulator.AgentContainer.step(AgentContainer.java:385)
+	simulator.Simulator.step(Simulator.java:370)
+TRACE 300827:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:203)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridUtils.interpolateBoundaryLayer(MultigridUtils.java:339)
+	simulator.diffusionSolver.multigrid.MultigridSolute.initLoop(MultigridSolute.java:207)
+TRACE 301107:
+	java.lang.StringBuilder.append(StringBuilder.java:119)
+	povray.ParticleWithCapsule.toString(ParticleWithCapsule.java:213)
+	povray.Biofilm3D.particlesToFile(Biofilm3D.java:295)
+	povray.Povray3DScene.writeModelState(Povray3DScene.java:246)
+TRACE 301120:
+	java.lang.StringBuffer.append(StringBuffer.java:224)
+	simulator.agent.LocatedAgent.writeOutput(LocatedAgent.java:946)
+	simulator.agent.zoo.Bacterium.writeOutput(Bacterium.java:442)
+	simulator.AgentContainer.writeReport(AgentContainer.java:1144)
+TRACE 301123:
+	java.lang.Object.wait(Object.java:Unknown line)
+	java.lang.Object.wait(Object.java:485)
+	java.lang.ref.Reference$ReferenceHandler.run(Reference.java:116)
+TRACE 301126:
+	simulator.agent.LocatedAgent.fitMassOnGrid(LocatedAgent.java:856)
+	simulator.reaction.Reaction.fitGuildOnGrid(Reaction.java:613)
+	simulator.reaction.Reaction.writeReport(Reaction.java:598)
+	simulator.Simulator.writeReport(Simulator.java:1224)
+TRACE 300791:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:203)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:454)
+	simulator.Simulator.writeReport(Simulator.java:1199)
+TRACE 301141:
+	sun.misc.FloatingDecimal.dtoa(FloatingDecimal.java:834)
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.Double.toString(Double.java:179)
+	simulator.SpatialGrid.writeReport(SpatialGrid.java:1001)
+TRACE 301142:
+	java.io.UnixFileSystem.delete0(UnixFileSystem.java:Unknown line)
+	java.io.UnixFileSystem.delete(UnixFileSystem.java:251)
+	java.io.File.delete(File.java:904)
+	de.schlichtherle.io.UpdatingArchiveController.shutdownStep3(UpdatingArchiveController.java:1179)
+TRACE 301146:
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:346)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:177)
+TRACE 301160:
+	java.nio.HeapByteBuffer.<init>(HeapByteBuffer.java:39)
+	java.nio.ByteBuffer.allocate(ByteBuffer.java:312)
+	java.nio.charset.CharsetEncoder.encode(CharsetEncoder.java:760)
+	java.nio.charset.CharsetEncoder.canEncode(CharsetEncoder.java:875)
+TRACE 301170:
+	simulator.AgentContainer.followPressure(AgentContainer.java:560)
+	simulator.AgentContainer.step(AgentContainer.java:339)
+	simulator.Simulator.step(Simulator.java:370)
+	simulator.Simulator.run(Simulator.java:316)
+TRACE 300761:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:221)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:454)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:96)
+TRACE 301177:
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:678)
+	java.lang.StringBuilder.append(StringBuilder.java:239)
+	simulator.agent.LocatedAgent.writeOutput(LocatedAgent.java:947)
+TRACE 301179:
+	java.util.Arrays.copyOf(Arrays.java:2786)
+	java.lang.StringCoding.safeTrim(StringCoding.java:64)
+	java.lang.StringCoding.access$300(StringCoding.java:34)
+	java.lang.StringCoding$StringEncoder.encode(StringCoding.java:251)
+TRACE 301187:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeShort(LEDataOutputStream.java:181)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeCentralFileHeader(BasicZipOutputStream.java:609)
+TRACE 300751:
+	java.io.UnixFileSystem.getBooleanAttributes0(UnixFileSystem.java:Unknown line)
+	java.io.UnixFileSystem.getBooleanAttributes(UnixFileSystem.java:228)
+	java.io.File.isFile(File.java:778)
+	de.schlichtherle.io.UpdatingArchiveController.ensureOutArchive(UpdatingArchiveController.java:522)
+TRACE 301200:
+	java.lang.StringBuffer.append(StringBuffer.java:224)
+	java.lang.StringBuffer.<init>(StringBuffer.java:104)
+	simulator.agent.Agent.writeOutput(Agent.java:199)
+	simulator.agent.ActiveAgent.writeOutput(ActiveAgent.java:631)
+TRACE 301203:
+	java.util.LinkedList.indexOf(LinkedList.java:401)
+	java.util.LinkedList.contains(LinkedList.java:177)
+	simulator.detachment.LevelSet.addToCloseAndUpdate(LevelSet.java:241)
+	simulator.detachment.LevelSet.computeLevelSet(LevelSet.java:213)
+TRACE 301217:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:203)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:454)
+	simulator.diffusionSolver.Solver_multigrid.initializeConcentrationFields(Solver_multigrid.java:106)
+TRACE 300622:
+	simulator.agent.LocatedGroup.<init>(LocatedGroup.java:98)
+	simulator.AgentContainer.createShovGrid(AgentContainer.java:1631)
+	simulator.AgentContainer.<init>(AgentContainer.java:265)
+	simulator.Simulator.createSpecies(Simulator.java:886)
+TRACE 301251:
+	java.io.FileOutputStream.open(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.<init>(FileOutputStream.java:194)
+	de.schlichtherle.io.FileOutputStream.createOutputStream(FileOutputStream.java:169)
+	de.schlichtherle.io.FileOutputStream.<init>(FileOutputStream.java:124)
+TRACE 300642:
+	java.lang.ref.ReferenceQueue.enqueue(ReferenceQueue.java:52)
+	java.lang.ref.Reference$ReferenceHandler.run(Reference.java:129)
+TRACE 301046:
+	java.lang.Object.wait(Object.java:Unknown line)
+	java.lang.Object.wait(Object.java:485)
+	de.schlichtherle.io.Streams$1Reader.run(Streams.java:113)
+	java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:439)
+TRACE 301307:
+	sun.misc.FloatingDecimal.dtoa(FloatingDecimal.java:838)
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:678)
+	java.lang.StringBuilder.append(StringBuilder.java:239)
+TRACE 301008:
+	java.lang.StringBuffer.append(StringBuffer.java:224)
+	simulator.agent.ActiveAgent.writeOutput(ActiveAgent.java:640)
+	simulator.agent.LocatedAgent.writeOutput(LocatedAgent.java:942)
+	simulator.agent.zoo.Bacterium.writeOutput(Bacterium.java:442)
+TRACE 301020:
+	simulator.AgentContainer.fitAgentMassOnGrid(AgentContainer.java:925)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:441)
+	simulator.Simulator.writeReport(Simulator.java:1240)
+	simulator.Simulator.step(Simulator.java:383)
+TRACE 300915:
+	java.nio.charset.CharsetEncoder.<init>(CharsetEncoder.java:209)
+	sun.nio.cs.UTF_8$Encoder.<init>(UTF_8.java:314)
+	sun.nio.cs.UTF_8$Encoder.<init>(UTF_8.java:311)
+	sun.nio.cs.UTF_8.newEncoder(UTF_8.java:53)
+TRACE 301204:
+	sun.misc.FloatingDecimal.constructPow52(FloatingDecimal.java:172)
+	sun.misc.FloatingDecimal.dtoa(FloatingDecimal.java:799)
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:678)
+TRACE 300916:
+	java.lang.System.currentTimeMillis(System.java:Unknown line)
+	java.io.ExpiringCache.entryFor(ExpiringCache.java:85)
+	java.io.ExpiringCache.get(ExpiringCache.java:58)
+	java.io.UnixFileSystem.canonicalize(UnixFileSystem.java:137)
+TRACE 301044:
+	simulator.agent.LocatedAgent.writeOutput(LocatedAgent.java:949)
+	simulator.agent.zoo.Bacterium.writeOutput(Bacterium.java:442)
+	simulator.AgentContainer.writeReport(AgentContainer.java:1144)
+	simulator.Simulator.writeReport(Simulator.java:1274)
+TRACE 301042:
+	simulator.diffusionSolver.Solver_multigrid.updateReacRateAndDiffRate(Solver_multigrid.java:278)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:261)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:202)
+	simulator.diffusionSolver.Solver_multigrid.solveDiffusionReaction(Solver_multigrid.java:138)
+TRACE 300831:
+	java.util.Calendar.<init>(Calendar.java:932)
+	java.util.GregorianCalendar.<init>(GregorianCalendar.java:574)
+	java.util.Calendar.createCalendar(Calendar.java:1012)
+	java.util.Calendar.getInstance(Calendar.java:949)
+TRACE 301106:
+	java.lang.Thread.isInterrupted(Thread.java:Unknown line)
+	java.lang.Thread.interrupted(Thread.java:949)
+	de.schlichtherle.io.Streams$1Reader.run(Streams.java:132)
+	java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:439)
+TRACE 300928:
+	sun.misc.FloatingDecimal.multPow52(FloatingDecimal.java:152)
+	sun.misc.FloatingDecimal.dtoa(FloatingDecimal.java:798)
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.Double.toString(Double.java:179)
+TRACE 301206:
+	java.io.FileInputStream.close0(FileInputStream.java:Unknown line)
+	java.io.FileInputStream.close(FileInputStream.java:304)
+	de.schlichtherle.io.Files.cp0(Files.java:419)
+	de.schlichtherle.io.Files.cp(Files.java:383)
+TRACE 300929:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:203)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:455)
+	simulator.Simulator.writeReport(Simulator.java:1240)
+TRACE 301034:
+	java.lang.AbstractStringBuilder.<init>(AbstractStringBuilder.java:45)
+	java.lang.StringBuffer.<init>(StringBuffer.java:103)
+	simulator.agent.LocatedAgent.writeOutput(LocatedAgent.java:942)
+	simulator.agent.zoo.Bacterium.writeOutput(Bacterium.java:442)
+TRACE 301112:
+	simulator.geometry.Domain.calculateComputationDomainGrids(Domain.java:483)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:447)
+	simulator.Simulator.writeReport(Simulator.java:1199)
+	simulator.Simulator.step(Simulator.java:383)
+TRACE 300930:
+	java.io.UnixFileSystem.getLastModifiedTime(UnixFileSystem.java:Unknown line)
+	java.io.File.lastModified(File.java:826)
+	de.schlichtherle.io.Files.isWritableOrCreatable(Files.java:154)
+	de.schlichtherle.io.UpdatingArchiveController.mount0(UpdatingArchiveController.java:163)
+TRACE 301113:
+	simulator.AgentContainer.writeGrids(AgentContainer.java:985)
+	simulator.Simulator.writeReport(Simulator.java:1235)
+	simulator.Simulator.step(Simulator.java:383)
+	simulator.Simulator.run(Simulator.java:316)
+TRACE 301114:
+	java.lang.Object.wait(Object.java:Unknown line)
+	java.lang.Object.wait(Object.java:485)
+	de.schlichtherle.io.Streams.cat(Streams.java:160)
+	de.schlichtherle.io.UpdatingArchiveController.update(UpdatingArchiveController.java:835)
+TRACE 300814:
+	simulator.agent.LocatedAgent.checkBoundaries(LocatedAgent.java:808)
+	simulator.agent.LocatedAgent.move(LocatedAgent.java:788)
+	simulator.agent.LocatedAgent.interact(LocatedAgent.java:558)
+	simulator.AgentContainer.performMove(AgentContainer.java:629)
+TRACE 300673:
+	sun.misc.FloatingDecimal.dtoa(FloatingDecimal.java:659)
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.Double.toString(Double.java:179)
+	simulator.SpatialGrid.writeReport(SpatialGrid.java:1001)
+TRACE 300812:
+	simulator.agent.LocatedAgent.move(LocatedAgent.java:772)
+	simulator.AgentContainer.followPressure(AgentContainer.java:560)
+	simulator.AgentContainer.step(AgentContainer.java:339)
+	simulator.Simulator.step(Simulator.java:370)
+TRACE 301115:
+	sun.misc.FDBigInt.<init>(FloatingDecimal.java:2419)
+	sun.misc.FDBigInt.add(FloatingDecimal.java:2671)
+	sun.misc.FloatingDecimal.dtoa(FloatingDecimal.java:838)
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+TRACE 301041:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:206)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridUtils.interpolateBoundaryLayer(MultigridUtils.java:339)
+	simulator.diffusionSolver.multigrid.MultigridSolute.upward(MultigridSolute.java:260)
+TRACE 301212:
+	java.util.Arrays.mergeSort(Arrays.java:1281)
+	java.util.Arrays.mergeSort(Arrays.java:1281)
+	java.util.Arrays.mergeSort(Arrays.java:1281)
+	java.util.Arrays.sort(Arrays.java:1210)
+TRACE 301121:
+	java.lang.StringBuffer.append(StringBuffer.java:219)
+	simulator.agent.ActiveAgent.writeOutput(ActiveAgent.java:636)
+	simulator.agent.LocatedAgent.writeOutput(LocatedAgent.java:942)
+	simulator.agent.zoo.Bacterium.writeOutput(Bacterium.java:442)
+TRACE 301006:
+	simulator.diffusionSolver.Solver_multigrid.updateReacRateAndDiffRate(Solver_multigrid.java:278)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:261)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:177)
+	simulator.diffusionSolver.Solver_multigrid.solveDiffusionReaction(Solver_multigrid.java:138)
+TRACE 300805:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:206)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:449)
+	simulator.Simulator.writeReport(Simulator.java:1240)
+TRACE 300938:
+	java.io.FileInputStream.open(FileInputStream.java:Unknown line)
+	java.io.FileInputStream.<init>(FileInputStream.java:120)
+	de.schlichtherle.io.Files.cp0(Files.java:414)
+	de.schlichtherle.io.Files.cp(Files.java:383)
+TRACE 300939:
+	simulator.agent.LocatedAgent.writeOutput(LocatedAgent.java:942)
+	simulator.agent.zoo.Bacterium.writeOutput(Bacterium.java:442)
+	simulator.AgentContainer.writeReport(AgentContainer.java:1144)
+	simulator.Simulator.writeReport(Simulator.java:1274)
+TRACE 300800:
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.SinglegridPressure.relax(SinglegridPressure.java:139)
+	simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction(Solver_pressure.java:117)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:214)
+TRACE 301124:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:206)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:449)
+	simulator.diffusionSolver.Solver_multigrid.initializeConcentrationFields(Solver_multigrid.java:106)
+TRACE 300798:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:203)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridUtils.restrictBoundaryLayer(MultigridUtils.java:195)
+	simulator.diffusionSolver.multigrid.MultigridSolute.upward(MultigridSolute.java:258)
+TRACE 300797:
+	povray.VectorProperty.setValues(VectorProperty.java:59)
+	povray.ParticleWithCapsule.setCenter(ParticleWithCapsule.java:189)
+	povray.ParticleWithCapsule.<init>(ParticleWithCapsule.java:96)
+	povray.Biofilm3D.particlesToFile(Biofilm3D.java:294)
+TRACE 300795:
+	java.util.Arrays.copyOf(Arrays.java:2882)
+	java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:100)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:515)
+	java.lang.StringBuilder.append(StringBuilder.java:189)
+TRACE 300971:
+	java.io.UnixFileSystem.setLastModifiedTime(UnixFileSystem.java:Unknown line)
+	java.io.File.setLastModified(File.java:1263)
+	de.schlichtherle.io.UpdatingArchiveController.reassemble(UpdatingArchiveController.java:1005)
+	de.schlichtherle.io.UpdatingArchiveController.umount0(UpdatingArchiveController.java:705)
+TRACE 301136:
+	java.lang.Object.notifyAll(Object.java:Unknown line)
+	de.schlichtherle.io.ReentrantReadWriteLock.unlockWrite(ReentrantReadWriteLock.java:207)
+	de.schlichtherle.io.ReentrantReadWriteLock.access$1000(ReentrantReadWriteLock.java:58)
+	de.schlichtherle.io.ReentrantReadWriteLock$WriteLock.unlock(ReentrantReadWriteLock.java:282)
+TRACE 301255:
+	sun.misc.FloatingDecimal.dtoa(FloatingDecimal.java:837)
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:678)
+	java.lang.StringBuilder.append(StringBuilder.java:239)
+TRACE 301282:
+	sun.misc.FloatingDecimal.dtoa(FloatingDecimal.java:814)
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.Double.toString(Double.java:179)
+	simulator.SpatialGrid.writeReport(SpatialGrid.java:1001)
+TRACE 300941:
+	simulator.SpatialGrid.setAllValueAt(SpatialGrid.java:781)
+	simulator.diffusionSolver.multigrid.MultigridSolute.resetMultigridCopies(MultigridSolute.java:454)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:160)
+	simulator.diffusionSolver.Solver_multigrid.solveDiffusionReaction(Solver_multigrid.java:138)
+TRACE 301139:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:206)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:454)
+	simulator.diffusionSolver.Solver_multigrid.initializeConcentrationFields(Solver_multigrid.java:106)
+TRACE 300999:
+	java.util.LinkedList.remove(LinkedList.java:795)
+	java.util.LinkedList.removeFirst(LinkedList.java:134)
+	simulator.detachment.LevelSet.computeLevelSet(LevelSet.java:206)
+	simulator.AgentContainer.step(AgentContainer.java:456)
+TRACE 301227:
+	simulator.agent.LocatedAgent.fitMassOnGrid(LocatedAgent.java:856)
+	simulator.reaction.Reaction.fitAgentMassOnGrid(Reaction.java:514)
+	simulator.diffusionSolver.Solver_multigrid.initializeConcentrationFields(Solver_multigrid.java:116)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:213)
+TRACE 301144:
+	java.lang.StringBuilder.append(StringBuilder.java:119)
+	povray.VectorProperty.toString(VectorProperty.java:94)
+	java.lang.String.valueOf(String.java:2826)
+	java.lang.StringBuilder.append(StringBuilder.java:115)
+TRACE 300687:
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:326)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+	simulator.diffusionSolver.Solver_multigrid.solveCoarsest(Solver_multigrid.java:252)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:163)
+TRACE 301149:
+	java.util.LinkedList.listIterator(LinkedList.java:667)
+	java.util.AbstractList.listIterator(AbstractList.java:284)
+	java.util.AbstractSequentialList.iterator(AbstractSequentialList.java:222)
+	simulator.agent.LocatedAgent.interact(LocatedAgent.java:540)
+TRACE 300945:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeShort(LEDataOutputStream.java:181)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeCentralFileHeader(BasicZipOutputStream.java:606)
+TRACE 301271:
+	simulator.diffusionSolver.multigrid.MultigridSolute.computeResidual(MultigridSolute.java:402)
+	simulator.diffusionSolver.multigrid.MultigridSolute.breakVCycle(MultigridSolute.java:266)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:211)
+	simulator.diffusionSolver.Solver_multigrid.solveDiffusionReaction(Solver_multigrid.java:138)
+TRACE 300946:
+	java.io.RandomAccessFile.seek(RandomAccessFile.java:Unknown line)
+	de.schlichtherle.io.Files.isWritableOrCreatable(Files.java:192)
+	de.schlichtherle.io.UpdatingArchiveController.mount0(UpdatingArchiveController.java:163)
+	de.schlichtherle.io.UpdatingArchiveController.mount(UpdatingArchiveController.java:127)
+TRACE 301156:
+	java.lang.ref.Reference.access$200(Reference.java:24)
+	java.lang.ref.Reference$ReferenceHandler.run(Reference.java:109)
+TRACE 300773:
+	simulator.reaction.Reaction.readConcentrationSeen(Reaction.java:529)
+	simulator.reaction.ReactionFactor.computeSpecificGrowthRate(ReactionFactor.java:231)
+	simulator.reaction.ReactionFactor.computeSpecGrowthRate(ReactionFactor.java:484)
+	simulator.agent.ActiveAgent.grow(ActiveAgent.java:370)
+TRACE 301234:
+	java.lang.Double.valueOf(Double.java:492)
+	utils.ExtraMath.newDoubleArray(ExtraMath.java:265)
+	simulator.agent.ActiveAgent.grow(ActiveAgent.java:355)
+	simulator.agent.zoo.Bacterium.internalStep(Bacterium.java:279)
+TRACE 300956:
+	simulator.SpatialGrid.setAllValueAt(SpatialGrid.java:780)
+	simulator.diffusionSolver.multigrid.MultigridSolute.resetReaction(MultigridSolute.java:470)
+	simulator.diffusionSolver.Solver_multigrid.updateReacRateAndDiffRate(Solver_multigrid.java:275)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:261)
+TRACE 300957:
+	simulator.geometry.Domain.calculateComputationDomainGrids(Domain.java:473)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:447)
+	simulator.Simulator.writeReport(Simulator.java:1240)
+	simulator.Simulator.step(Simulator.java:383)
+TRACE 300768:
+	simulator.SpatialGrid.setGrid(SpatialGrid.java:951)
+	simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields(Solver_pressure.java:99)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:213)
+	simulator.AgentContainer.followPressure(AgentContainer.java:521)
+TRACE 301037:
+	java.util.HashMap.<init>(HashMap.java:209)
+	java.util.LinkedHashMap.<init>(LinkedHashMap.java:181)
+	de.schlichtherle.util.zip.BasicZipFile.<init>(BasicZipFile.java:100)
+	de.schlichtherle.io.archive.zip.Zip32InputArchive.<init>(Zip32InputArchive.java:60)
+TRACE 301168:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.write(LEDataOutputStream.java:112)
+	de.schlichtherle.util.zip.BasicZipOutputStream.deflate(BasicZipOutputStream.java:437)
+TRACE 301236:
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:678)
+	java.lang.StringBuilder.append(StringBuilder.java:239)
+	simulator.agent.ActiveAgent.writeOutput(ActiveAgent.java:640)
+TRACE 301237:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeShort(LEDataOutputStream.java:181)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeLocalFileHeader(BasicZipOutputStream.java:360)
+TRACE 300961:
+	java.util.zip.Deflater.init(Deflater.java:Unknown line)
+	java.util.zip.Deflater.<init>(Deflater.java:124)
+	de.schlichtherle.util.zip.BasicZipOutputStream$ZipDeflater.<init>(BasicZipOutputStream.java:687)
+	de.schlichtherle.util.zip.BasicZipOutputStream.<init>(BasicZipOutputStream.java:57)
+TRACE 301243:
+	simulator.AgentContainer.fitAgentMassOnGrid(AgentContainer.java:927)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:441)
+	simulator.Simulator.writeReport(Simulator.java:1240)
+	simulator.Simulator.step(Simulator.java:383)
+TRACE 300566:
+	java.lang.Double.doubleToRawLongBits(Double.java:Unknown line)
+	sun.misc.FpUtils.getExponent(FpUtils.java:130)
+	java.lang.Math.getExponent(Math.java:1295)
+	java.lang.StrictMath.floorOrCeil(StrictMath.java:338)
+TRACE 301300:
+	java.util.Arrays.sort(Arrays.java:1210)
+	java.util.Collections.sort(Collections.java:157)
+	simulator.detachment.LevelSet.computeLevelSet(LevelSet.java:205)
+	simulator.AgentContainer.step(AgentContainer.java:456)
+TRACE 301021:
+	sun.misc.FloatingDecimal.toJavaFormatString(FloatingDecimal.java:886)
+	java.lang.Double.toString(Double.java:179)
+	java.lang.String.valueOf(String.java:2973)
+	java.lang.Double.toString(Double.java:603)
+TRACE 301014:
+	simulator.agent.LocatedAgent.checkBoundaries(LocatedAgent.java:810)
+	simulator.agent.LocatedAgent.move(LocatedAgent.java:788)
+	simulator.agent.LocatedAgent.interact(LocatedAgent.java:558)
+	simulator.AgentContainer.performMove(AgentContainer.java:629)
+TRACE 301188:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeShort(LEDataOutputStream.java:181)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeCentralFileHeader(BasicZipOutputStream.java:590)
+TRACE 300739:
+	sun.misc.FloatingDecimal.dtoa(FloatingDecimal.java:513)
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.Double.toString(Double.java:179)
+	simulator.SpatialGrid.writeReport(SpatialGrid.java:1001)
+TRACE 301189:
+	simulator.geometry.Domain.calculateComputationDomainGrids(Domain.java:483)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:447)
+	simulator.diffusionSolver.Solver_multigrid.initializeConcentrationFields(Solver_multigrid.java:106)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:213)
+TRACE 301192:
+	java.util.Arrays.copyOfRange(Arrays.java:3209)
+	java.lang.String.<init>(String.java:215)
+	sun.misc.FloatingDecimal.toJavaFormatString(FloatingDecimal.java:887)
+	java.lang.Double.toString(Double.java:179)
+TRACE 300962:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:282)
+	de.schlichtherle.io.util.LEDataOutputStream.writeInt(LEDataOutputStream.java:204)
+	de.schlichtherle.util.zip.BasicZipOutputStream.writeCentralFileHeader(BasicZipOutputStream.java:579)
+TRACE 301252:
+	java.util.Arrays.copyOfRange(Arrays.java:3209)
+	java.lang.String.<init>(String.java:215)
+	java.lang.StringBuffer.toString(StringBuffer.java:585)
+	simulator.AgentContainer.writeReport(AgentContainer.java:1205)
+TRACE 301070:
+	simulator.agent.LocatedGroup.refreshElement(LocatedGroup.java:213)
+	simulator.AgentContainer.refreshGroupStatus(AgentContainer.java:672)
+	simulator.AgentContainer.step(AgentContainer.java:450)
+	simulator.Simulator.step(Simulator.java:370)
+TRACE 300087:
+	java.lang.ClassLoader.findBootstrapClass(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.findBootstrapClassOrNull(ClassLoader.java:932)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:297)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:295)
+TRACE 301194:
+	java.lang.ref.Reference$ReferenceHandler.run(Reference.java:120)
+TRACE 300877:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:203)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridUtils.restrictBoundaryLayer(MultigridUtils.java:195)
+	simulator.diffusionSolver.multigrid.MultigridSolute.downward1(MultigridSolute.java:233)
+TRACE 300722:
+	simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction(Solver_pressure.java:117)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:214)
+	simulator.AgentContainer.followPressure(AgentContainer.java:521)
+	simulator.AgentContainer.step(AgentContainer.java:339)
+TRACE 301063:
+	java.lang.ThreadLocal.get(ThreadLocal.java:125)
+	sun.misc.FloatingDecimal.appendTo(FloatingDecimal.java:970)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:678)
+	java.lang.StringBuilder.append(StringBuilder.java:239)
+TRACE 300889:
+	sun.misc.FloatingDecimal.toJavaFormatString(FloatingDecimal.java:886)
+	java.lang.Double.toString(Double.java:179)
+	simulator.SpatialGrid.writeReport(SpatialGrid.java:1001)
+	simulator.Simulator.writeReport(Simulator.java:1218)
+TRACE 301258:
+	simulator.SpatialGrid.getDiscreteCoordinates(SpatialGrid.java:263)
+	simulator.SpatialGrid.getValueAt(SpatialGrid.java:544)
+	simulator.geometry.Domain.testCrossedBoundary(Domain.java:317)
+	simulator.agent.LocatedAgent.checkBoundaries(LocatedAgent.java:810)
+TRACE 300871:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:207)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:455)
+	simulator.Simulator.writeReport(Simulator.java:1199)
+TRACE 300870:
+	simulator.AgentContainer.fitAgentMassOnGrid(AgentContainer.java:925)
+	simulator.geometry.Domain.refreshBioFilmGrids(Domain.java:441)
+	simulator.Simulator.writeReport(Simulator.java:1199)
+	simulator.Simulator.step(Simulator.java:383)
+TRACE 300892:
+	simulator.diffusionSolver.Solver_multigrid.updateReacRateAndDiffRate(Solver_multigrid.java:278)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:261)
+	simulator.diffusionSolver.Solver_multigrid.solveCoarsest(Solver_multigrid.java:252)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:190)
+TRACE 300899:
+	java.util.HashMap.resize(HashMap.java:462)
+	java.util.LinkedHashMap.addEntry(LinkedHashMap.java:414)
+	java.util.HashMap.put(HashMap.java:385)
+	java.util.HashSet.add(HashSet.java:200)
+TRACE 301076:
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:346)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+	simulator.diffusionSolver.Solver_multigrid.solveCoarsest(Solver_multigrid.java:252)
+TRACE 301083:
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:346)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+	simulator.diffusionSolver.Solver_multigrid.stepSolveDiffusionReaction(Solver_multigrid.java:202)
+TRACE 301195:
+	sun.misc.Unsafe.park(Unsafe.java:Unknown line)
+	java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:196)
+	java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:424)
+	java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:323)
+TRACE 300863:
+	sun.misc.Unsafe.compareAndSwapInt(Unsafe.java:Unknown line)
+	java.util.concurrent.atomic.AtomicInteger.compareAndSet(AtomicInteger.java:107)
+	java.util.concurrent.atomic.AtomicInteger.decrementAndGet(AtomicInteger.java:192)
+	java.io.FileDescriptor.decrementAndGetUseCount(FileDescriptor.java:157)
+TRACE 301197:
+	java.io.FileOutputStream.writeBytes(FileOutputStream.java:Unknown line)
+	java.io.FileOutputStream.write(FileOutputStream.java:269)
+	utils.LogFile.writeLog(LogFile.java:115)
+	utils.LogFile.chronoMessageOut(LogFile.java:239)
+TRACE 301086:
+	java.io.UnixFileSystem.setLastModifiedTime(UnixFileSystem.java:Unknown line)
+	java.io.File.setLastModified(File.java:1263)
+	de.schlichtherle.io.Files.isWritableOrCreatable(Files.java:207)
+	de.schlichtherle.io.UpdatingArchiveController.mount0(UpdatingArchiveController.java:163)
+TRACE 300683:
+	simulator.reaction.Reaction.applyReaction(Reaction.java:468)
+	simulator.diffusionSolver.Solver_multigrid.updateReacRateAndDiffRate(Solver_multigrid.java:283)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:261)
+	simulator.diffusionSolver.Solver_multigrid.solveCoarsest(Solver_multigrid.java:252)
+TRACE 300903:
+	java.lang.System.arraycopy(System.java:Unknown line)
+	de.schlichtherle.io.rof.BufferedReadOnlyFile.read(BufferedReadOnlyFile.java:263)
+	de.schlichtherle.io.rof.AbstractReadOnlyFile.readFully(AbstractReadOnlyFile.java:48)
+	de.schlichtherle.io.rof.AbstractReadOnlyFile.readFully(AbstractReadOnlyFile.java:41)
+TRACE 301284:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:203)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridUtils.interpolateBoundaryLayer(MultigridUtils.java:339)
+	simulator.diffusionSolver.multigrid.MultigridSolute.upward(MultigridSolute.java:260)
+TRACE 301090:
+	simulator.AgentContainer.step(AgentContainer.java:348)
+	simulator.Simulator.step(Simulator.java:370)
+	simulator.Simulator.run(Simulator.java:316)
+	idyno.Idynomics.launchSimulation(Idynomics.java:699)
+TRACE 300852:
+	java.io.RandomAccessFile.open(RandomAccessFile.java:Unknown line)
+	java.io.RandomAccessFile.<init>(RandomAccessFile.java:216)
+	de.schlichtherle.io.rof.SimpleReadOnlyFile.<init>(SimpleReadOnlyFile.java:40)
+	de.schlichtherle.io.UpdatingArchiveController.initInArchive(UpdatingArchiveController.java:438)
+TRACE 300850:
+	java.nio.CharBuffer.wrap(CharBuffer.java:350)
+	java.lang.StringCoding$StringEncoder.encode(StringCoding.java:238)
+	java.lang.StringCoding.encode(StringCoding.java:272)
+	java.lang.StringCoding.encode(StringCoding.java:284)
+TRACE 301057:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:210)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.SinglegridPressure.relax(SinglegridPressure.java:139)
+	simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction(Solver_pressure.java:117)
+TRACE 301051:
+	simulator.diffusionSolver.multigrid.SinglegridPressure.relax(SinglegridPressure.java:87)
+	simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction(Solver_pressure.java:117)
+	simulator.diffusionSolver.DiffusionSolver.initAndSolve(DiffusionSolver.java:214)
+	simulator.AgentContainer.followPressure(AgentContainer.java:521)
+TRACE 301049:
+	simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary(BoundaryCyclic.java:197)
+	simulator.SoluteGrid.refreshBoundary(SoluteGrid.java:247)
+	simulator.diffusionSolver.multigrid.MultigridSolute.relax(MultigridSolute.java:346)
+	simulator.diffusionSolver.Solver_multigrid.relax(Solver_multigrid.java:263)
+TRACE 300224:
+	java.lang.ClassLoader.defineClass1(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.defineClassCond(ClassLoader.java:637)
+	java.lang.ClassLoader.defineClass(ClassLoader.java:621)
+	java.security.SecureClassLoader.defineClass(SecureClassLoader.java:141)
+TRACE 301095:
+	java.lang.Thread.currentThread(Thread.java:Unknown line)
+	java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:301)
+	java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+TRACE 301256:
+	sun.misc.FloatingDecimal.multPow52(FloatingDecimal.java:154)
+	sun.misc.FloatingDecimal.dtoa(FloatingDecimal.java:798)
+	sun.misc.FloatingDecimal.<init>(FloatingDecimal.java:440)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:678)
+CPU SAMPLES BEGIN (total = 19792) Mon Jun  9 19:25:00 2014
+rank   self  accum   count trace method
+   1 17.94% 17.94%    3551 300568 java.lang.StrictMath.floor
+   2 15.50% 33.44%    3068 300707 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+   3  7.49% 40.94%    1483 300708 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+   4  6.13% 47.07%    1214 300699 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+   5  3.88% 50.94%     767 300817 java.util.LinkedList.addAll
+   6  3.78% 54.73%     749 300714 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+   7  3.74% 58.47%     740 300829 simulator.agent.LocatedAgent.interact
+   8  3.55% 62.02%     703 300698 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+   9  2.83% 64.85%     561 300794 java.util.zip.Deflater.deflateBytes
+  10  2.62% 67.47%     518 300681 java.io.FileInputStream.readBytes
+  11  1.93% 69.40%     381 300807 java.io.RandomAccessFile.write
+  12  1.83% 71.23%     362 300697 simulator.diffusionSolver.multigrid.MultigridSolute.relax
+  13  1.77% 72.99%     350 300692 simulator.diffusionSolver.multigrid.MultigridSolute.relax
+  14  1.49% 74.48%     294 300703 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+  15  1.38% 75.86%     273 300721 java.lang.StrictMath.expm1
+  16  1.23% 77.09%     243 300700 simulator.reaction.ReactionFactor.computeSpecificGrowthRate
+  17  1.09% 78.17%     215 300809 simulator.diffusionSolver.multigrid.MultigridSolute.relax
+  18  1.07% 79.24%     212 300731 simulator.diffusionSolver.multigrid.SinglegridPressure.relax
+  19  1.05% 80.29%     207 300695 simulator.diffusionSolver.multigrid.MultigridSolute.relax
+  20  0.72% 81.01%     142 300754 simulator.SpatialGrid.setAllValueAt
+  21  0.71% 81.72%     141 300696 simulator.geometry.shape.Planar.followBoundary
+  22  0.61% 82.33%     121 300756 simulator.SpatialGrid.setAllValueAt
+  23  0.57% 82.90%     113 300811 simulator.diffusionSolver.multigrid.SinglegridPressure.relax
+  24  0.50% 83.40%      99 300717 simulator.SpatialGrid.getGradient
+  25  0.46% 83.86%      91 300913 simulator.agent.LocatedAgent.interact
+  26  0.38% 84.25%      76 300733 simulator.geometry.Domain.calculateComputationDomainGrids
+  27  0.37% 84.62%      74 300799 java.lang.StrictMath.log
+  28  0.36% 84.98%      72 300651 java.io.RandomAccessFile.write
+  29  0.36% 85.34%      71 300788 simulator.AgentContainer.fitAgentVolumeRateOnGrid
+  30  0.35% 85.70%      70 300709 simulator.AgentContainer.fitAgentMassOnGrid
+  31  0.34% 86.04%      68 300858 simulator.agent.LocatedAgent.fitVolRateOnGrid
+  32  0.33% 86.37%      66 300753 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+  33  0.32% 86.70%      64 300716 simulator.AgentContainer.followPressure
+  34  0.31% 87.00%      61 300718 simulator.AgentContainer.followPressure
+  35  0.24% 87.25%      48 300763 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+  36  0.24% 87.48%      47 300702 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+  37  0.24% 87.72%      47 300966 simulator.geometry.Domain.testCrossedBoundary
+  38  0.23% 87.95%      46 300857 java.util.LinkedList.addAll
+  39  0.22% 88.17%      43 300833 java.util.LinkedList.clear
+  40  0.21% 88.38%      41 300456 java.net.Inet6AddressImpl.lookupAllHostAddr
+  41  0.21% 88.59%      41 300887 simulator.agent.LocatedAgent.fitMassOnGrid
+  42  0.20% 88.79%      40 300845 simulator.geometry.Domain.testCrossedBoundary
+  43  0.19% 88.98%      38 300769 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+  44  0.18% 89.16%      36 300764 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+  45  0.18% 89.34%      35 300867 java.io.FileOutputStream.writeBytes
+  46  0.17% 89.51%      34 300784 simulator.geometry.boundaryConditions.BoundaryBulk.refreshBoundary
+  47  0.17% 89.68%      33 300920 simulator.agent.LocatedAgent.move
+  48  0.16% 89.84%      32 300704 simulator.geometry.boundaryConditions.BoundaryZeroFlux.refreshBoundary
+  49  0.16% 90.00%      31 300865 java.io.FileOutputStream.writeBytes
+  50  0.15% 90.15%      30 300912 simulator.geometry.Domain.testCrossedBoundary
+  51  0.15% 90.30%      30 300758 simulator.diffusionSolver.Solver_multigrid.updateReacRateAndDiffRate
+  52  0.14% 90.44%      28 300949 simulator.AgentContainer.fitAgentVolumeRateOnGrid
+  53  0.14% 90.58%      28 300723 simulator.geometry.Domain.calculateComputationDomainGrids
+  54  0.14% 90.72%      27 300720 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+  55  0.13% 90.85%      26 300774 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+  56  0.12% 90.97%      24 300816 java.util.LinkedList.toArray
+  57  0.12% 91.09%      24 300755 simulator.diffusionSolver.Solver_multigrid.updateReacRateAndDiffRate
+  58  0.12% 91.21%      23 301032 simulator.agent.LocatedGroup.addMoveToAgents
+  59  0.12% 91.32%      23 300967 simulator.agent.LocatedGroup.addMoveToAgents
+  60  0.11% 91.43%      21 300860 simulator.agent.LocatedAgent.move
+  61  0.10% 91.53%      20 300878 simulator.geometry.boundaryConditions.BoundaryBulk.refreshBoundary
+  62  0.10% 91.63%      20 300783 simulator.diffusionSolver.multigrid.MultigridSolute.relax
+  63  0.10% 91.73%      20 300847 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+  64  0.09% 91.82%      18 300864 java.io.FileOutputStream.close0
+  65  0.09% 91.92%      18 301016 simulator.AgentContainer.fitAgentMassOnGrid
+  66  0.09% 92.00%      17 300772 simulator.geometry.boundaryConditions.BoundaryZeroFlux.refreshBoundary
+  67  0.09% 92.09%      17 300822 java.util.zip.CRC32.updateBytes
+  68  0.08% 92.17%      16 300742 java.lang.StrictMath.floor
+  69  0.08% 92.25%      16 300907 java.io.RandomAccessFile.length
+  70  0.08% 92.33%      16 300789 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+  71  0.08% 92.41%      16 300880 java.io.RandomAccessFile.readBytes
+  72  0.08% 92.49%      15 300808 simulator.diffusionSolver.multigrid.MultigridSolute.relax
+  73  0.08% 92.56%      15 300969 java.io.FileOutputStream.writeBytes
+  74  0.08% 92.64%      15 300884 simulator.geometry.boundaryConditions.BoundaryZeroFlux.refreshBoundary
+  75  0.07% 92.71%      14 300832 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+  76  0.07% 92.78%      14 300770 utils.MatrixOperations.copyValuesTo
+  77  0.07% 92.85%      14 300977 sun.misc.Unsafe.unpark
+  78  0.07% 92.92%      13 301069 simulator.agent.LocatedAgent.move
+  79  0.07% 92.98%      13 300779 java.nio.Buffer.<init>
+  80  0.07% 93.05%      13 300856 simulator.diffusionSolver.Solver_pressure.initializeConcentrationFields
+  81  0.06% 93.11%      12 300876 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+  82  0.06% 93.17%      12 300781 java.io.FileOutputStream.close0
+  83  0.06% 93.23%      12 300792 java.util.LinkedList.listIterator
+  84  0.06% 93.29%      12 300467 java.net.SocketInputStream.socketRead0
+  85  0.06% 93.35%      12 300462 java.net.PlainSocketImpl.socketConnect
+  86  0.06% 93.41%      12 300841 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+  87  0.06% 93.47%      12 300820 sun.nio.cs.SingleByteEncoder.encodeLoop
+  88  0.06% 93.53%      11 300719 utils.MatrixOperations.copyValuesTo
+  89  0.06% 93.58%      11 300706 simulator.geometry.boundaryConditions.BoundaryZeroFlux.refreshBoundary
+  90  0.06% 93.64%      11 300981 simulator.agent.LocatedAgent.move
+  91  0.06% 93.69%      11 300766 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+  92  0.06% 93.75%      11 300806 java.io.UnixFileSystem.canonicalize0
+  93  0.06% 93.81%      11 300837 java.io.FileOutputStream.writeBytes
+  94  0.06% 93.86%      11 300844 sun.security.pkcs11.wrapper.PKCS11.C_GetSlotInfo
+  95  0.06% 93.92%      11 301027 sun.nio.cs.SingleByteEncoder.encodeLoop
+  96  0.05% 93.97%      10 300980 simulator.diffusionSolver.multigrid.SinglegridPressure.relax
+  97  0.05% 94.02%      10 300573 java.lang.ClassLoader$NativeLibrary.load
+  98  0.05% 94.07%      10 301082 sun.misc.FloatingDecimal.<init>
+  99  0.05% 94.12%      10 301079 simulator.agent.LocatedAgent.move
+ 100  0.05% 94.16%       9 300934 simulator.geometry.boundaryConditions.BoundaryZeroFlux.refreshBoundary
+ 101  0.05% 94.21%       9 300701 simulator.geometry.boundaryConditions.BoundaryBulk.refreshBoundary
+ 102  0.05% 94.26%       9 300839 java.lang.Thread.isInterrupted
+ 103  0.05% 94.30%       9 300925 simulator.geometry.boundaryConditions.BoundaryZeroFlux.refreshBoundary
+ 104  0.05% 94.35%       9 301050 simulator.diffusionSolver.multigrid.SinglegridPressure.relax
+ 105  0.04% 94.39%       8 300904 java.io.FileOutputStream.writeBytes
+ 106  0.04% 94.43%       8 300886 simulator.SpatialGrid.setAllValueAt
+ 107  0.04% 94.47%       8 300914 sun.misc.FloatingDecimal.<init>
+ 108  0.04% 94.51%       8 300919 java.io.FileOutputStream.writeBytes
+ 109  0.04% 94.55%       8 300866 sun.misc.FloatingDecimal.developLongDigits
+ 110  0.04% 94.59%       8 300958 java.io.FileOutputStream.writeBytes
+ 111  0.04% 94.63%       8 300780 java.io.RandomAccessFile.seek
+ 112  0.04% 94.67%       8 300890 simulator.diffusionSolver.multigrid.MultigridSolute.relax
+ 113  0.04% 94.70%       7 301004 sun.misc.FloatingDecimal.<init>
+ 114  0.04% 94.74%       7 300633 java.util.Arrays.copyOf
+ 115  0.04% 94.78%       7 300672 java.lang.System.arraycopy
+ 116  0.04% 94.81%       7 300900 java.io.FileOutputStream.writeBytes
+ 117  0.04% 94.85%       7 300882 java.io.FileOutputStream.writeBytes
+ 118  0.04% 94.88%       7 300846 simulator.SpatialGrid.setAllValueAt
+ 119  0.04% 94.92%       7 300813 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 120  0.03% 94.95%       6 300818 simulator.geometry.boundaryConditions.BoundaryBulk.refreshBoundary
+ 121  0.03% 94.98%       6 300875 simulator.AgentContainer.fitAgentMassOnGrid
+ 122  0.03% 95.01%       6 300823 java.lang.System.arraycopy
+ 123  0.03% 95.04%       6 300730 java.util.LinkedList.listIterator
+ 124  0.03% 95.07%       6 301097 java.util.Random.nextInt
+ 125  0.03% 95.10%       6 301073 sun.misc.FloatingDecimal.<init>
+ 126  0.03% 95.13%       6 300802 java.io.FileOutputStream.writeBytes
+ 127  0.03% 95.16%       6 301064 simulator.diffusionSolver.multigrid.SinglegridPressure.relax
+ 128  0.03% 95.19%       6 300972 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 129  0.03% 95.22%       6 300909 simulator.reaction.ReactionFactor.computeUptakeRate
+ 130  0.03% 95.25%       6 301054 java.io.FileOutputStream.writeBytes
+ 131  0.03% 95.28%       6 300776 simulator.AgentContainer.writeGrids
+ 132  0.03% 95.31%       6 300777 java.lang.Object.notifyAll
+ 133  0.03% 95.34%       6 300848 java.util.LinkedList.listIterator
+ 134  0.03% 95.37%       5 301087 java.io.FileOutputStream.open
+ 135  0.03% 95.39%       5 300992 sun.misc.FloatingDecimal.countBits
+ 136  0.03% 95.42%       5 301224 java.io.FileOutputStream.writeBytes
+ 137  0.03% 95.44%       5 300891 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 138  0.03% 95.47%       5 301060 java.lang.StringBuilder.append
+ 139  0.03% 95.49%       5 300986 java.util.zip.Deflater.deflateBytes
+ 140  0.03% 95.52%       5 301019 java.io.FileOutputStream.writeBytes
+ 141  0.03% 95.54%       5 300874 java.io.FileOutputStream.writeBytes
+ 142  0.03% 95.57%       5 300778 simulator.geometry.Domain.calculateComputationDomainGrids
+ 143  0.03% 95.59%       5 301220 sun.misc.FloatingDecimal.dtoa
+ 144  0.03% 95.62%       5 300801 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 145  0.03% 95.64%       5 301013 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 146  0.03% 95.67%       5 300931 java.lang.StringCoding$StringDecoder.decode
+ 147  0.03% 95.70%       5 300828 simulator.SpatialGrid.setAllValueAt
+ 148  0.03% 95.72%       5 300968 java.io.RandomAccessFile.seek
+ 149  0.03% 95.75%       5 301103 sun.misc.FloatingDecimal.countBits
+ 150  0.03% 95.77%       5 301045 java.lang.Object.<init>
+ 151  0.03% 95.80%       5 300982 simulator.SpatialGrid.getGradient
+ 152  0.03% 95.82%       5 300836 java.io.FileOutputStream.writeBytes
+ 153  0.03% 95.85%       5 301101 java.io.FileOutputStream.writeBytes
+ 154  0.03% 95.87%       5 300710 java.lang.ref.Reference$ReferenceHandler.run
+ 155  0.03% 95.90%       5 300906 java.lang.Thread.currentThread
+ 156  0.02% 95.92%       4 301137 java.io.FileOutputStream.writeBytes
+ 157  0.02% 95.94%       4 300859 java.lang.StrictMath.expm1
+ 158  0.02% 95.96%       4 301232 java.lang.Double.valueOf
+ 159  0.02% 95.98%       4 301226 java.io.FileOutputStream.writeBytes
+ 160  0.02% 96.00%       4 300868 java.util.AbstractList.iterator
+ 161  0.02% 96.02%       4 301009 java.io.RandomAccessFile.readBytes
+ 162  0.02% 96.04%       4 300885 simulator.SpatialGrid.getGradient
+ 163  0.02% 96.06%       4 301010 java.io.FileOutputStream.writeBytes
+ 164  0.02% 96.08%       4 300973 simulator.agent.LocatedGroup.remove
+ 165  0.02% 96.10%       4 300682 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 166  0.02% 96.12%       4 301030 java.lang.ref.Reference$ReferenceHandler.run
+ 167  0.02% 96.14%       4 300965 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 168  0.02% 96.16%       4 301171 java.util.LinkedList.indexOf
+ 169  0.02% 96.18%       4 301167 sun.misc.FloatingDecimal.<init>
+ 170  0.02% 96.20%       4 301166 java.util.Arrays.copyOf
+ 171  0.02% 96.22%       4 301161 java.io.FileOutputStream.writeBytes
+ 172  0.02% 96.24%       4 300952 java.io.FileOutputStream.writeBytes
+ 173  0.02% 96.26%       4 300943 simulator.geometry.Domain.getInterface
+ 174  0.02% 96.28%       4 300902 simulator.AgentContainer.followPressure
+ 175  0.02% 96.30%       4 301119 java.lang.Thread.currentThread
+ 176  0.02% 96.32%       4 301104 java.lang.String.valueOf
+ 177  0.02% 96.34%       4 300923 java.lang.Thread.currentThread
+ 178  0.02% 96.36%       4 300650 java.io.RandomAccessFile.read
+ 179  0.02% 96.38%       4 301091 simulator.agent.LocatedAgent.move
+ 180  0.02% 96.40%       3 300881 java.io.FileOutputStream.writeBytes
+ 181  0.02% 96.41%       3 300996 java.util.AbstractList.iterator
+ 182  0.02% 96.43%       3 300994 de.schlichtherle.io.Streams$1Reader.run
+ 183  0.02% 96.44%       3 300984 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 184  0.02% 96.46%       3 301022 java.io.UnixFileSystem.getLastModifiedTime
+ 185  0.02% 96.47%       3 301023 simulator.Simulator.getParticleIndex
+ 186  0.02% 96.49%       3 300976 java.lang.Object.notify
+ 187  0.02% 96.50%       3 301029 simulator.diffusionSolver.multigrid.MultigridSolute.computeResidual
+ 188  0.02% 96.52%       3 300963 sun.nio.cs.StreamEncoder.write
+ 189  0.02% 96.53%       3 301040 java.io.FileOutputStream.writeBytes
+ 190  0.02% 96.55%       3 300947 simulator.geometry.Domain.calculateComputationDomainGrids
+ 191  0.02% 96.56%       3 300918 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 192  0.02% 96.58%       3 300898 java.io.FileOutputStream.writeBytes
+ 193  0.02% 96.59%       3 300897 java.io.FileOutputStream.writeBytes
+ 194  0.02% 96.61%       3 300894 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 195  0.02% 96.62%       3 301262 java.util.Collections.shuffle
+ 196  0.02% 96.64%       3 301259 java.lang.Double.doubleToRawLongBits
+ 197  0.02% 96.66%       3 300883 sun.misc.Unsafe.compareAndSwapInt
+ 198  0.02% 96.67%       3 301071 java.io.FileOutputStream.open
+ 199  0.02% 96.69%       3 301072 sun.misc.FloatingDecimal.<init>
+ 200  0.02% 96.70%       3 301085 sun.misc.FloatingDecimal.<init>
+ 201  0.02% 96.72%       3 300861 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 202  0.02% 96.73%       3 300843 simulator.diffusionSolver.multigrid.MultigridSolute.computeResidual
+ 203  0.02% 96.75%       3 300842 simulator.diffusionSolver.multigrid.MultigridSolute.computeResidual
+ 204  0.02% 96.76%       3 301100 simulator.agent.LocatedAgent.fitReacRateOnGrid
+ 205  0.02% 96.78%       3 301102 simulator.AgentContainer.performMove
+ 206  0.02% 96.79%       3 300827 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 207  0.02% 96.81%       3 301107 java.lang.StringBuilder.append
+ 208  0.02% 96.82%       3 301120 java.lang.StringBuffer.append
+ 209  0.02% 96.84%       3 301123 java.lang.Object.wait
+ 210  0.02% 96.85%       3 301126 simulator.agent.LocatedAgent.fitMassOnGrid
+ 211  0.02% 96.87%       3 300791 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 212  0.02% 96.88%       3 301141 sun.misc.FloatingDecimal.dtoa
+ 213  0.02% 96.90%       3 301142 java.io.UnixFileSystem.delete0
+ 214  0.02% 96.91%       3 301146 simulator.SoluteGrid.refreshBoundary
+ 215  0.02% 96.93%       3 301160 java.nio.HeapByteBuffer.<init>
+ 216  0.02% 96.94%       3 301170 simulator.AgentContainer.followPressure
+ 217  0.02% 96.96%       3 300761 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 218  0.02% 96.97%       3 301177 sun.misc.FloatingDecimal.<init>
+ 219  0.02% 96.99%       3 301179 java.util.Arrays.copyOf
+ 220  0.02% 97.00%       3 301187 java.io.FileOutputStream.writeBytes
+ 221  0.02% 97.02%       3 300751 java.io.UnixFileSystem.getBooleanAttributes0
+ 222  0.02% 97.03%       3 301200 java.lang.StringBuffer.append
+ 223  0.02% 97.05%       3 301203 java.util.LinkedList.indexOf
+ 224  0.02% 97.06%       3 301217 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 225  0.02% 97.08%       3 300622 simulator.agent.LocatedGroup.<init>
+ 226  0.02% 97.09%       3 301251 java.io.FileOutputStream.open
+ 227  0.02% 97.11%       3 300642 java.lang.ref.ReferenceQueue.enqueue
+ 228  0.01% 97.12%       2 301046 java.lang.Object.wait
+ 229  0.01% 97.13%       2 301307 sun.misc.FloatingDecimal.dtoa
+ 230  0.01% 97.14%       2 301008 java.lang.StringBuffer.append
+ 231  0.01% 97.15%       2 301020 simulator.AgentContainer.fitAgentMassOnGrid
+ 232  0.01% 97.16%       2 300915 java.nio.charset.CharsetEncoder.<init>
+ 233  0.01% 97.17%       2 301204 sun.misc.FloatingDecimal.constructPow52
+ 234  0.01% 97.18%       2 300916 java.lang.System.currentTimeMillis
+ 235  0.01% 97.19%       2 301044 simulator.agent.LocatedAgent.writeOutput
+ 236  0.01% 97.20%       2 301042 simulator.diffusionSolver.Solver_multigrid.updateReacRateAndDiffRate
+ 237  0.01% 97.21%       2 300831 java.util.Calendar.<init>
+ 238  0.01% 97.22%       2 301106 java.lang.Thread.isInterrupted
+ 239  0.01% 97.23%       2 300928 sun.misc.FloatingDecimal.multPow52
+ 240  0.01% 97.24%       2 301206 java.io.FileInputStream.close0
+ 241  0.01% 97.25%       2 300929 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 242  0.01% 97.26%       2 301034 java.lang.AbstractStringBuilder.<init>
+ 243  0.01% 97.27%       2 301112 simulator.geometry.Domain.calculateComputationDomainGrids
+ 244  0.01% 97.28%       2 300930 java.io.UnixFileSystem.getLastModifiedTime
+ 245  0.01% 97.29%       2 301113 simulator.AgentContainer.writeGrids
+ 246  0.01% 97.30%       2 301114 java.lang.Object.wait
+ 247  0.01% 97.31%       2 300814 simulator.agent.LocatedAgent.checkBoundaries
+ 248  0.01% 97.32%       2 300673 sun.misc.FloatingDecimal.dtoa
+ 249  0.01% 97.33%       2 300812 simulator.agent.LocatedAgent.move
+ 250  0.01% 97.34%       2 301115 sun.misc.FDBigInt.<init>
+ 251  0.01% 97.35%       2 301041 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 252  0.01% 97.36%       2 301212 java.util.Arrays.mergeSort
+ 253  0.01% 97.37%       2 301121 java.lang.StringBuffer.append
+ 254  0.01% 97.38%       2 301006 simulator.diffusionSolver.Solver_multigrid.updateReacRateAndDiffRate
+ 255  0.01% 97.39%       2 300805 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 256  0.01% 97.40%       2 300938 java.io.FileInputStream.open
+ 257  0.01% 97.41%       2 300939 simulator.agent.LocatedAgent.writeOutput
+ 258  0.01% 97.42%       2 300800 simulator.SoluteGrid.refreshBoundary
+ 259  0.01% 97.43%       2 301124 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 260  0.01% 97.44%       2 300798 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 261  0.01% 97.45%       2 300797 povray.VectorProperty.setValues
+ 262  0.01% 97.46%       2 300795 java.util.Arrays.copyOf
+ 263  0.01% 97.47%       2 300971 java.io.UnixFileSystem.setLastModifiedTime
+ 264  0.01% 97.48%       2 301136 java.lang.Object.notifyAll
+ 265  0.01% 97.49%       2 301255 sun.misc.FloatingDecimal.dtoa
+ 266  0.01% 97.50%       2 301282 sun.misc.FloatingDecimal.dtoa
+ 267  0.01% 97.51%       2 300941 simulator.SpatialGrid.setAllValueAt
+ 268  0.01% 97.52%       2 301139 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 269  0.01% 97.53%       2 300999 java.util.LinkedList.remove
+ 270  0.01% 97.54%       2 301227 simulator.agent.LocatedAgent.fitMassOnGrid
+ 271  0.01% 97.55%       2 301144 java.lang.StringBuilder.append
+ 272  0.01% 97.56%       2 300687 simulator.diffusionSolver.multigrid.MultigridSolute.relax
+ 273  0.01% 97.57%       2 301149 java.util.LinkedList.listIterator
+ 274  0.01% 97.58%       2 300945 java.io.FileOutputStream.writeBytes
+ 275  0.01% 97.59%       2 301271 simulator.diffusionSolver.multigrid.MultigridSolute.computeResidual
+ 276  0.01% 97.61%       2 300946 java.io.RandomAccessFile.seek
+ 277  0.01% 97.62%       2 301156 java.lang.ref.Reference.access$200
+ 278  0.01% 97.63%       2 300773 simulator.reaction.Reaction.readConcentrationSeen
+ 279  0.01% 97.64%       2 301234 java.lang.Double.valueOf
+ 280  0.01% 97.65%       2 300956 simulator.SpatialGrid.setAllValueAt
+ 281  0.01% 97.66%       2 300957 simulator.geometry.Domain.calculateComputationDomainGrids
+ 282  0.01% 97.67%       2 300768 simulator.SpatialGrid.setGrid
+ 283  0.01% 97.68%       2 301037 java.util.HashMap.<init>
+ 284  0.01% 97.69%       2 301168 java.io.FileOutputStream.writeBytes
+ 285  0.01% 97.70%       2 301236 sun.misc.FloatingDecimal.<init>
+ 286  0.01% 97.71%       2 301237 java.io.FileOutputStream.writeBytes
+ 287  0.01% 97.72%       2 300961 java.util.zip.Deflater.init
+ 288  0.01% 97.73%       2 301243 simulator.AgentContainer.fitAgentMassOnGrid
+ 289  0.01% 97.74%       2 300566 java.lang.Double.doubleToRawLongBits
+ 290  0.01% 97.75%       2 301300 java.util.Arrays.sort
+ 291  0.01% 97.76%       2 301021 sun.misc.FloatingDecimal.toJavaFormatString
+ 292  0.01% 97.77%       2 301014 simulator.agent.LocatedAgent.checkBoundaries
+ 293  0.01% 97.78%       2 301188 java.io.FileOutputStream.writeBytes
+ 294  0.01% 97.79%       2 300739 sun.misc.FloatingDecimal.dtoa
+ 295  0.01% 97.80%       2 301189 simulator.geometry.Domain.calculateComputationDomainGrids
+ 296  0.01% 97.81%       2 301192 java.util.Arrays.copyOfRange
+ 297  0.01% 97.82%       2 300962 java.io.FileOutputStream.writeBytes
+ 298  0.01% 97.83%       2 301252 java.util.Arrays.copyOfRange
+ 299  0.01% 97.84%       2 301070 simulator.agent.LocatedGroup.refreshElement
+ 300  0.01% 97.85%       2 300087 java.lang.ClassLoader.findBootstrapClass
+ 301  0.01% 97.86%       2 301194 java.lang.ref.Reference$ReferenceHandler.run
+ 302  0.01% 97.87%       2 300877 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 303  0.01% 97.88%       2 300722 simulator.diffusionSolver.Solver_pressure.solveDiffusionReaction
+ 304  0.01% 97.89%       2 301063 java.lang.ThreadLocal.get
+ 305  0.01% 97.90%       2 300889 sun.misc.FloatingDecimal.toJavaFormatString
+ 306  0.01% 97.91%       2 301258 simulator.SpatialGrid.getDiscreteCoordinates
+ 307  0.01% 97.92%       2 300871 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 308  0.01% 97.93%       2 300870 simulator.AgentContainer.fitAgentMassOnGrid
+ 309  0.01% 97.94%       2 300892 simulator.diffusionSolver.Solver_multigrid.updateReacRateAndDiffRate
+ 310  0.01% 97.95%       2 300899 java.util.HashMap.resize
+ 311  0.01% 97.96%       2 301076 simulator.SoluteGrid.refreshBoundary
+ 312  0.01% 97.97%       2 301083 simulator.SoluteGrid.refreshBoundary
+ 313  0.01% 97.98%       2 301195 sun.misc.Unsafe.park
+ 314  0.01% 97.99%       2 300863 sun.misc.Unsafe.compareAndSwapInt
+ 315  0.01% 98.00%       2 301197 java.io.FileOutputStream.writeBytes
+ 316  0.01% 98.01%       2 301086 java.io.UnixFileSystem.setLastModifiedTime
+ 317  0.01% 98.02%       2 300683 simulator.reaction.Reaction.applyReaction
+ 318  0.01% 98.03%       2 300903 java.lang.System.arraycopy
+ 319  0.01% 98.04%       2 301284 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 320  0.01% 98.05%       2 301090 simulator.AgentContainer.step
+ 321  0.01% 98.06%       2 300852 java.io.RandomAccessFile.open
+ 322  0.01% 98.07%       2 300850 java.nio.CharBuffer.wrap
+ 323  0.01% 98.08%       2 301057 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 324  0.01% 98.09%       2 301051 simulator.diffusionSolver.multigrid.SinglegridPressure.relax
+ 325  0.01% 98.10%       2 301049 simulator.geometry.boundaryConditions.BoundaryCyclic.refreshBoundary
+ 326  0.01% 98.11%       2 300224 java.lang.ClassLoader.defineClass1
+ 327  0.01% 98.12%       2 301095 java.lang.Thread.currentThread
+ 328  0.01% 98.13%       2 301256 sun.misc.FloatingDecimal.multPow52
+CPU SAMPLES END

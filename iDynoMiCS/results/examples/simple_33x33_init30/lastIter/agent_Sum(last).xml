@@ -1,0 +1,8 @@
+<idynomics>
+ <simulation iterate="72" time="72.0" unit="hour">
+<grid resolution="8.0" nI="33" nJ="33" nK="1"/>
+<species name="MyHeterotroph" header="population,mass,growthRate" >
+3624.0,3.431027062632728E7,797297.5266390898</species>
+
+</simulation>
+</idynomics>
